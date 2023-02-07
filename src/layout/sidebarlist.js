@@ -1,27 +1,19 @@
-import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
+import { sentenceCase } from "change-case"
 
-import { Box, Divider, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
+import { Box, Button, Divider, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import { navItems } from "./info"
-import Logo from "../assets/logo/Black on Transparent.png";
 
-const StyledLogoListItem = styled(List)(({theme}) => ({
-	backgroundColor: theme.palette.primary.dark
+const StyledContainerStack = styled(Stack)(({theme}) => ({
+	marginTop: "20px"
 }))
 
-const LogoParent = styled(ListItem)(({theme}) => ({
-	height: "18vh",
-}))
-
-const LogoItem = styled("img")(({theme}) => ({
-	width: "60vw",
-	height: "100%",
-	marginLeft: "auto",
-	marginRight: "auto",
-	marginBottom: "20px",
-	margin: "20px auto"
+const StyledNavItems = styled(Stack)(({theme}) => ({
+	width: "70%",
+	marginLeft: "10%",
+	marginTop: "20px"
 }))
 
 const activeNavlink={
@@ -34,17 +26,18 @@ const activeNavlink={
 
 const navlinkStyle = {
 	textDecoration: "none",
-	color: "white"
+	color: "#0b0d0c"
 }
 
-const SwipeableDrawerList = ({mobileNav, setMobileNav}) => {
+const StyledButtonStack = styled(Stack)(({theme}) => ({
+	width: "70%",
+	marginLeft: "10%",
+	marginTop: "20px"
+}))
 
-	const [selectedIndex, setSelectedIndex] = useState(0);
 
-	const handleListItemClick = (event, index) => {
-	  setSelectedIndex(index);
-	};
-  
+const SideBarList = ({mobileNav, setMobileNav}) => {
+
 
 	return (
 		<Box
@@ -52,46 +45,55 @@ const SwipeableDrawerList = ({mobileNav, setMobileNav}) => {
 			onClick={() => setMobileNav(false)}
 			onKeyDown={() => setMobileNav(false)}
 		>
-			<StyledLogoListItem component="nav" aria-label="rhino jon navigation">
-				<LogoParent>
-					<LogoItem src={Logo} alt="Rhino John Prime Metal Logo"/>
-				</LogoParent>
-
-				
-				{
-					navItems.map((el, index) => (
-						<NavLink 
-							style={({isActive}) => 
-								isActive ? activeNavlink : navlinkStyle
-							}
-							to={el.path} 
-							key={index}
-						>
-							<ListItemButton
-								selected={selectedIndex === el.index}
-								onClick={(event) => handleListItemClick(event, 0)}
-								sx={{
-									minHeight: 48,
-									justifyContent: mobileNav ? 'initial' : 'center',
-									px: 2.5,
-								}}
+			<StyledContainerStack
+				direction="column"
+			>
+				<StyledNavItems
+					direction="column"
+					spacing={1.5}
+				>
+					
+					{
+						navItems.map((el, index) => (
+							<NavLink 
+								style={({isActive}) => 
+									isActive ? activeNavlink : navlinkStyle
+								}
+								to={el.path} 
+								key={index}
 							>
-								{el.icon}
-								<ListItemText primary={el.label} sx={{ opacity: mobileNav ? 1 : 0 , marginLeft: "15px"}} />
+								<Typography variant="subtitle2">
+									{sentenceCase(el.path)}
+								</Typography>
+							</NavLink>
+						))
+					}
 
-							</ListItemButton>
-						</NavLink>
-					))
-				}
+				</StyledNavItems>
 
-				<Divider color="grey"/>
+				<Divider
+					style={{
+						marginTop: "30px",
+						marginBottom: "20px"
+					}}
+				/>
+					
+				<StyledButtonStack
+					direction="column"
+					spacing={1.5}
+				>
+					<Button variant="outlined" color="primary">
+						Login
+					</Button>
 
-				
-				<Box></Box>
+					<Button variant="contained" color="primary">
+						Regster
+					</Button>
+				</StyledButtonStack>
 
-			</StyledLogoListItem>
+			</StyledContainerStack>
 		</Box>
 	)
 }
 
-export default SwipeableDrawerList
+export default SideBarList
