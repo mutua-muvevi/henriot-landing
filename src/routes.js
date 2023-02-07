@@ -9,6 +9,10 @@ import CEC from "./pages/cec/cec";
 import Diverse from "./pages/diverse/diverse";
 import Exchange from "./pages/exchange/exchange";
 import News from "./pages/news/news";
+import InvestmentProcess from "./pages/process/process";
+import Innovation from "./pages/innovation/innovation";
+import InvestmentResources from "./pages/resources/resources";
+import About from "./pages/about/about";
 
 //router function
 const Router = () => {
@@ -22,6 +26,10 @@ const Router = () => {
 					element: <Homepage/>,	
 				},
 				{
+					path: "/about",
+					element: <About/>,	
+				},
+				{
 					path: "/cec",
 					element: <CEC/>,	
 				},
@@ -32,6 +40,18 @@ const Router = () => {
 				{
 					path: "/exchange",
 					element: <Exchange/>,	
+				},
+				{
+					path: "/investment-process",
+					element: <InvestmentProcess/>,	
+				},
+				{
+					path: "/investment-resources",
+					element: <InvestmentResources/>,	
+				},
+				{
+					path: "/innovation",
+					element: <Innovation/>,	
 				},
 				{
 					path: "/news",
