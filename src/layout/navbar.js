@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+
 import { NavLink } from "react-router-dom";
+import { sentenceCase } from 'change-case';
 
 import { AppBar, Box, Button, Container, IconButton, Stack, Toolbar, Typography} from "@mui/material";
 import { styled } from "@mui/system";
@@ -84,7 +86,7 @@ const Navbar = () => {
 									navItems.map((el, i) => (
 										<NavLink to={el.path} style={styledNavLink}>
 											<Typography variant="subtitle2" color="text.primary">
-												{el.label}
+												{sentenceCase(el.label)}
 											</Typography>
 										</NavLink>
 									))
