@@ -12,7 +12,7 @@ const StyledMain = styled(Box)(({ theme }) => ({
 
 const Layout = () => {
 	return (
-		<Stack direction="column">
+		<Stack direction="column" spacing={3}>
 			<Navbar/>
 			<StyledMain>
 				<Outlet/>

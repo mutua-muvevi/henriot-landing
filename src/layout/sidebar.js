@@ -1,16 +1,32 @@
 import React from 'react';
-import { SwipeableDrawer } from "@mui/material"
-import SwipeableDrawerList from "./sidebarlist";
+
+import { Box, Stack, SwipeableDrawer } from "@mui/material"
 import { styled } from "@mui/system";
 
+import SideBarList from "./sidebarlist";
+import Logo from "../assets/logo/Black on Transparent.png";
+
+
 const StyledSwipeAbleDrawer = styled(SwipeableDrawer)(({theme}) => ({
-	width: "90vw !important"
+	backgroundColor: "rgba(0, 0, 0, 0.39)"
 }))
 
 const swipeableDrawerSX = {
-	width: "90vw !important",
 	color: "white",
 }
+
+const StyledStack = styled(Stack)(({ theme }) => ({
+	height: "100%",
+	backgroundColor: "yellow",
+	width: "70vw"
+}));
+
+const styledLogo = {
+	width: "70%",
+	marginLeft: "10%",
+	marginTop: "20px"
+}
+
 
 const SwipeableSideDrawer = ({mobileNav, setMobileNav}) => {
 	return (
@@ -22,12 +38,14 @@ const SwipeableSideDrawer = ({mobileNav, setMobileNav}) => {
 			sx={swipeableDrawerSX}
 			PaperProps={{
 				sx: {
-					backgroundColor: "#131212",
 					color: "#dea95f",
 				  }
 			}}
 		>
-			<SwipeableDrawerList mobileNav={mobileNav} setMobileNav={setMobileNav}/>
+			<StyledStack spacing={3}>
+				<img src={Logo} alt="Rhino John Prime Metal Logo" style={styledLogo}/>
+				<SideBarList mobileNav={mobileNav} setMobileNav={setMobileNav}/>
+			</StyledStack>
 		</StyledSwipeAbleDrawer>
 	)
 }
