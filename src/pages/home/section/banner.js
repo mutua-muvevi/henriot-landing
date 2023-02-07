@@ -14,7 +14,7 @@ const styledVideo = {
 	height: "70vh",
 	objectFit: "cover",
 	
-	width: "100vw",
+	width: "100%",
 }
 
 const StyledContainer = styled(Container)(({ theme }) => ({
