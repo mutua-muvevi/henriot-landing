@@ -13,6 +13,7 @@ import InvestmentProcess from "./pages/process/process";
 import Innovation from "./pages/innovation/innovation";
 import InvestmentResources from "./pages/resources/resources";
 import About from "./pages/about/about";
+import Contact from "./pages/contact/contact";
 
 //router function
 const Router = () => {
@@ -56,6 +57,14 @@ const Router = () => {
 				{
 					path: "/news",
 					element: <News/>,	
+				},
+				{
+					path: "/contact",
+					element: <Contact/>,	
+				},
+				{
+					path: "/privacy-policy",
+					element: <Contact/>,	
 				},
 			]
 		},

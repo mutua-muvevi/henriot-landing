@@ -31,6 +31,7 @@ export default function CheckboxField(props) {
 				checked={field.checked}
 				control={<Checkbox {...field} onChange={_onChange} />}
 				label={label}
+				sx={{color: "#0b0d0c"}}
 			/>
 			{_renderHelperText()}
 		</FormControl>
