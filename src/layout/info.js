@@ -19,6 +19,10 @@ export const navItems = [
 		label: "news",
 		path: "/news",
 	},
+	{
+		label: "contact",
+		path: "/contact",
+	},
 ]
 
 export const footerHenriotContacts = [
