@@ -59,7 +59,6 @@ const Disruptive = () => {
 					</StyledGridRight>
 				</StyledGrid>
 			</StyledContainer>
-			<div>Disruptive</div>
 		</StyledDisruptive>
 	)
 }

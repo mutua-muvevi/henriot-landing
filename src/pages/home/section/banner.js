@@ -45,6 +45,7 @@ const Banner = () => {
 							Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios
 						</Typography>
 					</Box>
+					
 					<Button variant="contained">
 						Find out more
 					</Button>
