@@ -17,7 +17,7 @@ const swipeableDrawerSX = {
 
 const StyledStack = styled(Stack)(({ theme }) => ({
 	height: "100%",
-	backgroundColor: "yellow",
+	backgroundColor: theme.palette.primary.main,
 	width: "70vw"
 }));
 

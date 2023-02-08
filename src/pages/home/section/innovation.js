@@ -6,7 +6,7 @@ import { FaChevronDown } from "react-icons/fa"
 import { accordionInfo } from "../info";
 
 const StyledHomeInnovation = styled(Box)(({ theme }) => ({
-	
+
 }));
 
 const StyledContainer = styled(Container)(({ theme }) => ({
