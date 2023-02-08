@@ -7,7 +7,8 @@ import Image from "../../../assets/avatar_1.jpg"
 const videoLink = "https://res.cloudinary.com/dqweh6zte/video/upload/v1675812053/henriot/pexels-tima-miroshnichenko-7580448_rujknu.mp4"
 
 const StyledHomeAbout = styled(Box)(({ theme }) => ({
-	
+	minHeight: "60vh",
+	backgroundColor: theme.palette.background.neutral
 }));
 
 
