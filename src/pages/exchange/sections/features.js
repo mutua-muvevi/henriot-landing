@@ -34,8 +34,8 @@ const ExchangeFeatures = () => {
 					<Typography variant="h2" color="text.primary">
 						The features
 					</Typography>
-
 				</StyledStack>
+
 				<StyledGrid container spacing={3}>
 					{
 						featuresItem.map((el, i) => (
