@@ -1,9 +1,10 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
+import { Link } from "react-router-dom";
 
-import ProcessDiagram from "./processdiagram";
 //  reactflow styles
 import 'reactflow/dist/style.css';
+import TopDownDagram from "../../../components/topDownDiagram";
 
 const StyledHomeInvestmentProcess = styled(Box)(({ theme }) => ({
 	backgroundColor: "rgba(0,0,0)",
@@ -20,6 +21,11 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 	alignItems: "center",
 }));
 
+const styledLink = {
+	textDecoration: "none",
+	color: "inherit"
+}
+
 const HomeInvestmentProcess = () => {
 	return (
 		<StyledHomeInvestmentProcess>
@@ -30,12 +36,14 @@ const HomeInvestmentProcess = () => {
 					</Typography>
 
 					<Box>
-						<ProcessDiagram/>
+						<TopDownDagram/>
 					</Box>
 
-					<Button variant="contained" color="primary">
-						View more
-					</Button>
+					<Link to="/investment-process" style={styledLink}>
+						<Button variant="contained" color="primary">
+							View more
+						</Button>
+					</Link>
 				</Stack>
 			</StyledContainer>
 		</StyledHomeInvestmentProcess>

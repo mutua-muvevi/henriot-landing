@@ -68,6 +68,9 @@ const ContactForm = () => {
 				<StyledGrid container spacing={3}>
 					<StyledGridItem item xs={12} sm={12} md={12} lg={6} xl={6}>
 						<Stack direction="column" alignItems="flex-start" textAlign="left" justifyContent="flex-start" spacing={3}>
+							<Typography variant="h3" color="text.primary">
+								Let's communicate
+							</Typography>
 							{
 								LeftSideInfo.map((el, i) => (
 									<Typography key={i} variant="body1" color="text.primary">
