@@ -17,6 +17,10 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 	paddingBottom: "30px",
 }));
 
+const StyledStack = styled(Stack)(({ theme }) => ({
+	marginBottom: "30px"
+}));
+
 const StyledGrid = styled(Grid)(({ theme }) => ({
 
 }));
@@ -38,6 +42,12 @@ const ExchangeDocs = () => {
 	return (
 		<StyledExchangeDocs>
 			<StyledContainer maxWidth="xl">
+				<StyledStack direction="row" justifyContent="center" alignItems="center">
+					<Typography variant="h2" color="text.primary">
+						The Documents
+					</Typography>
+				</StyledStack>
+
 				<StyledGrid container spacing={3}>
 					{
 						[1,2,3,4,5,6,7,8].map((el, i) => (
