@@ -4,16 +4,16 @@ export const navItems = [
 		path: "/home",
 	},
 	{
-		label: "cec",
+		label: "foreign exchange funds",
+		path: "/exchange",
+	},
+	{
+		label: "cec funds",
 		path: "/cec",
 	},
 	{
-		label: "diverse",
+		label: "diverse funds",
 		path: "/diverse",
-	},
-	{
-		label: "exchange",
-		path: "/exchange",
 	},
 	{
 		label: "news",
