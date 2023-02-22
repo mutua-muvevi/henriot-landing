@@ -6,7 +6,6 @@ import HomeAbout from "./section/about";
 import Banner from "./section/banner";
 import Disruptive from "./section/disruptive";
 import HomeInnovation from "./section/innovation";
-import HomeInvestmentProcess from "./section/investmentProcess";
 import HomeResearch from "./section/research";
 import Strategy from "./section/strategy";
 
@@ -23,7 +22,6 @@ const Homepage = () => {
 			<HomeInnovation/>
 			<HomeAbout/>
 			<HomeResearch/>
-			<HomeInvestmentProcess/>
 			<Subscribe/>
 		</StyledHomepage>
 	)

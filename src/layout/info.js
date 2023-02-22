@@ -1,27 +1,27 @@
 export const navItems = [
 	{
-		label: "homepage",
-		path: "/home",
+		label: "mainpage",
+		path: "/landing/main",
 	},
 	{
 		label: "foreign exchange funds",
-		path: "/exchange",
+		path: "/landing/exchange",
 	},
 	{
 		label: "cec funds",
-		path: "/cec",
+		path: "/landing/cec",
 	},
 	{
 		label: "diverse funds",
-		path: "/diverse",
+		path: "/landing/diverse",
 	},
 	{
 		label: "news",
-		path: "/news",
+		path: "/landing/news",
 	},
 	{
 		label: "contact",
-		path: "/contact",
+		path: "/landing/contact",
 	},
 ]
 
@@ -33,15 +33,15 @@ export const footerHenriotContacts = [
 export const footerInvestmentOptions = [
 	{
 		label: "CEC Fund",
-		path: "/cec",
+		path: "/landing/cec",
 	},
 	{
 		label: "Diverse Fund",
-		path: "/diverse",
+		path: "/landing/diverse",
 	},
 	{
 		label: "Foreign Exchange Fund",
-		path: "/exchange",
+		path: "/landing/exchange",
 	}
 ]
 

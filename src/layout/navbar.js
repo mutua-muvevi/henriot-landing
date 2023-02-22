@@ -51,8 +51,12 @@ const StyledButtonSection = styled(Stack)(({ theme }) => ({
 
 }));
 
-const StyledButtons = styled(Button)(({ theme }) => ({
-	minWidth: "150px !important"
+const StyledLoginButton = styled(Button)(({ theme }) => ({
+	minWidth: "150px !important",
+}));
+
+const StyledRegisterButtons = styled(Button)(({ theme }) => ({
+	minWidth: "150px !important",
 }));
 
 const Navbar = () => {
@@ -60,15 +64,14 @@ const Navbar = () => {
 	const innerWidth = window.innerWidth
 
 	const handleOpenSidebar = () => {
-		setMobileNav(!mobileNav)
+		setMobileNav(true)
 	}
 
 	return (
 		<StyledNavbar>
 			<StyledContainer maxWidth="xl">
-				{console.log("innerWidth", innerWidth)}
 				{
-					innerWidth >= 900 ? (
+					innerWidth >= 1000 ? (
 						<StyledStack
 							direction="row"
 							alignItems="center"
@@ -99,12 +102,13 @@ const Navbar = () => {
 								direction="row"
 								spacing={3}
 							>
-								<StyledButtons variant="outlined" color="primary">
+								<StyledLoginButton variant="contained" color="primary">
 									Login
-								</StyledButtons>
-								<StyledButtons variant="contained" color="primary">
-									Join us
-								</StyledButtons>
+								</StyledLoginButton>
+
+								<StyledRegisterButtons variant="contained" color="primary">
+									Register
+								</StyledRegisterButtons>
 							</StyledButtonSection>
 
 						</StyledStack>
