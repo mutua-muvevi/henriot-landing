@@ -14,59 +14,70 @@ import Innovation from "./pages/innovation/innovation";
 import InvestmentResources from "./pages/resources/resources";
 import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
+import WelcomePage from "./pages/welcome/welcome";
+import NotFound from "./pages/error/404";
 
 //router function
 const Router = () => {
 	return useRoutes([
 		{
 			path: "/",
+			element: <WelcomePage/>,
+
+		},
+		{
+			path: "/landing",
 			element: <Layout/>,
 			children: [
 				{
-					path: "/home",
+					path: "/landing/main",
 					element: <Homepage/>,	
 				},
 				{
-					path: "/about",
+					path: "/landing/about",
 					element: <About/>,	
 				},
 				{
-					path: "/cec",
+					path: "/landing/cec",
 					element: <CEC/>,	
 				},
 				{
-					path: "/diverse",
+					path: "/landing/diverse",
 					element: <Diverse/>,	
 				},
 				{
-					path: "/exchange",
+					path: "/landing/exchange",
 					element: <Exchange/>,	
 				},
 				{
-					path: "/investment-process",
+					path: "/landing/investment-process",
 					element: <InvestmentProcess/>,	
 				},
 				{
-					path: "/investment-resources",
+					path: "/landing/investment-resources",
 					element: <InvestmentResources/>,	
 				},
 				{
-					path: "/innovation",
+					path: "/landing/innovation",
 					element: <Innovation/>,	
 				},
 				{
-					path: "/news",
+					path: "/landing/news",
 					element: <News/>,	
 				},
 				{
-					path: "/contact",
+					path: "/landing/contact",
 					element: <Contact/>,	
 				},
 				{
-					path: "/privacy-policy",
+					path: "/landing/privacy-policy",
 					element: <Contact/>,	
 				},
 			]
+		},
+		{
+			path: "/404",
+			element: <NotFound/>
 		},
 		{
 			path: "*",

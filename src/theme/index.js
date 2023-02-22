@@ -12,30 +12,42 @@ import shadows, { customShadows } from './shadows';
 // ----------------------------------------------------------------------
 
 ThemeProvider.propTypes = {
-  children: PropTypes.node,
+	children: PropTypes.node,
 };
 
 export default function ThemeProvider({ children }) {
-  const themeOptions = useMemo(
-    () => ({
-      palette,
-      shape: { borderRadius: 3 },
-      typography,
-      shadows,
-      customShadows,
-    }),
-    []
-  );
+	const themeOptions = useMemo(
+		() => ({
+			palette,
+			shape: { borderRadius: 3 },
+			typography,
+			shadows,
+			customShadows,
+		}),
+		[]
+	);
 
-  const theme = createTheme(themeOptions);
-  theme.components = componentsOverride(theme);
+	const theme = createTheme(themeOptions);
+	theme.components = {
+		MuiCssBaseline: {
+			styleOverrides: `
+				@font-face {
+					font-family: 'Book Antiqua';
+					src: url('/fonts/book-antiqua.ttf') format('truetype');
+					font-weight: normal;
+					font-style: normal;
+				}
+			`
+		},
+		...componentsOverride(theme)
+	}
 
-  return (
-    <StyledEngineProvider injectFirst>
-      <MUIThemeProvider theme={theme}>
-        <CssBaseline />
-        {children}
-      </MUIThemeProvider>
-    </StyledEngineProvider>
-  );
+	return (
+		<StyledEngineProvider injectFirst>
+			<MUIThemeProvider theme={theme}>
+				<CssBaseline />
+				{children}
+			</MUIThemeProvider>
+		</StyledEngineProvider>
+	);
 }
