@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
-const videoLink = "https://res.cloudinary.com/dqweh6zte/video/upload/v1675812053/henriot/pexels-tima-miroshnichenko-7580448_rujknu.mp4"
+const videoLink = "https://res.cloudinary.com/dqweh6zte/video/upload/v1676458610/henriot/video_amk9d6.mp4"
 
 const StyledBanner = styled(Box)(({ theme }) => ({
 	

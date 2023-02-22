@@ -2,7 +2,7 @@ export const accordionInfo = [
 	{
 		title: "Invest In The Future Today",
 		paragraph: "Henriot identifies more innovations evolving today than ever before. We believe it is changing lives and businesses across the world dramatically, creating opportunities to own the next big thing by investing in the future today.",
-		image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675816662/henriot/chart-4065756_1920_j3h3zk.jpg"
+		image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1676462807/henriot/cover3_xje8wj.jpg"
 	},
 	{
 		title: "Take Advantage of Market Inefficiencies",

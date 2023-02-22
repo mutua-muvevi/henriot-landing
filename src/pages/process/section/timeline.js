@@ -1,9 +1,12 @@
-import { Box, Container, Typography } from "@mui/material";
-import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, timelineItemClasses, TimelineSeparator } from "@mui/lab";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
+import { Box, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 import { timelineItems } from "../info";
+import { useTheme } from '@emotion/react';
 
 const StyledProcessTimeline = styled(Box)(({ theme }) => ({
 	
@@ -12,55 +15,58 @@ const StyledProcessTimeline = styled(Box)(({ theme }) => ({
 const StyledContainer = styled(Container)(({ theme }) => ({
 	
 }))
-const imageStyles = {
-	width: "100px",
-	height: "100px",
-	borderRadius: "4px"
-}
 
-const styledIcon = {
-	color: "#3366FF",
-	fontSize: "20px"
+const timelineStyle = {
+	backgrounsColoe: "red",
+	width: "100% !important"
 }
-
 
 const ProcessTimeline = () => {
+	const theme = useTheme()
+
+	const iconStyleBox = {
+		backgroundColor: theme.palette.primary.main,
+		color: "#fff"
+	}
+
 	return (
 		<StyledProcessTimeline>
 			<StyledContainer maxWidth="xl">
-
-				<Timeline
-					sx={{
-					[`& .${timelineItemClasses.root}:before`]: {
-						flex: 0,
-						padding: 0,
-					},
-					}}
-					position="alternate"
+				<Stack
+					direction="column"
+					alignItems="stretch"
+					justifyContent="center"
 				>
-					{
-						timelineItems ?
-						timelineItems.map((el, i) => (
-							<TimelineItem key={i}>
-								<TimelineSeparator sx={{mt:"-10px"}}>
-									<TimelineDot>
-										<BsFillFileEarmarkPdfFill style={styledIcon}/>
-									</TimelineDot>
-									<TimelineConnector sx={{mt:"-10px"}} />
-								</TimelineSeparator>
-								<TimelineContent>
-									<Typography variant="subtitle2" color="text.primary">
-										{el.title}
-									</Typography>
-									<Typography variant="body2" color="text.secondary" gutterBottom>
-										{el.text}
-									</Typography>
-								</TimelineContent>
-							</TimelineItem>
-						))
-						: "Loading"
-					}
-				</Timeline>
+					<VerticalTimeline
+						layout="1-column-left"
+						style={timelineStyle}
+					>
+						{
+							timelineItems.map((el, i) => (
+								<VerticalTimelineElement
+									key={i}
+									iconStyle={iconStyleBox}
+									icon={el.icon}
+									contentStyle={el.contentStyle}
+									contentArrowStyle={el.arrowStyle}
+								>
+									<Stack>
+										<Typography variant="h5" color="text.primary">
+											{el.title}
+										</Typography>
+										{
+											el.paragraphs.map((p, index) => (
+												<Typography variant="body1" color="text.primary" key={index}>
+													{p}
+												</Typography>
+											))
+										}
+									</Stack>
+								</VerticalTimelineElement>
+							))
+						}
+					</VerticalTimeline>
+				</Stack>
 			</StyledContainer>
 		</StyledProcessTimeline>
 	)

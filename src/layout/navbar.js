@@ -43,6 +43,8 @@ const StyledLogoNavItems = styled(Stack)(({ theme }) => ({
 const styledNavLink = {
 	textDecoration: "none",
 	color: "initial",
+	textTransform: "uppercase",
+	
 }
 
 const StyledButtonSection = styled(Stack)(({ theme }) => ({
@@ -85,7 +87,7 @@ const Navbar = () => {
 								{
 									navItems.map((el, i) => (
 										<NavLink to={el.path} style={styledNavLink}>
-											<Typography variant="subtitle2" color="text.primary">
+											<Typography variant="subtitle1" color="text.primary">
 												{sentenceCase(el.label)}
 											</Typography>
 										</NavLink>
