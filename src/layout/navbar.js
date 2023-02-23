@@ -1,14 +1,13 @@
 import React, { useState, useLayoutEffect, useRef } from 'react';
 
 import { styled } from '@mui/material/styles';
-import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack } from '@mui/material';
+import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack, Box } from '@mui/material';
 
-import { Fabars } from "react-icons/fa";
 import { menuItems } from "./info";
+import { NavLink } from 'react-router-dom';
 
 const TopAppBar = styled(AppBar)({
 	zIndex: 3,
-	marginBottom:"50px"
 });
 
 const StyledContainer = styled(Container)({
@@ -27,6 +26,10 @@ const StyledNavButton = styled(Button) ({
 	paddingBottom: "20px",
 });
 
+const styledLink = {
+	textDecoration: "none",
+	color: "inherit"
+}
 
 const DropdownMenu = ({ menuItems }) => {
 	const [anchorEl, setAnchorEl] = useState(null);
@@ -68,20 +71,27 @@ const DropdownMenu = ({ menuItems }) => {
 				}}
 			>
 				{menuItems.navItems.map((item, index) => (
-					<MenuItem key={index} onClick={handleClose}>
-						{item.label}
-					</MenuItem>
+					<NavLink to={item.link} style={styledLink}>
+						<MenuItem key={index} onClick={handleClose}>
+							{item.label}
+						</MenuItem>
+					</NavLink>
 				))}
 			</Menu>
 		</div>
 	);
 };
 
+const logo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1658133237/henriot/logo/henriot_logo_mefxsi.png";
+
 const StyledDivider = styled(Divider)({
-	backgroundColor: "#fff"
+	backgroundColor: "#fff",
+	marginTop: "10px",
 })
 
-
+const styledLogo = {
+	height: "60px"
+}
 
 const Navigation = () => {
 	const [anchorEl, setAnchorEl] = useState(null);
@@ -96,28 +106,36 @@ const Navigation = () => {
 
 	return (
 		<>
-			<TopAppBar position="fixed">
-				<Toolbar sx={{  }}>
+			<TopAppBar position="scroll">
+				<Toolbar>
 					<StyledContainer maxWidth="xl">
 						<StyledMenuStack direction="row" justifyContent="space-between">
-							<Typography variant="h6" noWrap>
-								Logo
-							</Typography>
-							<div>
-								<Button color="inherit">Contact Us</Button>
-								<Button color="inherit" onClick={handleMenuClick}>
-									Login
-								</Button>
-								<Menu
-									id="login-menu"
-									anchorEl={anchorEl}
-									open={Boolean(anchorEl)}
-									onClose={handleMenuClose}
-								>
-									<MenuItem onClick={handleMenuClose}>Login</MenuItem>
-									<MenuItem onClick={handleMenuClose}>Register</MenuItem>
-								</Menu>
-							</div>
+							<img src={logo} alt="Henriot logo" style={styledLogo}/>
+							<Stack direction="row" justifyContent="right" alignItems="flex-end" spacing={3}>
+
+								<Box>
+									<NavLink to="/landing/contact" style={styledLink}>
+										<Button variant="outlined">
+											<Typography variant="subtitle1" color="text.primary">
+												Contact us
+											</Typography>
+										</Button>
+									</NavLink>
+
+								</Box>
+								<Box>
+									<Button variant="contained" onClick={handleMenuClick}>
+										Login
+									</Button>
+
+								</Box>
+								<Box>
+									<Button variant="contained" onClick={handleMenuClick}>
+										Register
+									</Button>
+								</Box>
+								
+							</Stack>
 
 						</StyledMenuStack>
 
@@ -125,9 +143,12 @@ const Navigation = () => {
 
 						<StyledMenuStack direction="row" justifyContent="left" spacing={5}>
 							<StyledNavButton sx={{textAlign: "left"}} variant="text">
-								<Typography variant="subtitle1" color="text.primary">
-									Mainpage
-								</Typography>
+								<NavLink to="/landing/main" style={styledLink}>
+									<Typography variant="subtitle1" color="text.primary">
+										Mainpage
+									</Typography>
+								</NavLink>
+
 							</StyledNavButton>
 
 							{

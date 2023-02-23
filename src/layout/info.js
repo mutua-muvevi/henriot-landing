@@ -31,15 +31,15 @@ export const menuItems = [
 		navItems: [
 			{
 				label: "FX Fund",
-				link:""
+				link:"/landing/exchange"
 			},
 			{
 				label: "CEC Fund",
-				link:""
+				link:"/landing/cec"
 			},
 			{
 				label: "Diverse Fund",
-				link:""
+				link:"/landing/diverse"
 			},
 		]
 	},
