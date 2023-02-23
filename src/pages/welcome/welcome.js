@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Card, CardContent, Container, Stack, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, Container, Divider, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 
 
@@ -24,11 +24,12 @@ const StyledStack = styled(Stack)(({ theme }) => ({
 }));
 
 const StyledContainer = styled(Container)(({ theme }) => ({
-	
+	minHeight: "100vh",
 }));
 
 const StyledCard = styled(Card)(({ theme }) => ({
-
+	maxWidth: "500px",
+	marginTop: "10vh"
 }));
 
 const StyledCardContent = styled(CardContent)(({ theme }) => ({
@@ -36,7 +37,7 @@ const StyledCardContent = styled(CardContent)(({ theme }) => ({
 }));
 
 const StyledItemStack = styled(Stack)(({ theme }) => ({
-	height: "60vh",
+	height: "30vh",
 	overflowY: "scroll",
 
 }));
@@ -54,23 +55,27 @@ const linkStyles = {
 	txtDecoration: "none"
 }
 
+
 const WelcomePage = () => {
 	return (
 		<StyledWelcomePage>
-			<StyledStack justifyContent="center" alignItems="center">
+			<StyledStack justifyContent="center" alignItems="flex-start">
 				<StyledContainer maxWidth="lg">
 					<StyledCard>
 						<StyledCardContent>
 							<StyledItemStack direction="column" spacing={3}>
-								<Stack direction="column" spacing={1.5} textAlign="center">
+								<Stack direction="column" spacing={2} textAlign="center">
+
 									<Typography variant="h5" color="text.primary">
-										{disclaimer.title}
+										" HG"	
 									</Typography>
-									<Typography variant="subtitle1" color="text.primary">
-										{disclaimer.subtitle}
+
+									<Typography variant="h5" color="text.primary">
+										(the “Company”)
 									</Typography>
-									<Typography variant="body1" color="text.primary">
-										{disclaimer.email}
+
+									<Typography variant="h5" color="text.primary">
+										Please read the disclaimer below carefully. You must accept its terms before you can proceed.
 									</Typography>
 								</Stack>
 

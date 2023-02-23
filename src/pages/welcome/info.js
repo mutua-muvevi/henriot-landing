@@ -1,15 +1,12 @@
 export const disclaimer = {
-	title: `
-		Henriot Investment Management is a quantitative investment management company trading in global financial markets. The company is dedicated to produce superior returns for its investors by strictly adhering to its Unique Trading strategy while imploring mathematical and statistical Methods.
-	`,
-	subtitle: `
-		Henriot Investment Management, Vistra Corporate Services Centre, Suite 23, 1st Floor, Eden Plaza, Eden Island, Mahé,
-	`,
-	email: "client@henriotgroup.com",
+
 	body: [
 		{
 			title: "",
 			paragraphs: [
+				`Henriot Investment Management is a quantitative investment management company trading in global financial markets. The company is dedicated to produce superior returns for its investors by strictly adhering to its Unique Trading strategy while imploring mathematical and statistical Methods.`,
+				`Henriot Investment Management, Vistra Corporate Services Centre, Suite 23, 1st Floor, Eden Plaza, Eden Island, Mahé`,
+				"client@henriotgroup.com",
 				`Users of this website are responsible for observing all applicable laws and regulations in their relevant jurisdictions before proceeding to access the information contained herein. By proceeding to access the information, users are deemed to have represented and warranted that the applicable laws and regulations of their relevant jurisdiction allow them to do so.`,
 				`The Company is a registered International Business Company under International Business Companies Act 2016 of the Republic of Seychelles issued by the Seychelles Financial Services Authority (the “Commission”). The Commission has not reviewed this disclaimer and takes no responsibility for the financial soundness of the Company or for the correctness of any of the statements made or opinions expressed with regard to it.`,
 				`All investment is subject to risk. The value of the portfolio products may go down as well as up. Past performance is no guarantee of future returns and there is no guarantee that the market price of the portfolio’s shares will fully reflect their underlying net asset value. There is also no guarantee that the Company’s investment objective will be achieved. Potential investors are advised to seek expert financial advice before making any investment decision and should be aware that they may not fully recover the amount invested.`,

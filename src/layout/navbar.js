@@ -1,137 +1,150 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect, useRef } from 'react';
 
-import { NavLink } from "react-router-dom";
-import { sentenceCase } from 'change-case';
+import { styled } from '@mui/material/styles';
+import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack } from '@mui/material';
 
-import { AppBar, Box, Button, Container, IconButton, Stack, Toolbar, Typography} from "@mui/material";
-import { styled } from "@mui/system";
+import { Fabars } from "react-icons/fa";
+import { menuItems } from "./info";
 
-import { FaBars } from "react-icons/fa";
+const TopAppBar = styled(AppBar)({
+	zIndex: 3,
+	marginBottom:"50px"
+});
 
-import { navItems } from "./info"
-import Logo from "../assets/logo/Black on Transparent.png"
-import SwipeableSideDrawer from "./sidebar";
-
-const StyledNavbar = styled(Box)(({ theme }) => ({
-
-}))
-
-const StyledContainer = styled(Container)(({theme}) => ({
+const StyledContainer = styled(Container)({
 	width: "100%",
-	padding:"0px"
-}))
+	paddingTop: "20px"
+})
 
-const StyledStack = styled(Stack)(({theme}) => ({
+const StyledMenuStack = styled(Stack)({
 	width: "100%",
-	paddingTop: "5px",
-	paddingBottom: "5px",
-}))
+	paddintTop: "20px",
+	paddintBottom: "20px",
+});
 
-const StyledLogoContainer = styled(Stack)(({ theme }) => ({
+const StyledNavButton = styled(Button) ({
+	paddingTop: "20px",
+	paddingBottom: "20px",
+});
 
-}));
 
-const styledLogo = {
-	width: "200px"
-}
+const DropdownMenu = ({ menuItems }) => {
+	const [anchorEl, setAnchorEl] = useState(null);
+	const buttonRef = useRef(null);
 
-const StyledLogoNavItems = styled(Stack)(({ theme }) => ({
-	width: "80%"
+	useLayoutEffect(() => {
+		if (buttonRef.current) {
+			buttonRef.current.style.width = 'auto';
+			buttonRef.current.style.width = `${buttonRef.current.offsetWidth}px`;
+		}
+	}, [anchorEl]);
+  
+	const handleClick = (event) => {
+	  setAnchorEl(event.currentTarget);
+	};
+  
+	const handleClose = () => {
+	  setAnchorEl(null);
+	};
+  
+	return (
+		<div>
+			<StyledNavButton sx={{textAlign: "left"}} ref={buttonRef} variant="text" onClick={handleClick}>
+				<Typography variant="subtitle1" color="text.primary">
+					{menuItems.label}
+				</Typography>
+			</StyledNavButton>
+			<Menu
+				anchorEl={anchorEl}
+				open={Boolean(anchorEl)}
+				onClose={handleClose}
+				anchorOrigin={{
+					vertical: 'bottom',
+					horizontal: 'left',
+				}}
+				transformOrigin={{
+					vertical: 'top',
+					horizontal: 'left',
+				}}
+			>
+				{menuItems.navItems.map((item, index) => (
+					<MenuItem key={index} onClick={handleClose}>
+						{item.label}
+					</MenuItem>
+				))}
+			</Menu>
+		</div>
+	);
+};
 
-}));
+const StyledDivider = styled(Divider)({
+	backgroundColor: "#fff"
+})
 
-const styledNavLink = {
-	textDecoration: "none",
-	color: "initial",
-	textTransform: "uppercase",
-	
-}
 
-const StyledButtonSection = styled(Stack)(({ theme }) => ({
 
-}));
+const Navigation = () => {
+	const [anchorEl, setAnchorEl] = useState(null);
 
-const StyledLoginButton = styled(Button)(({ theme }) => ({
-	minWidth: "150px !important",
-}));
+	const handleMenuClick = (event) => {
+		setAnchorEl(event.currentTarget);
+	};
 
-const StyledRegisterButtons = styled(Button)(({ theme }) => ({
-	minWidth: "150px !important",
-}));
-
-const Navbar = () => {
-	const [mobileNav, setMobileNav] = useState(false);
-	const innerWidth = window.innerWidth
-
-	const handleOpenSidebar = () => {
-		setMobileNav(true)
-	}
+	const handleMenuClose = () => {
+		setAnchorEl(null);
+	};
 
 	return (
-		<StyledNavbar>
-			<StyledContainer maxWidth="xl">
-				{
-					innerWidth >= 1000 ? (
-						<StyledStack
-							direction="row"
-							alignItems="center"
-							justifyContent="space-between"
-						>
-							<StyledLogoContainer textAlign="flex-start">
-								<img src={Logo} alt="Henriot logo" style={styledLogo}/>
-							</StyledLogoContainer>
-
-							<StyledLogoNavItems
-								direction="row"
-								alignItems="center"
-								justifyContent="center"
-								spacing={3}
-							>
-								{
-									navItems.map((el, i) => (
-										<NavLink to={el.path} style={styledNavLink}>
-											<Typography variant="subtitle1" color="text.primary">
-												{sentenceCase(el.label)}
-											</Typography>
-										</NavLink>
-									))
-								}
-							</StyledLogoNavItems>
-
-							<StyledButtonSection
-								direction="row"
-								spacing={3}
-							>
-								<StyledLoginButton variant="contained" color="primary">
+		<>
+			<TopAppBar position="fixed">
+				<Toolbar sx={{  }}>
+					<StyledContainer maxWidth="xl">
+						<StyledMenuStack direction="row" justifyContent="space-between">
+							<Typography variant="h6" noWrap>
+								Logo
+							</Typography>
+							<div>
+								<Button color="inherit">Contact Us</Button>
+								<Button color="inherit" onClick={handleMenuClick}>
 									Login
-								</StyledLoginButton>
+								</Button>
+								<Menu
+									id="login-menu"
+									anchorEl={anchorEl}
+									open={Boolean(anchorEl)}
+									onClose={handleMenuClose}
+								>
+									<MenuItem onClick={handleMenuClose}>Login</MenuItem>
+									<MenuItem onClick={handleMenuClose}>Register</MenuItem>
+								</Menu>
+							</div>
 
-								<StyledRegisterButtons variant="contained" color="primary">
-									Register
-								</StyledRegisterButtons>
-							</StyledButtonSection>
+						</StyledMenuStack>
 
-						</StyledStack>
-					) : (
-						<AppBar>
-							<Toolbar>
+						<StyledDivider />
 
-							<IconButton
-								onClick={handleOpenSidebar}
-							>
-								<FaBars/>
-							</IconButton>
-							</Toolbar>
-						</AppBar>
-					)
-				}
-			</StyledContainer>
+						<StyledMenuStack direction="row" justifyContent="left" spacing={5}>
+							<StyledNavButton sx={{textAlign: "left"}} variant="text">
+								<Typography variant="subtitle1" color="text.primary">
+									Mainpage
+								</Typography>
+							</StyledNavButton>
 
+							{
+								menuItems.map((item, index) => (
+									<div key={index}>
+										<DropdownMenu menuItems={item} />
+									</div>
+								))
+							}
+						</StyledMenuStack>
 
+					</StyledContainer>
 
-			<SwipeableSideDrawer mobileNav={mobileNav} setMobileNav={setMobileNav} />
-		</StyledNavbar>
-	)
-}
+				</Toolbar>
+			</TopAppBar>
+		</>
+	);
+};
 
-export default Navbar
+export default Navigation;
