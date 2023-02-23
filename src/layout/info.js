@@ -25,6 +25,60 @@ export const navItems = [
 	},
 ]
 
+export const menuItems = [
+	{
+		label: "Our Fund",
+		navItems: [
+			{
+				label: "FX Fund",
+				link:"/landing/exchange"
+			},
+			{
+				label: "CEC Fund",
+				link:"/landing/cec"
+			},
+			{
+				label: "Diverse Fund",
+				link:"/landing/diverse"
+			},
+		]
+	},
+	{
+		label: "Investment Solutions",
+		navItems: [
+			{
+				label: "Forex",
+				link:""
+			},
+			{
+				label: "Equities",
+				link:""
+			},
+			{
+				label: "Structure Products",
+				link:""
+			},
+		]
+	},
+	{
+		label: "Resources",
+		navItems: [
+			{
+				label: "News",
+				link:""
+			},
+			{
+				label: "Research",
+				link:""
+			},
+			{
+				label: "Learn",
+				link:""
+			},
+		]
+	},
+]
+
 export const footerHenriotContacts = [
 	"client@henriotgroup.com",
 	"+248-2768537"
