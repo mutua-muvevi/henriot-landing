@@ -4,7 +4,7 @@ import { Box, Stack } from '@mui/material';
 import { styled } from '@mui/system';
 
 import Footer from './footer';
-import Navbar from './navbar';
+import Navbar from './navbar/navbar';
 
 const StyledMain = styled(Box)(({ theme }) => ({
 
