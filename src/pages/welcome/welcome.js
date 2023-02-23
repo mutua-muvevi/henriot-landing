@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Button, Card, CardContent, Container, Divider, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 
-
+import { BsChevronRight } from "react-icons/bs"
 
 import { disclaimer } from "./info";
 import { Link } from 'react-router-dom';
@@ -33,26 +33,34 @@ const StyledCard = styled(Card)(({ theme }) => ({
 }));
 
 const StyledCardContent = styled(CardContent)(({ theme }) => ({
-	padding: "20px"
+	padding: "10px"
 }));
 
 const StyledItemStack = styled(Stack)(({ theme }) => ({
-	height: "30vh",
+
+}));
+
+const StyledParagraphStack = styled(Stack)(({ theme }) => ({
+	height: "20vh",
 	overflowY: "scroll",
+	width: "100%"
 
 }));
 
 const StyledButtonSection = styled(Box)(({ theme }) => ({
-	paddingTop: "20px"
+	width: "100%",
+	borderTop: "1px solid #000000",
+	padding: "10px"
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-	width: "300px"
+	width: "100%",
+	padding: "15px"
 }));
 
 const linkStyles = {
 	color: "inherit",
-	txtDecoration: "none"
+	textDecoration: "none"
 }
 
 
@@ -64,7 +72,11 @@ const WelcomePage = () => {
 					<StyledCard>
 						<StyledCardContent>
 							<StyledItemStack direction="column" spacing={3}>
-								<Stack direction="column" spacing={2} textAlign="center">
+								<Stack direction="column" spacing={1} textAlign="center">
+
+									<Typography variant="h5" color="text.primary">
+										Welcome to Henriot Investment Management, 
+									</Typography>
 
 									<Typography variant="h5" color="text.primary">
 										" HG"	
@@ -79,33 +91,41 @@ const WelcomePage = () => {
 									</Typography>
 								</Stack>
 
-								{
-									disclaimer.body.map((body, index) => (
-										<Stack key={index} direction="column" spacing={1.5}>
-											<Typography variant="subtitle1" color="text.primary">
-												{body.title}
-											</Typography>
-											{
-												body.paragraphs.map((paragraph, i) => (
-													<Typography key={i} variant="body1" color="text.primary">
-														{paragraph}
-													</Typography>
-												))
-											}
-										</Stack>
-									))
-								}
+								<StyledParagraphStack spacing={3}>
+
+									{
+										disclaimer.body.map((body, index) => (
+											<Stack key={index} direction="column" spacing={1.5}>
+												<Typography variant="subtitle1" color="text.primary">
+													{body.title}
+												</Typography>
+												{
+													body.paragraphs.map((paragraph, i) => (
+														<Typography style={{fontWeight: "bolder"}} key={i} variant="body1" color="text.secondary">
+															{paragraph}
+														</Typography>
+													))
+												}
+											</Stack>
+										))
+									}
+								</StyledParagraphStack>
 
 							</StyledItemStack>
 							
+						</StyledCardContent>
+						<Stack>
 							<StyledButtonSection>
 								<Link to="/landing/main" style={linkStyles}>
-									<StyledButton variant="contained">
+									<StyledButton
+										variant="contained"
+										endIcon={<BsChevronRight/>}
+									>
 										Accept and enter
 									</StyledButton>
 								</Link>
 							</StyledButtonSection>
-						</StyledCardContent>
+						</Stack>
 					</StyledCard>
 				</StyledContainer>
 

@@ -33,7 +33,7 @@ export default function ThemeProvider({ children }) {
 			styleOverrides: `
 				@font-face {
 					font-family: 'Book Antiqua';
-					src: url('/fonts/book-antiqua.ttf') format('truetype');
+					src: url('/fonts/valera-round.ttf') format('truetype');
 					font-weight: normal;
 					font-style: normal;
 				}

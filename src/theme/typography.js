@@ -18,7 +18,7 @@ function responsiveFontSizes({ sm, md, lg }) {
 	};
 }
 
-const FONT_PRIMARY = 'Book Antiqua, serif';
+const FONT_PRIMARY = "'Varela Round', sans-serif";
 
 const typography = {
 	fontFamily: FONT_PRIMARY,
