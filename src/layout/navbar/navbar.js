@@ -112,9 +112,6 @@ const Navigation = () => {
 		setAnchorEl(event.currentTarget);
 	};
 
-	const handleMenuClose = () => {
-		setAnchorEl(null);
-	};
 	const [mobileNav, setMobileNav] = useState(false)
 
 	const handleMobileNav = () => {

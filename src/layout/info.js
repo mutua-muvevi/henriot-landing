@@ -193,3 +193,11 @@ export const privacyPolicy = [
 		jurisdiction of the Courts of the Republic of Seychelles.
 	`
 ]
+
+export const footerParagraph = [
+	`Henriot Investment Management (Investment fund) is alternative investment fund designed for Professional or Informed investors only and supervised by the Capital Markets Authority. The information contained in this webpage does not constitute a solicitation or offer to invest in any financial products. It does not constitute legal or fiscal advice nor does it provide specific investment advice.`,
+	`Detailed information about the fund can be found in the fund’s rules, prospectus and Key investor information document that can be obtained from HG Asset Management. The data has been compiled from sources deemed reliable and is accurate to the best of our knowledge; however, we accept no obligation whatsoever from the information given in this webpage.`,
+	`HG Asset Management assumes no (direct or indirect) liability for any losses which result from the data and information published herein. The offering and sale of the products described in this webpage is legally restricted in certain jurisdictions. Persons who are subordinate to such jurisdictions have to inform themselves about such restrictions and must adhere to them. `,
+	`The prices stated are net of all fees; front load and taxes have not been taken into account. The potential for high returns of this investment strategy is combined with significant risks. Even a total loss of the invested capital is possible. Performance from the past is no guarantee of future results. Funds management company is not liable for the losses of the fund suffered due to the fluctuations of financial markets. It is strongly recommended to overview Fund's Prospect and Articles of Association before making a decision to invest in the Fund.`,
+
+]
