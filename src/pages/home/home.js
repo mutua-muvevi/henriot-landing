@@ -1,8 +1,6 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
-import Subscribe from "../../components/subscribe";
-import HomeAbout from "./section/about";
 import Banner from "./section/banner";
 import Disruptive from "./section/disruptive";
 import HomeInnovation from "./section/innovation";
@@ -20,9 +18,7 @@ const Homepage = () => {
 			<Disruptive/>
 			<Strategy/>
 			<HomeInnovation/>
-			<HomeAbout/>
 			<HomeResearch/>
-			<Subscribe/>
 		</StyledHomepage>
 	)
 }

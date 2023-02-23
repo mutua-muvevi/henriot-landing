@@ -46,10 +46,10 @@ const Banner = () => {
 				<Stack direction="column" spacing={3} alignItems="flex-start">
 					<Box>
 						<Typography variant="h2" gutterBottom>
-							Be a Smart Global Innovation Investor
+							Mathematics takes investment decisions here
 						</Typography>
 						<Typography variant="subtitle1">
-							Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios.
+							Rule-based investing – fast, quantitative, reliable and inexpensive.
 						</Typography>
 					</Box>
 					
