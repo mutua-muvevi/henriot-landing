@@ -18,7 +18,7 @@ function responsiveFontSizes({ sm, md, lg }) {
 	};
 }
 
-const FONT_PRIMARY = "'Varela Round', sans-serif";
+const FONT_PRIMARY = "'varela round', sans-serif";
 
 const typography = {
 	fontFamily: FONT_PRIMARY,

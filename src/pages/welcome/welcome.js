@@ -121,7 +121,7 @@ const WelcomePage = () => {
 										variant="contained"
 										endIcon={<BsChevronRight/>}
 									>
-										Accept and enter
+										Accept and enter site
 									</StyledButton>
 								</Link>
 							</StyledButtonSection>

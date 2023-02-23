@@ -47,6 +47,18 @@ const SwipeableDrawerList = ({ mobileNav, setMobileNav }) => {
 					<LogoItem src={Logo} alt="Henriot Logo"/>
 				</LogoParent>
 				
+				<NavLink to="/landing/main" style={navlinkStyle}>
+				<ListItemButton
+					sx={{
+						minHeight: 48,
+						justifyContent: mobileNav ? 'initial' : 'center',
+						px: 2.5,
+					}}
+				>
+					<ListItemText primary="Mainpage" sx={{ opacity: mobileNav ? 1 : 0, marginLeft: "15px" }} />
+				</ListItemButton>
+				</NavLink>
+
 				{drawerMenuItems.top.map((item, index) => (
 					<NavLink to={item.link} style={navlinkStyle}>
 						<ListItemButton
@@ -71,25 +83,25 @@ const SwipeableDrawerList = ({ mobileNav, setMobileNav }) => {
 								) : null}
 
 						</ListItemButton>
-								<Collapse in={submenuOpen === index} timeout="auto" unmountOnExit>
-									<List component="div" disablePadding>
-										{item.navItems.map((subitem, subindex) => (
-											<NavLink to={subitem.link} style={navlinkStyle}>
-												<ListItemButton
-													sx={{
-														minHeight: 48,
-														justifyContent: mobileNav ? 'initial' :
-														'center',
-														px: 5,
-														}}
-														key={subindex}
-														>
-													<ListItemText primary={subitem.label} sx={{ opacity: mobileNav ? 1 : 0, marginLeft: "15px" }} />
-												</ListItemButton>
-											</NavLink>
-										))}
-									</List>
-								</Collapse>
+						<Collapse in={submenuOpen === index} timeout="auto" unmountOnExit>
+							<List component="div" disablePadding>
+								{item.navItems.map((subitem, subindex) => (
+									<NavLink to={subitem.link} style={navlinkStyle}>
+										<ListItemButton
+											sx={{
+												minHeight: 48,
+												justifyContent: mobileNav ? 'initial' :'center',
+												px: 5,
+											}}
+											onClick={() => setMobileNav(false)}
+											key={subindex}
+											>
+											<ListItemText primary={subitem.label} sx={{ opacity: mobileNav ? 1 : 0, marginLeft: "15px" }} />
+										</ListItemButton>
+									</NavLink>
+								))}
+							</List>
+						</Collapse>
 					</NavLink>
 				))}
 

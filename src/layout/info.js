@@ -48,15 +48,15 @@ export const menuItems = [
 		navItems: [
 			{
 				label: "Forex",
-				link:""
+				link:"/landing/news"
 			},
 			{
 				label: "Equities",
-				link:""
+				link:"/landing/news"
 			},
 			{
 				label: "Structure Products",
-				link:""
+				link:"/landing/news"
 			},
 		]
 	},
@@ -65,15 +65,15 @@ export const menuItems = [
 		navItems: [
 			{
 				label: "News",
-				link:""
+				link:"/landing/news"
 			},
 			{
 				label: "Research",
-				link:""
+				link:"/landing/news"
 			},
 			{
 				label: "Learn",
-				link:""
+				link:"/landing/news"
 			},
 		]
 	},
@@ -103,15 +103,15 @@ export const drawerMenuItems = {
 			navItems: [
 				{
 					label: "Forex",
-					link:""
+					link:"/landing/news"
 				},
 				{
 					label: "Equities",
-					link:""
+					link:"/landing/news"
 				},
 				{
 					label: "Structure Products",
-					link:""
+					link:"/landing/news"
 				},
 			]
 		},
@@ -120,15 +120,15 @@ export const drawerMenuItems = {
 			navItems: [
 				{
 					label: "News",
-					link:""
+					link:"/landing/news"
 				},
 				{
 					label: "Research",
-					link:""
+					link:"/landing/news"
 				},
 				{
 					label: "Learn",
-					link:""
+					link:"/landing/news"
 				},
 			]
 		},

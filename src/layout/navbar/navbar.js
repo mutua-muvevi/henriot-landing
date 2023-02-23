@@ -28,6 +28,7 @@ const StyledMenuStack = styled(Stack)({
 const StyledNavButton = styled(Button) ({
 	paddingTop: "20px",
 	paddingBottom: "20px",
+	width:"max-content"
 });
 
 const styledLink = {
@@ -56,8 +57,8 @@ const DropdownMenu = ({ menuItems }) => {
   
 	return (
 		<div>
-			<StyledNavButton sx={{textAlign: "left"}} ref={buttonRef} variant="text" onClick={handleClick}>
-				<Typography variant="subtitle1" color="text.primary">
+			<StyledNavButton sx={{textAlign: "left"}} variant="text" onClick={handleClick}>
+				<Typography variant="subtitle1" color="text.primary" style={{textTransform: "uppercase"}}>
 					{menuItems.label}
 				</Typography>
 			</StyledNavButton>
@@ -77,7 +78,10 @@ const DropdownMenu = ({ menuItems }) => {
 				{menuItems.navItems.map((item, index) => (
 					<NavLink to={item.link} style={styledLink}>
 						<MenuItem key={index} onClick={handleClose}>
-							{item.label}
+							<Typography variant="subtitle2" color="text.primary"  style={{textTransform: "uppercase"}}>
+								{item.label}
+								{console.log(item)}
+							</Typography>
 						</MenuItem>
 					</NavLink>
 				))}
@@ -133,7 +137,7 @@ const Navigation = () => {
 									<Box>
 										<NavLink to="/landing/contact" style={styledLink}>
 											<Button variant="outlined">
-												<Typography variant="subtitle1" color="text.primary">
+												<Typography variant="subtitle1" color="text.primary" style={{textTransform: "uppercase"}}>
 													Contact us
 												</Typography>
 											</Button>
@@ -158,10 +162,10 @@ const Navigation = () => {
 
 							<StyledDivider />
 
-							<StyledMenuStack direction="row" justifyContent="left" spacing={5}>
+							<StyledMenuStack direction="row" justifyContent="space-around" alignItems="center" spacing={5}>
 								<StyledNavButton sx={{textAlign: "left"}} variant="text">
 									<NavLink to="/landing/main" style={styledLink}>
-										<Typography variant="subtitle1" color="text.primary">
+										<Typography variant="subtitle1" color="text.primary" style={{textTransform: "uppercase"}}>
 											Mainpage
 										</Typography>
 									</NavLink>
@@ -171,6 +175,7 @@ const Navigation = () => {
 								{
 									menuItems.map((item, index) => (
 										<div key={index}>
+											{console.log("Menu items here", item)}
 											<DropdownMenu menuItems={item} />
 										</div>
 									))
@@ -184,7 +189,7 @@ const Navigation = () => {
 				) : (
 					<TopAppBar>
 						<Container>
-							<Stack direction="row" justifyContent="space-between">
+							<Stack direction="row" justifyContent="space-between" alignItems="center">
 								<img src={logo} alt="Henriot mobile logo" style={styledMobileLogo}/>
 								<IconButton
 									size="large"
