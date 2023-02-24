@@ -1,12 +1,20 @@
-import { Box, Card, CardActionArea, CardContent, Chip, Container, Grid, Stack, Typography } from "@mui/material";
-import { styled } from "@mui/system";
-import { sentenceCase } from "change-case";
 import { Link } from "react-router-dom";
 
-import { researchCenter } from "../info";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import { styled } from "@mui/system";
+
+import { FaSearch } from "react-icons/fa";
+
+import VerticalTabs from "../../../components/verticaltabs";
+import MarketUpdateTab from "./tabs/marketupdate";
+import BlogTab from "./tabs/blog";
+import TradingViewsTab from "./tabs/tradingviews";
+import MarketOutLookTab from "./tabs/marketoutlook";
+
+
 
 const StyledHomeResearch = styled(Box)(({ theme }) => ({
-	
+	backgroundColor: theme.palette.background.neutral
 }))
 
 const StyledContainer = styled(Container)(({ theme }) => ({
@@ -24,45 +32,59 @@ const linkStyle = {
 	textDecoration:"none"
 }
 
-const StyledGrid = styled(Grid)(({ theme }) => ({
-	marginTop: "30px",
-	marginBottom: "30px",
-}));
-
-const StyledGridItem = styled(Grid)(({ theme }) => ({
-
-}));
-
-const StyledCard = styled(Card)(({ theme }) => ({
-	
+const StyledButton = styled(Button)(({ theme }) => ({
+	width: "300px"
 }))
 
-const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
 
-}))
+const tabItems = [
+	{
+		label: "Blogs",
+		pannel:<BlogTab/>
+	},
+	{
+		label: "Weekly Market Update",
+		pannel:<MarketUpdateTab/>
+	},
+	{
+		label: "Trading views",
+		pannel:<TradingViewsTab/>
+	},
+	{
+		label: "Monthly Market Outlook",
+		pannel:<MarketOutLookTab/>
+	},
+]
 
-const StyledCardContent = styled(CardContent)(({ theme }) => ({
-
-}))
-
-const styledImageMedia = {
-	borderRadius: "10px"
-}
 
 const HomeResearch = () => {
-
-	const viewCard = () => {
-		console.log("Something happened")
-	}
 
 	return (
 		<StyledHomeResearch>
 			<StyledContainer maxWidth="xl">
-				<Typography variant="h2" color="text.primary" gutterBottom>
-					Our Innovation Research Centre
-				</Typography>
 
-				<Link to="/news" style={linkStyle}>
+				<Stack
+					direction="row"
+					justifyContent="space-between"
+					sx={{width: "100%"}}
+
+				>
+					<Typography variant="h3" color="text.primary" gutterBottom sx={{textTransform: "uppercase"}}>
+						Investment Research
+					</Typography>
+
+					<StyledButton variant="outlined" endIcon={<FaSearch/>}>
+						Visit Henriot Research Centre
+					</StyledButton>
+				</Stack>
+
+				<Box sx={{width: "100%", marginTop: "50px"}}>
+					<VerticalTabs
+						tabItems={tabItems}
+					/>
+				</Box>
+
+				{/* <Link to="/news" style={linkStyle}>
 					<Typography variant="subtitle1" color="primary">
 						Visit Henriot Research Centre
 					</Typography>
@@ -119,7 +141,7 @@ const HomeResearch = () => {
 							</StyledGridItem>	
 						))
 					}
-				</StyledGrid>
+				</StyledGrid> */}
 			</StyledContainer>
 		</StyledHomeResearch>
 	)
