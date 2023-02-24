@@ -30,11 +30,11 @@ const StyledCardMedia = styled(CardMedia)(({ theme }) => ({
 }))
 
 const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
-
+	height: "100%"
 }))
 
 const StyledCardContent = styled(CardContent)(({ theme }) => ({
-
+	height: 200
 }))
 
 
@@ -51,13 +51,14 @@ const BlogTab = () => {
 					researchCenter.map((el, i) => (
 						<StyledGridItem item key={i} xs={12} sm={12} md={6} lg={4} xl={4}>
 							<StyledCard>
-								<StyledCardMedia
-									component="img"
-									src={el.image}
-									alt={el.title}
-									height={250}
-								/>
 								<StyledCardActionArea onClick={viewCard}>
+									<StyledCardMedia
+										component="img"
+										src={el.image}
+										alt={el.title}
+										height={250}
+									/>
+
 									<StyledCardContent>
 										<Stack
 											direction="column"
