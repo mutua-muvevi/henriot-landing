@@ -1,7 +1,7 @@
 export const accordionInfo = [
 	{
 		title: `
-			Market Amplification through Consistency, Discipline and Objectivity Quantitative trading is characterized by its consistency, discipline, and objectivity.
+			Market Amplification
 		`,
 		paragraph: [
 			`Market Amplification through Consistency, Discipline and Objectivity Quantitative trading is characterized by its consistency, discipline, and objectivity. `,
@@ -12,7 +12,7 @@ export const accordionInfo = [
 	},
 	{
 		title: `
-			The Hunt for Positive Alpha
+			Hunt for Positive Alpha
 		`,
 		paragraph: [
 			`Henriot Investment Management differs from any typical fund by using extensive diversification through various different financial instruments and applying multiple completely different trading strategies. Thousands of different strategy variations catch trends, react to market waves, find repetitive patterns and seasonalities. `,
@@ -23,7 +23,7 @@ export const accordionInfo = [
 	},
 	{
 		title: `
-			Human intervention can effectively distinguish alpha from noise Machine learning and Algo trading models has the potential to help investors find alpha in unexpected places.
+			Human can distinguish alpha from noise
 		`,
 		paragraph: [
 			`Human intervention can effectively distinguish alpha from noise Machine learning and Algo trading models has the potential to help investors find alpha in unexpected places.`,

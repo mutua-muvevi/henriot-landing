@@ -1,6 +1,6 @@
 export const navItems = [
 	{
-		label: "mainpage",
+		label: "home",
 		path: "/landing/main",
 	},
 	{
@@ -27,7 +27,7 @@ export const navItems = [
 
 export const menuItems = [
 	{
-		label: "Our Fund",
+		label: "Our Quant Funds",
 		navItems: [
 			{
 				label: "FX Fund",
@@ -55,7 +55,11 @@ export const menuItems = [
 				link:"/landing/news"
 			},
 			{
-				label: "Structure Products",
+				label: "Structured Products",
+				link:"/landing/news"
+			},
+			{
+				label: "Portfolios",
 				link:"/landing/news"
 			},
 		]
@@ -77,12 +81,29 @@ export const menuItems = [
 			},
 		]
 	},
+	{
+		label: "Company",
+		navItems: [
+			{
+				label: "Overview",
+				link:"/landing/news"
+			},
+			{
+				label: "Careers",
+				link:"/landing/news"
+			},
+			{
+				label: "FAQ",
+				link:"/landing/news"
+			},
+		]
+	},
 ]
 
 export const drawerMenuItems = {
 	top: [
 		{
-			label: "Our Fund",
+			label: "Our Quant Funds",
 			navItems: [
 				{
 					label: "FX Fund",
@@ -110,8 +131,12 @@ export const drawerMenuItems = {
 					link:"/landing/news"
 				},
 				{
-					label: "Structure Products",
+					label: "Structured Products",
 					link:"/landing/news"
+				},
+				{
+					label: "Portfolios",
+					link:"/landing/portfolio"
 				},
 			]
 		},
@@ -129,6 +154,23 @@ export const drawerMenuItems = {
 				{
 					label: "Learn",
 					link:"/landing/news"
+				},
+			]
+		},
+		{
+			label: "Company",
+			navItems: [
+				{
+					label: "Overview",
+					link:"/landing/company/overview"
+				},
+				{
+					label: "Careers",
+					link:"/landing/company/faq"
+				},
+				{
+					label: "FAQ",
+					link:"/landing/company/careers"
 				},
 			]
 		},

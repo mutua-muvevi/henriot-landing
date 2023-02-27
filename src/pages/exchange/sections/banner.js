@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
-const videoLink = "https://res.cloudinary.com/dqweh6zte/video/upload/v1675812053/henriot/pexels-tima-miroshnichenko-7580448_rujknu.mp4"
+import { FaChevronRight } from "react-icons/fa";
+
+const videoLink = "https://res.cloudinary.com/dqweh6zte/video/upload/v1677246028/henriot/video_vvjwad.mp4"
 
 const StyledExchangeBanner = styled(Box)(({ theme }) => ({
 	
@@ -42,21 +44,19 @@ const ExchangeBanner = () => {
 			</video>
 
 			<StyledContainer maxWidth="xl">
-				<Stack direction="column" spacing={3} alignItems="flex-start">
-					<Box>
-						<Typography variant="h2" gutterBottom>
-							Be a Smart Global Innovation Investor
-						</Typography>
-						<Typography variant="subtitle1">
-							Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios.
-						</Typography>
-					</Box>
+				<Stack direction="column" spacing={3} alignItems="center">
+					<Typography variant="h3" gutterBottom>
+						FOREIGN EXCHANGE FUND
+					</Typography>
+					<Typography variant="subtitle1">
+						Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios.
+					</Typography>
 					
-					<Link to="/investment-process" style={linkStyles}>
-						<Button variant="contained">
-							Find out more
-						</Button>
-					</Link>
+					<Button variant="text" endIcon={<FaChevronRight/>}>
+						<Typography variant="h5">
+							Buy
+						</Typography>
+					</Button>
 				</Stack>
 			</StyledContainer>
 		</StyledExchangeBanner>

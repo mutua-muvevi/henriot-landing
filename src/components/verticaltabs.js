@@ -67,6 +67,7 @@ const VerticalTabs = ({tabItems}) => {
 							sx={{
 								alignItems:"start",
 								typography: "h5",
+								textAlign:"left"
 							}}
 						/>
 					))

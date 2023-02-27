@@ -33,6 +33,12 @@ export default function Button(theme) {
 				},
 				outlinedPrimary: {
 					fontSize: 16,
+					borderColor: theme.palette.common.black,
+					backgroundColor: "transparent",
+					color: theme.palette.common.black,
+				},
+				outlinedSecondary: {
+					fontSize: 16,
 				},
 				outlinedInherit: {
 					border: `1px solid ${theme.palette.grey[500_32]}`,

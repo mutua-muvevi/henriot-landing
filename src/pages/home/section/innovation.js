@@ -40,7 +40,7 @@ const styledImage = {
 const HomeInnovation = () => {
 	return (
 		<StyledHomeInnovation>
-			<StyledContainer maxWidth="xl">
+			<StyledContainer maxWidth="lg">
 				<Stack direction="column" spacing={3}>
 
 					<Stack justifyContent="center" alignItems="center" textAlign="center">
@@ -57,7 +57,7 @@ const HomeInnovation = () => {
 									aria-controls="panel1a-content"
 									id="panel1a-header"
 								>
-									<Typography variant="h5">
+									<Typography variant="h3">
 										{el.title}
 									</Typography>
 
@@ -65,22 +65,14 @@ const HomeInnovation = () => {
 
 								<AccordionDetails>
 									<StyledGrid container spacing={3}>
-										<StyledGridItem item xs={12} sm={12} md={12} lg={6} xl={6}>
-											<Stack spacing={3}>
+										<StyledGridItem item xs={12} sm={12} md={12} lg={12} xl={12}>
+											<Stack textAlign="left" spacing={3}>
 												{el.paragraph.map((p, index) => (
-													<Typography key={index} variant="subtitle1" color="text.secondary">
+													<Typography key={index} variant="h4" color="text.secondary">
 														{p}
 													</Typography>
 												))}
 											</Stack>
-										</StyledGridItem>
-
-										<StyledGridItem item xs={12} sm={12} md={12} lg={6} xl={6}>
-											<img
-												src={el.image}
-												alt={el.title}
-												style={styledImage}
-											/>
 										</StyledGridItem>
 									</StyledGrid> 
 								</AccordionDetails>

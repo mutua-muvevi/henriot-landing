@@ -4,7 +4,8 @@ import { styled } from "@mui/system";
 import { contentAfterBanner } from "../info"
 
 const StyledDisruptive = styled(Box)(({ theme }) => ({
-	marginBottom: "100px"
+	marginBottom: "100px",
+	marginTop: "-8vh"
 }));
 
 const StyledContainer = styled(Container)(({ theme }) => ({
@@ -16,14 +17,14 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 const Disruptive = () => {
 	return (
 		<StyledDisruptive>
-			<StyledContainer maxWidth="xl">
+			<StyledContainer maxWidth="lg">
 				<Stack direction="column" spacing={3} textAlign="center">
 					<Typography variant="h3">
 						ABOUT THE FUND
 					</Typography>
 					{
 						contentAfterBanner.map((el, i) => (
-							<Typography variant="subtitle1" color="text.primary" key={i}>
+							<Typography variant="h4" color="text.primary" key={i}>
 								{el}
 							</Typography>
 						))

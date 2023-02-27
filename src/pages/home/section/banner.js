@@ -6,7 +6,6 @@ import { styled } from "@mui/system";
 const videoLink = "https://res.cloudinary.com/dqweh6zte/video/upload/v1676458610/henriot/video_amk9d6.mp4"
 
 const StyledBanner = styled(Box)(({ theme }) => ({
-	
 }));
 
 const styledVideo = {
@@ -20,10 +19,14 @@ const styledVideo = {
 }
 
 const StyledContainer = styled(Container)(({ theme }) => ({
+	backgroundColor: "rgba(0,0,0,0.5)",
 	position: "relative",
 	color:"#fff",
 	top: "-40vh",
 	zIndex: 2,
+	paddingTop: "20px",
+	paddingbottom: "20px",
+
 
 }))
 
@@ -31,6 +34,11 @@ const linkStyles = {
 	textDecoration: "none",
 	color: "inherit"
 }
+
+const StyledButton = styled(Button)(({ theme }) => ({
+	minWidth: "200px",
+	padding: "10px"
+}))
 
 const Banner = () => {
 	return (
@@ -42,21 +50,24 @@ const Banner = () => {
 				</Typography>
 			</video>
 
-			<StyledContainer maxWidth="xl">
-				<Stack direction="column" spacing={3} alignItems="flex-start">
+			<StyledContainer maxWidth="lg">
+				<Stack direction="column" spacing={3} alignItems="center" textAlign="center">
 					<Box>
-						<Typography variant="h2" gutterBottom>
+						<Typography variant="h3" gutterBottom sx={{textTransform: "uppercase"}}>
 							Mathematics takes investment decisions here
 						</Typography>
-						<Typography variant="subtitle1">
+						<Typography variant="h3">
 							Rule-based investing – fast, quantitative, reliable and inexpensive.
 						</Typography>
 					</Box>
 					
-					<Link to="/investment-process" style={linkStyles}>
-						<Button variant="contained">
-							Find out more
-						</Button>
+					<Link to="/landing/company/overview" style={linkStyles}>
+						
+						<StyledButton variant="contained">
+							<Typography variant="h6">
+								Find out more
+							</Typography>
+						</StyledButton>
 					</Link>
 				</Stack>
 			</StyledContainer>

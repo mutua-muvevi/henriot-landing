@@ -126,7 +126,7 @@ const Navigation = () => {
 				innerWidth >= 1000 ? (
 				<TopAppBar position="scroll">
 					<Toolbar>
-						<StyledContainer maxWidth="xl">
+						<StyledContainer maxWidth="lg">
 							<StyledMenuStack direction="row" justifyContent="space-between">
 								<img src={logo} alt="Henriot logo" style={styledLogo}/>
 								<Stack direction="row" justifyContent="right" alignItems="flex-end" spacing={3}>
@@ -134,7 +134,7 @@ const Navigation = () => {
 									<Box>
 										<NavLink to="/landing/contact" style={styledLink}>
 											<Button variant="outlined">
-												<Typography variant="subtitle1" color="text.primary" style={{textTransform: "uppercase"}}>
+												<Typography variant="subtitle1" color="text.primary" style={{textTransform: "capitalize"}}>
 													Contact us
 												</Typography>
 											</Button>
@@ -142,7 +142,7 @@ const Navigation = () => {
 
 									</Box>
 									<Box>
-										<Button variant="contained" onClick={handleMenuClick}>
+										<Button variant="outlined" onClick={handleMenuClick}>
 											Login
 										</Button>
 
@@ -159,11 +159,11 @@ const Navigation = () => {
 
 							<StyledDivider />
 
-							<StyledMenuStack direction="row" justifyContent="space-around" alignItems="center" spacing={5}>
+							<StyledMenuStack direction="row" justifyContent="left" alignItems="center" spacing={5}>
 								<StyledNavButton sx={{textAlign: "left"}} variant="text">
 									<NavLink to="/landing/main" style={styledLink}>
 										<Typography variant="subtitle1" color="text.primary" style={{textTransform: "uppercase"}}>
-											Mainpage
+											Home
 										</Typography>
 									</NavLink>
 
@@ -185,7 +185,7 @@ const Navigation = () => {
 				</TopAppBar>
 				) : (
 					<TopAppBar>
-						<Container>
+						<Container maxWidth="lg">
 							<Stack direction="row" justifyContent="space-between" alignItems="center">
 								<img src={logo} alt="Henriot mobile logo" style={styledMobileLogo}/>
 								<IconButton

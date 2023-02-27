@@ -44,15 +44,15 @@ const tabItems = [
 	},
 	{
 		label: "Weekly Market Update",
-		pannel:<MarketUpdateTab/>
+		pannel:<BlogTab/>
 	},
 	{
 		label: "Trading views",
-		pannel:<TradingViewsTab/>
+		pannel:<BlogTab/>
 	},
 	{
 		label: "Monthly Market Outlook",
-		pannel:<MarketOutLookTab/>
+		pannel:<BlogTab/>
 	},
 ]
 
@@ -61,7 +61,7 @@ const HomeResearch = () => {
 
 	return (
 		<StyledHomeResearch>
-			<StyledContainer maxWidth="xl">
+			<StyledContainer maxWidth="lg">
 
 				<Stack
 					direction="row"
