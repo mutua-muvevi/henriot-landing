@@ -16,6 +16,10 @@ import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
 import WelcomePage from "./pages/welcome/welcome";
 import NotFound from "./pages/error/404";
+import Overview from "./pages/company/overview/overview";
+import FAQ from "./pages/company/faq/faq";
+import Careers from "./pages/company/careers/careers";
+import Portfolio from "./pages/portfolio/portfolio";
 
 //router function
 const Router = () => {
@@ -62,6 +66,10 @@ const Router = () => {
 					element: <Innovation/>,	
 				},
 				{
+					path: "/landing/portfolio",
+					element: <Portfolio/>,	
+				},
+				{
 					path: "/landing/news",
 					element: <News/>,	
 				},
@@ -70,8 +78,16 @@ const Router = () => {
 					element: <Contact/>,	
 				},
 				{
-					path: "/landing/privacy-policy",
-					element: <Contact/>,	
+					path: "/landing/company/overview",
+					element: <Overview/>,	
+				},
+				{
+					path: "/landing/company/faq",
+					element: <FAQ/>,	
+				},
+				{
+					path: "/landing/company/careers",
+					element: <Careers/>,	
 				},
 			]
 		},

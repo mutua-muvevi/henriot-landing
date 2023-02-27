@@ -28,8 +28,11 @@ const StyledBottomContainer = styled(Container)(({ theme }) => ({
 const Footer = () => {
 	return (
 		<StyledFooter>
-			<StyledTopContainer maxWidth="xl">
+			<StyledTopContainer maxWidth="lg">
 				<Stack direction="column" spacing={3}>
+					<Typography variant="h4">
+						Privacy policy
+					</Typography>
 					{
 						footerParagraph.map((el, i) => (
 								<Typography variant="subtitle1" key={i}>
@@ -43,7 +46,7 @@ const Footer = () => {
 			<Divider/>
 
 			<StyledBottomContainer>
-				<Typography variant="caption">
+				<Typography variant="subtitle1">
 					Copyright 2023 by Henriot Investment Management Ltd
 				</Typography>
 			</StyledBottomContainer>

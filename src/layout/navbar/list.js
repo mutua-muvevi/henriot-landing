@@ -46,6 +46,8 @@ const SwipeableDrawerList = ({ mobileNav, setMobileNav }) => {
 				<LogoParent>
 					<LogoItem src={Logo} alt="Henriot Logo"/>
 				</LogoParent>
+
+				<Divider color="grey"/>
 				
 				<NavLink to="/landing/main" style={navlinkStyle}>
 				<ListItemButton
@@ -55,7 +57,7 @@ const SwipeableDrawerList = ({ mobileNav, setMobileNav }) => {
 						px: 2.5,
 					}}
 				>
-					<ListItemText primary="Mainpage" sx={{ opacity: mobileNav ? 1 : 0, marginLeft: "15px" }} />
+					<ListItemText primary="Home" sx={{ opacity: mobileNav ? 1 : 0, marginLeft: "15px" }} />
 				</ListItemButton>
 				</NavLink>
 

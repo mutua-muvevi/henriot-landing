@@ -24,13 +24,13 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 const Strategy = () => {
 	return (
 		<StyledStrategy>
-			<StyledContainer maxWidth="xl">
+			<StyledContainer maxWidth="lg">
 				<Stack direction="column" justifyContent="center" alignItems="center" spacing={3}>
 					<Stack direction="column" justifyContent="center" spacing={1.5}>
 						<Typography variant="h3">	
 							ALGORITHMIC TRADING PORTFOLIO
 						</Typography>
-						<Typography variant="subtitle1">
+						<Typography variant="h4">
 							{text}
 						</Typography>
 					</Stack>
