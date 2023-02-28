@@ -1,8 +1,6 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
-import { featuresParagraph } from "../info";
-
 const StyledFundsParagraph = styled(Box)(({ theme }) => ({
 	backgroundColor: theme.palette.background.neutral,
 }));
@@ -16,13 +14,13 @@ const StyledStack = styled(Stack)(({ theme }) => ({
 	paddingBottom: "30px",
 }));
 
-const FundsParagraph = () => {
+const FundsParagraph = ({fundsParagraph}) => {
 	return (
 		<StyledFundsParagraph >
 			<StyledContainer maxWidth="lg">
 				<StyledStack spacing={3} direction="column">
 					{
-						featuresParagraph.map((el, i) => (
+						fundsParagraph.map((el, i) => (
 							<Typography variant="subtitle2" key={i}>
 								{el}
 							</Typography>

@@ -4,7 +4,6 @@ import { styled } from "@mui/system";
 import { BsFillPrinterFill } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa";
 
-import { documentButtons } from "../info";
 
 
 const StyledFundsDocument = styled(Container)(({ theme }) => ({
@@ -42,7 +41,7 @@ const styledIconButton = {
 	fontSize: "20px"
 }
 
-const FundsDocument = () => {
+const FundsDocument = ({documentButtons}) => {
 	return (
 		<StyledFundsDocument maxWidth="lg">
 			<StyledTopStack textAlign="left">

@@ -5,7 +5,6 @@ import { styled } from "@mui/system";
 
 import { FaChevronRight } from "react-icons/fa";
 
-const videoLink = "https://res.cloudinary.com/dqweh6zte/video/upload/v1677246028/henriot/video_vvjwad.mp4"
 
 const StyledExchangeBanner = styled(Box)(({ theme }) => ({
 	
@@ -28,16 +27,21 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 	zIndex: 2,
 }))
 
-const linkStyles = {
-	textDecoration: "none",
-	color: "inherit"
-}
+const StyledButton = styled(Button)(({ theme }) => ({
+	borderColor: "#fff",
+	color: "#fff"
+}))
 
-const ExchangeBanner = () => {
+// const linkStyles = {
+// 	textDecoration: "none",
+// 	color: "inherit"
+// }
+
+const ExchangeBanner = ({bannerItems}) => {
 	return (
 		<StyledExchangeBanner>
 			<video style={styledVideo} autoPlay loop controls="" muted>
-				<source  src={videoLink} type="video/mp4"/>
+				<source  src={bannerItems.videoLink} type="video/mp4"/>
 				<Typography variant="h5">
 					Your browser does not support HTML video.
 				</Typography>
@@ -46,17 +50,17 @@ const ExchangeBanner = () => {
 			<StyledContainer maxWidth="xl">
 				<Stack direction="column" spacing={3} alignItems="center">
 					<Typography variant="h3" gutterBottom>
-						FOREIGN EXCHANGE FUND
+						{bannerItems.title}
 					</Typography>
 					<Typography variant="subtitle1">
-						Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios.
+						{bannerItems.subtitle}
 					</Typography>
 					
-					<Button variant="text" endIcon={<FaChevronRight/>}>
+					<StyledButton variant="outlined" color="primary" endIcon={<FaChevronRight/>}>
 						<Typography variant="h5">
-							Buy
+							{bannerItems.button.label}
 						</Typography>
-					</Button>
+					</StyledButton>
 				</Stack>
 			</StyledContainer>
 		</StyledExchangeBanner>

@@ -1,8 +1,6 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
-import { overviewItems } from "../info";
-
 const StyledFundsOverview = styled(Container)(({ theme }) => ({
 	minHeight: "20vh",
 }));
@@ -15,7 +13,7 @@ const StyledGridItem = styled(Grid)(({ theme }) => ({
 
 }));
 
-const FundsOverview = () => {
+const FundsOverview = ({overviewItems}) => {
 	return (
 		<StyledFundsOverview maxWidth="lg">
 			<StyledGrid container spacing={5}>

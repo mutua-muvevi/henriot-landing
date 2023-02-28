@@ -5,9 +5,11 @@ import { Navigate, useRoutes } from "react-router-dom";
 import Layout from "./layout/layout";
 
 import Homepage from "./pages/home/home";
-import CEC from "./pages/cec/cec";
-import Diverse from "./pages/diverse/diverse";
-import Exchange from "./pages/exchange/exchange";
+
+import CEC from "./pages/funds/cec/cec";
+import Diverse from "./pages/funds/diverse/diverse";
+import FXFund from "./pages/funds/exchange/fx";
+
 import News from "./pages/news/news";
 import InvestmentProcess from "./pages/process/process";
 import Innovation from "./pages/innovation/innovation";
@@ -20,7 +22,6 @@ import Overview from "./pages/company/overview/overview";
 import FAQ from "./pages/company/faq/faq";
 import Careers from "./pages/company/careers/careers";
 import Portfolio from "./pages/portfolio/portfolio";
-import FXFund from "./pages/funds/ex/fxfund";
 
 //router function
 const Router = () => {

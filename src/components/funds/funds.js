@@ -14,16 +14,16 @@ const StyledFundsComponent = styled(Box)(({ theme }) => ({
 }))
 
 
-const FundsComponent = () => {
+const FundsComponent = ({fundsItem}) => {
 	return (
 		<StyledFundsComponent>
-			<FundsComponentBanner/>
-			<FundsComponentFeatures/>
-			<FundsNavigation/>
-			<FundsOverview/>
-			<FundsParagraph/>
+			<FundsComponentBanner bannerItems={fundsItem.bannerItems}/>
+			<FundsComponentFeatures featuresContent={fundsItem.featuresContent}/>
+			<FundsNavigation fundsNavigationItems={fundsItem.fundsNavigationItems}/>
+			<FundsOverview overviewItems={fundsItem.overviewItems}/>
+			<FundsParagraph fundsParagraph={fundsItem.fundsParagraph}/>
 			<FundsPerfomance/>
-			<FundsDocument/>
+			<FundsDocument documentButtons={fundsItem.documentButtons}/>
 		</StyledFundsComponent>
 	)
 }

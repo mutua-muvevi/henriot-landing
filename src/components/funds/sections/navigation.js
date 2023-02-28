@@ -2,8 +2,6 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
 
-import { fundsNavigationItems } from "../info";
-
 const StyledFundsNavigation = styled(Container)(({ theme }) => ({
 	marginBottom: "20px"
 }));
@@ -17,7 +15,7 @@ const styledLink = {
 	textDecoration: "none"
 }
 
-const FundsNavigation = () => {
+const FundsNavigation = ({fundsNavigationItems}) => {
 	return (
 		<StyledFundsNavigation maxWidth="lg">
 			<StyledNavStack
