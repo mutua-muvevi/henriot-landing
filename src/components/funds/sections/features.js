@@ -1,8 +1,7 @@
 import { Box, Button, Card, CardContent, Container, Grid, Stack, Tooltip, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import { BsInfoCircle } from "react-icons/bs";
 
-import { featuresContent } from "../info";
+import { BsInfoCircle } from "react-icons/bs";
 
 const StyledExchangeFeatures = styled(Box)(({ theme }) => ({
 	marginTop: "-30vh",
@@ -58,7 +57,7 @@ const StyledRightCardsItemMain = styled(Stack)(({ theme }) => ({
 
 
 
-const ExchangeFeatures = () => {
+const ExchangeFeatures = ({featuresContent}) => {
 	return (
 		<StyledExchangeFeatures>
 			<StyledContainer maxWidth="lg">
