@@ -20,6 +20,7 @@ import Overview from "./pages/company/overview/overview";
 import FAQ from "./pages/company/faq/faq";
 import Careers from "./pages/company/careers/careers";
 import Portfolio from "./pages/portfolio/portfolio";
+import FXFund from "./pages/funds/ex/fxfund";
 
 //router function
 const Router = () => {
@@ -51,7 +52,7 @@ const Router = () => {
 				},
 				{
 					path: "/landing/exchange",
-					element: <Exchange/>,	
+					element: <FXFund/>,	
 				},
 				{
 					path: "/landing/investment-process",
