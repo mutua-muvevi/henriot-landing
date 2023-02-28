@@ -147,7 +147,7 @@ export const foreignExchangefundsItem = {
 export const CECfundsItem = {
 	bannerItems : {
 		videoLink: "https://res.cloudinary.com/dqweh6zte/video/upload/v1677590537/henriot/video_1_so3cbi.mp4",
-		title: "COMMODITIES, EQUITIES, CRYPTOCURRENCIES (CEC) FUND",
+		title: "COMMODITIES, EQUITIES, CRYPTOCURRENCIES (EC) FUNDC",
 		subtitle: "Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios.",
 		button: {
 			label: "Buy",
@@ -286,8 +286,8 @@ export const CECfundsItem = {
 
 export const diverseFundsItem = {
 	bannerItems : {
-		videoLink: "https://res.cloudinary.com/dqweh6zte/video/upload/v1677246028/henriot/video_vvjwad.mp4",
-		title: "FOREIGN EXCHANGE FUND",
+		videoLink: "https://res.cloudinary.com/dqweh6zte/video/upload/v1677590578/henriot/video_2_keqqhu.mp4",
+		title: "DIVERSE FUNDS",
 		subtitle: "Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios.",
 		button: {
 			label: "Buy",
