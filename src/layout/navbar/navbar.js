@@ -133,7 +133,7 @@ const Navigation = () => {
 
 									<Box>
 										<NavLink to="/landing/contact" style={styledLink}>
-											<Button variant="outlined">
+											<Button variant="text" >
 												<Typography variant="subtitle1" color="text.primary" style={{textTransform: "capitalize"}}>
 													Contact us
 												</Typography>
@@ -172,7 +172,6 @@ const Navigation = () => {
 								{
 									menuItems.map((item, index) => (
 										<div key={index}>
-											{console.log("Menu items here", item)}
 											<DropdownMenu menuItems={item} />
 										</div>
 									))
