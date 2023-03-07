@@ -22,6 +22,10 @@ import Overview from "./pages/company/overview/overview";
 import FAQ from "./pages/company/faq/faq";
 import Careers from "./pages/company/careers/careers";
 import Portfolio from "./pages/portfolio/portfolio";
+import InvestmentForex from "./pages/investment/forex/forex";
+import InvestmentEquities from "./pages/investment/equities/equities";
+import InvestmentStructuredProducts from "./pages/investment/products/products";
+import InvestmentPortfolios from "./pages/investment/portfolios/portfolios";
 
 //router function
 const Router = () => {
@@ -55,6 +59,25 @@ const Router = () => {
 					path: "/landing/exchange",
 					element: <FXFund/>,	
 				},
+				{
+					path: "/landing/investment-solutions/forex",
+					element: <InvestmentForex/>,	
+				},
+				{
+					path: "/landing/investment-solutions/equity",
+					element: <InvestmentEquities/>,	
+				},
+				{
+					path: "/landing/investment-solutions/structures-products",
+					element: <InvestmentStructuredProducts/>,	
+				},
+				{
+					path: "/landing/investment-solutions/portfolios",
+					element: <InvestmentPortfolios/>,	
+				},
+
+
+				
 				{
 					path: "/landing/investment-process",
 					element: <InvestmentProcess/>,	

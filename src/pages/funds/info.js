@@ -141,7 +141,23 @@ export const foreignExchangefundsItem = {
 			label: "Fund Holdings PDF",
 			action: ""
 		},
-	]
+	],
+	chartData: {
+		options: {
+			chart: {
+				id: "foreign-exchange-basic-line-chart"
+			},
+			xaxis: {
+				categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
+			}
+		},
+		series: [
+			{
+				name: "Series One",
+				data: [30, 40, 45, 50, 49, 60, 70, 91]
+			}
+		]
+	}
 }
 
 export const CECfundsItem = {
@@ -281,7 +297,23 @@ export const CECfundsItem = {
 			label: "Fund Holdings PDF",
 			action: ""
 		},
-	]
+	],
+	chartData: {
+		options: {
+			chart: {
+				id: "CEC-basic-line-chart"
+			},
+			xaxis: {
+				categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
+			}
+		},
+		series: [
+			{
+				name: "Series One",
+				data: [30, 40, 45, 50, 49, 60, 70, 91]
+			}
+		]
+	}
 }
 
 export const diverseFundsItem = {
@@ -421,5 +453,21 @@ export const diverseFundsItem = {
 			label: "Fund Holdings PDF",
 			action: ""
 		},
-	]
+	],
+	chartData: {
+		options: {
+			chart: {
+				id: "diverse-funds-basic-line-chart"
+			},
+			xaxis: {
+				categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
+			}
+		},
+		series: [
+			{
+				name: "Series One",
+				data: [30, 40, 45, 50, 49, 60, 70, 91]
+			}
+		]
+	}
 }
