@@ -143,14 +143,8 @@ export const foreignExchangefundsItem = {
 		},
 	],
 	chartData: {
-		options: {
-			chart: {
-				id: "foreign-exchange-basic-line-chart"
-			},
-			xaxis: {
-				categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
-			}
-		},
+		id: "fx-funds-basic-line-chart",
+		categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
 		series: [
 			{
 				name: "Series One",
@@ -299,14 +293,8 @@ export const CECfundsItem = {
 		},
 	],
 	chartData: {
-		options: {
-			chart: {
-				id: "CEC-basic-line-chart"
-			},
-			xaxis: {
-				categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
-			}
-		},
+		id: "CEC-funds-basic-line-chart",
+		categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
 		series: [
 			{
 				name: "Series One",
@@ -457,14 +445,6 @@ export const diverseFundsItem = {
 	chartData: {
 		id: "diverse-funds-basic-line-chart",
 		categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
-		options: {
-			chart: {
-				id: "diverse-funds-basic-line-chart"
-			},
-			xaxis: {
-				categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
-			}
-		},
 		series: [
 			{
 				name: "Series One",

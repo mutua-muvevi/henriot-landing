@@ -349,6 +349,7 @@ const ReusableChart = ({chartData, id, xaxis, series}) => {
 				type="line"
 				width="100%"
 			/>
+			{console.log(chartData)}
 		</StyledChart>
 	)
 }
