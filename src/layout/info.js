@@ -48,19 +48,19 @@ export const menuItems = [
 		navItems: [
 			{
 				label: "Forex",
-				link:"/landing/news"
+				link:"/landing/investment-solutions/forex"
 			},
 			{
 				label: "Equities",
-				link:"/landing/news"
+				link:"/landing/investment-solutions/equity"
 			},
 			{
 				label: "Structured Products",
-				link:"/landing/news"
+				link:"/landing/investment-solutions/structures-products"
 			},
 			{
 				label: "Portfolios",
-				link:"/landing/news"
+				link:"/landing/investment-solutions/portfolios"
 			},
 		]
 	},
@@ -124,19 +124,19 @@ export const drawerMenuItems = {
 			navItems: [
 				{
 					label: "Forex",
-					link:"/landing/news"
+					link:"/landing/investment-solutions/forex"
 				},
 				{
 					label: "Equities",
-					link:"/landing/news"
+					link:"/landing/investment-solutions/equity"
 				},
 				{
 					label: "Structured Products",
-					link:"/landing/news"
+					link:"/landing/investment-solutions/structures-products"
 				},
 				{
 					label: "Portfolios",
-					link:"/landing/portfolio"
+					link:"/landing/investment-solutions/portfolios"
 				},
 			]
 		},
