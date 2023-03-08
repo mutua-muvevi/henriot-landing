@@ -1,11 +1,11 @@
-import { Box, Button, Card, CardContent, Container, Grid, Stack, Tooltip, Typography } from "@mui/material";
+import { Box, Button, Card, CardContent, Container, Fade , Grid, IconButton, Stack, Tooltip, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import { BsInfoCircle } from "react-icons/bs";
 
 const StyledExchangeFeatures = styled(Box)(({ theme }) => ({
 	marginTop: "-30vh",
-	marginBottom: "20px",
+	marginBottom: "50px",
 }))
 
 const StyledContainer = styled(Container)(({ theme }) => ({
@@ -30,7 +30,13 @@ const StyledGrid = styled(Grid)(({ theme }) => ({
 }));
 
 const StyledGridItem = styled(Grid)(({ theme }) => ({
-	
+	minHeight: "250px",
+}));
+
+
+const StyledLeftStack = styled(Stack)(({ theme }) => ({
+	minHeight: "250px",
+
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -47,6 +53,7 @@ const StyledRightCardsItem = styled(Box)(({ theme }) => ({
 	padding: "10px"
 }));
 
+
 const StyledRightCardsItemTop = styled(Stack)(({ theme }) => ({
 
 }));
@@ -59,24 +66,24 @@ const StyledRightCardsItemMain = styled(Stack)(({ theme }) => ({
 
 const ExchangeFeatures = ({featuresContent}) => {
 	return (
-		<StyledExchangeFeatures>
+		<StyledExchangeFeatures id="features">
 			<StyledContainer maxWidth="lg">
 				<StyledCard variant="outlined">
 					<StyledCardContent>
 						<StyledGrid container>
 							<StyledGridItem item xs={12} sm={12} md={5} lg={5} xl={5}>
-								<Stack direction="column" spacing={1.5}>
+								<StyledLeftStack direction="column" justifyContent="center" spacing={1.5}>
 									<Typography variant="h4" color="text.primary">
 										{featuresContent.left.title}
 									</Typography>
 									<Typography variant="subtitle1" color="text.primary">
-										{featuresContent.left.title}
+										{featuresContent.left.subtitle}
 									</Typography>
-								</Stack>
+									<StyledButton variant="contained">
+										buy now
+									</StyledButton>
+								</StyledLeftStack>
 
-								<StyledButton variant="contained">
-									buy now
-								</StyledButton>
 							</StyledGridItem>
 
 							<StyledGridItem item xs={12} sm={12} md={7} lg={7} xl={7}>
@@ -94,21 +101,36 @@ const ExchangeFeatures = ({featuresContent}) => {
 															<Typography variant="subtitle2" color="text.primary">
 																{el.text}
 															</Typography>
-															{
-																el.info ? (
-																	<Tooltip title="Something here" placement="top-start">
-																		<BsInfoCircle/>
-																	</Tooltip>
-																) : ""
-															}
+															<Box>
+																{
+																	el.info ? (
+																		<Tooltip
+																			title="Something here"
+																			placement="bottom-start"
+																			TransitionComponent={Fade}
+																			TransitionProps={{ timeout: 900 }}
+																			arrow
+																		>
+																			<IconButton>
+																				<BsInfoCircle
+																					style={{
+																						fontSize: "15px"
+																					}}
+																				/>
+																			</IconButton>
+																		</Tooltip>
+																	) : ""
+																}
+															</Box>
+
 														</StyledRightCardsItemTop>
 
 														<StyledRightCardsItemMain
 															direction="row"
-															textAlign="left"
+															textAlign="center"
 															spacing={3}
 														>
-															<Typography variant="h3" color="text.primary">
+															<Typography variant="h2" color="text.primary">
 																{el.number}
 															</Typography>
 															{

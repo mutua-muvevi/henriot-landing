@@ -8,6 +8,7 @@ import FundsNavigation from "./sections/navigation";
 import FundsOverview from "./sections/overview";
 import FundsParagraph from "./sections/paragraph";
 import FundsPerfomance from "./sections/perfomance";
+import FundInvestmentTerms from "./sections/terms";
 
 const StyledFundsComponent = styled(Box)(({ theme }) => ({
 	
@@ -15,14 +16,17 @@ const StyledFundsComponent = styled(Box)(({ theme }) => ({
 
 
 const FundsComponent = ({fundsItem}) => {
+
+
 	return (
 		<StyledFundsComponent>
 			<FundsComponentBanner bannerItems={fundsItem.bannerItems}/>
 			<FundsComponentFeatures featuresContent={fundsItem.featuresContent}/>
 			<FundsNavigation fundsNavigationItems={fundsItem.fundsNavigationItems}/>
-			<FundsOverview overviewItems={fundsItem.overviewItems}/>
+			<FundsOverview overviewItems={fundsItem.overviewItems} paragraph={fundsItem.overViewParagraph} />
 			<FundsParagraph fundsParagraph={fundsItem.fundsParagraph}/>
 			<FundsPerfomance chartData={fundsItem.chartData}/>
+			<FundInvestmentTerms paragraph={fundsItem.perfomanceParagraph}/>
 			<FundsDocument documentButtons={fundsItem.documentButtons}/>
 		</StyledFundsComponent>
 	)

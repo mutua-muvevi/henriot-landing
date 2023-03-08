@@ -6,7 +6,7 @@ const StyledFundsParagraph = styled(Box)(({ theme }) => ({
 }));
 
 const StyledContainer = styled(Container)(({ theme }) => ({
-
+	paddingTop: "30px"
 }));
 
 const StyledStack = styled(Stack)(({ theme }) => ({
@@ -16,8 +16,13 @@ const StyledStack = styled(Stack)(({ theme }) => ({
 
 const FundsParagraph = ({fundsParagraph}) => {
 	return (
-		<StyledFundsParagraph >
+		<StyledFundsParagraph id="paragraph">
 			<StyledContainer maxWidth="lg">
+				<Typography
+					variant="h3"
+					color="text.primary" sx={{marginBottom: "20px",}}>
+					Features
+				</Typography>
 				<StyledStack spacing={3} direction="column">
 					{
 						fundsParagraph.map((el, i) => (

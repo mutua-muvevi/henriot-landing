@@ -10,7 +10,7 @@ const StyledChart = styled(Box)(({ theme }) => ({
 
 }));
 
-const ReusableChart = ({chartData, id, xaxis, series}) => {
+const ReusableChart = ({chartData, id, xaxis, series, type}) => {
 	const theme = useTheme()
 	const PrimaryColor = theme.palette.primary.main
 	const SecondaryColor = theme.palette.secondary.main
@@ -346,10 +346,9 @@ const ReusableChart = ({chartData, id, xaxis, series}) => {
 			<Chart
 				options={chartOptions}
 				series={chartData.series}
-				type="line"
+				type={type}
 				width="100%"
 			/>
-			{console.log(chartData)}
 		</StyledChart>
 	)
 }
