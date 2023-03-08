@@ -17,7 +17,7 @@ export const navItems = [
 	},
 	{
 		label: "news",
-		path: "/landing/news",
+		path: "/landing/resources/news",
 	},
 	{
 		label: "contact",
@@ -69,15 +69,15 @@ export const menuItems = [
 		navItems: [
 			{
 				label: "News",
-				link:"/landing/news"
+				link:"/landing/resources/news"
 			},
 			{
 				label: "Research",
-				link:"/landing/news"
+				link:"/landing/resources/research"
 			},
 			{
 				label: "Learn",
-				link:"/landing/news"
+				link:"/landing/resources/learn"
 			},
 		]
 	},
@@ -86,15 +86,15 @@ export const menuItems = [
 		navItems: [
 			{
 				label: "Overview",
-				link:"/landing/news"
+				link:"/landing/resources/news"
 			},
 			{
 				label: "Careers",
-				link:"/landing/news"
+				link:"/landing/resources/news"
 			},
 			{
 				label: "FAQ",
-				link:"/landing/news"
+				link:"/landing/resources/news"
 			},
 		]
 	},
@@ -145,15 +145,15 @@ export const drawerMenuItems = {
 			navItems: [
 				{
 					label: "News",
-					link:"/landing/news"
+					link:"/landing/resources/news"
 				},
 				{
 					label: "Research",
-					link:"/landing/news"
+					link:"/landing/resources/news"
 				},
 				{
 					label: "Learn",
-					link:"/landing/news"
+					link:"/landing/resources/news"
 				},
 			]
 		},

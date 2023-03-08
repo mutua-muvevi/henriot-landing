@@ -10,7 +10,6 @@ import CEC from "./pages/funds/cec/cec";
 import Diverse from "./pages/funds/diverse/diverse";
 import FXFund from "./pages/funds/exchange/fx";
 
-import News from "./pages/news/news";
 import InvestmentProcess from "./pages/process/process";
 import Innovation from "./pages/innovation/innovation";
 import InvestmentResources from "./pages/resources/resources";
@@ -26,6 +25,10 @@ import InvestmentForex from "./pages/investment/forex/forex";
 import InvestmentEquities from "./pages/investment/equities/equities";
 import InvestmentStructuredProducts from "./pages/investment/products/products";
 import InvestmentPortfolios from "./pages/investment/portfolios/portfolios";
+
+import Research from "./pages/resources/research/research";
+import Learn from "./pages/resources/learn/learn";
+import News from "./pages/resources/news/news";
 
 //router function
 const Router = () => {
@@ -77,6 +80,21 @@ const Router = () => {
 				},
 
 
+
+				{
+					path: "/landing/resources/news",
+					element: <News/>,
+				},
+				{
+					path: "/landing/resources/research",
+					element: <Research/>,
+				},
+				{
+					path: "/landing/resources/learn",
+					element: <Learn/>,
+				},
+
+
 				
 				{
 					path: "/landing/investment-process",
@@ -94,10 +112,7 @@ const Router = () => {
 					path: "/landing/portfolio",
 					element: <Portfolio/>,	
 				},
-				{
-					path: "/landing/news",
-					element: <News/>,	
-				},
+
 				{
 					path: "/landing/contact",
 					element: <Contact/>,	

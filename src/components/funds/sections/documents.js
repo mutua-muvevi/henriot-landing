@@ -1,9 +1,9 @@
-import { Box, CardActionArea, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, CardActionArea, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import { BsFillPrinterFill } from "react-icons/bs";
-import { FaDownload } from "react-icons/fa";
-
+import { FaDownload, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const StyledFundsDocument = styled(Container)(({ theme }) => ({
@@ -21,11 +21,11 @@ const StyledGrid = styled(Grid)(({ theme }) => ({
 }));
 
 const StyledGridItem = styled(Grid)(({ theme }) => ({
-
 }));
 
 const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
-	height: "50px"
+	borderBottom: "1px solid grey",
+	height: "50px",
 }));
 
 const StyledButtonStack = styled(Stack)(({ theme }) => ({
@@ -41,14 +41,23 @@ const styledIconButton = {
 	fontSize: "20px"
 }
 
+const StyledButton = styled(Button)(({ theme }) => ({
+	marginTop: "50px"
+}))
+
+const styledLink = {
+	textDecoration: "none",
+	color: "inherit"
+}
+
 const FundsDocument = ({documentButtons}) => {
 	return (
-		<StyledFundsDocument maxWidth="lg">
+		<StyledFundsDocument maxWidth="lg" id="documents">
 			<StyledTopStack textAlign="left">
-				<Typography variant="body2" color="text.primary">
+				<Typography sx={{fontWeight: "700"}} color="text.primary">
 					Know your Fund
 				</Typography>
-				<Typography variant="h4" color="text.primary">
+				<Typography variant="h3" color="text.primary">
 					Fund Documents
 				</Typography>
 			</StyledTopStack>
@@ -76,6 +85,13 @@ const FundsDocument = ({documentButtons}) => {
 					))
 				}
 			</StyledGrid>
+
+			<Link to="/landing/resources/research" style={styledLink}>
+				<StyledButton variant="contained" endIcon={<FaArrowRight/>}>
+					View All
+				</StyledButton>
+			</Link>
+
 		</StyledFundsDocument>
 	)
 }

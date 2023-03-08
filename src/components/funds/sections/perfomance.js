@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/system';
+
 
 import ReusableLineChart from '../../chart/chart';
 
@@ -12,19 +13,20 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 
 const StyledChartSection = styled(Box)(({ theme }) => ({
 	marginTop: "50px"
-}))
+}));
 
 const FundsPerfomance = ({chartData}) => {
 
 	return (
-		<StyledContainer maxWidth="lg">
-			<Typography variant="h3">
+		<StyledContainer maxWidth="lg" id="perfomance">
+			<Typography variant="h3" sx={{marginBottom: "30px"}}>
 				Perfomance
 			</Typography>
 
 			<StyledChartSection>
-				<ReusableLineChart chartData={chartData}/>
+				<ReusableLineChart type="line" chartData={chartData}/>
 			</StyledChartSection>
+
 		</StyledContainer>
 	);
 }

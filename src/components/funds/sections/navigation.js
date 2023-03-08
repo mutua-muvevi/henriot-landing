@@ -1,13 +1,14 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { HashLink } from 'react-router-hash-link';
+
+import { Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import { Link } from "react-router-dom";
 
 const StyledFundsNavigation = styled(Container)(({ theme }) => ({
 	marginBottom: "20px"
 }));
 
 const StyledNavStack = styled(Stack)(({ theme }) => ({
-
+	borderBottom: "3px solid grey"
 }));
 
 const styledLink = {
@@ -16,6 +17,7 @@ const styledLink = {
 }
 
 const FundsNavigation = ({fundsNavigationItems}) => {
+
 	return (
 		<StyledFundsNavigation maxWidth="lg">
 			<StyledNavStack
@@ -25,11 +27,12 @@ const FundsNavigation = ({fundsNavigationItems}) => {
 			>
 				{
 					fundsNavigationItems.map((el, i) => (
-						<Link to={el.label} key={i} style={styledLink}>
-							<Typography variant="subtitle1" sx={{textTransform:"uppercase"}}>
+						<HashLink smooth to={el.link} key={i} style={styledLink} >
+							<Typography variant="h6" color="primary" sx={{textTransform:"uppercase"}}>
 								{el.label}
 							</Typography>
-						</Link>
+							
+						</HashLink>
 					))
 				}
 			</StyledNavStack>

@@ -80,7 +80,6 @@ const DropdownMenu = ({ menuItems }) => {
 						<MenuItem key={index} onClick={handleClose}>
 							<Typography variant="subtitle2" color="text.primary"  style={{textTransform: "uppercase"}}>
 								{item.label}
-								{console.log(item)}
 							</Typography>
 						</MenuItem>
 					</NavLink>
