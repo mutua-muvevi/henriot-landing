@@ -42,7 +42,7 @@ const FundsOverview = ({overviewItems, paragraph}) => {
 											</Typography>
 											{
 												el.paragraphs.map((p, index) => (
-													<Typography key={index} variant="subtitle2" color="text.secondary">
+													<Typography key={index} variant="subtitle2" color="text.secondary" textAlign="justify">
 														{p}
 													</Typography>
 												))
@@ -65,7 +65,7 @@ const FundsOverview = ({overviewItems, paragraph}) => {
 									<Typography variant="h5" color="text.primary">
 										{el.title} : 
 									</Typography>
-									<Typography variant="subtitle2" color="text.secondary" sx={{ml:"30px"}}>
+									<Typography variant="h5" color="text.secondary" sx={{ml:"30px"}}>
 										{el.text}
 									</Typography>
 								</StyledContentRightStack>

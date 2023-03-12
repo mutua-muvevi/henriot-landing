@@ -5,6 +5,7 @@ import { styled } from '@mui/system';
 
 
 import ReusableLineChart from '../../chart/chart';
+import FundInvestmentTerms from './terms';
 
 const StyledContainer = styled(Container)(({ theme }) => ({
 	marginTop: "30px",
@@ -15,7 +16,7 @@ const StyledChartSection = styled(Box)(({ theme }) => ({
 	marginTop: "50px"
 }));
 
-const FundsPerfomance = ({chartData}) => {
+const FundsPerfomance = ({chartData, paragraph}) => {
 
 	return (
 		<StyledContainer maxWidth="lg" id="perfomance">
@@ -26,7 +27,7 @@ const FundsPerfomance = ({chartData}) => {
 			<StyledChartSection>
 				<ReusableLineChart type="line" chartData={chartData}/>
 			</StyledChartSection>
-
+			<FundInvestmentTerms paragraph={paragraph}/>
 		</StyledContainer>
 	);
 }
