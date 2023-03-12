@@ -50,7 +50,8 @@ const StyledRightCardsSection = styled(Box)(({ theme }) => ({
 const StyledRightCardsItem = styled(Box)(({ theme }) => ({
 	border: "1px solid grey",
 	borderRadius: "5px",
-	padding: "10px"
+	padding: "10px",
+	height: "140px"
 }));
 
 
@@ -72,7 +73,7 @@ const ExchangeFeatures = ({featuresContent}) => {
 					<StyledCardContent>
 						<StyledGrid container>
 							<StyledGridItem item xs={12} sm={12} md={5} lg={5} xl={5}>
-								<StyledLeftStack direction="column" justifyContent="center" spacing={1.5}>
+								<StyledLeftStack direction="column" justifyContent="center" alignItems="center" spacing={1.5}>
 									<Typography variant="h4" color="text.primary">
 										{featuresContent.left.title}
 									</Typography>

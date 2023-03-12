@@ -2,7 +2,6 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 const StyledFundInvestmentTerms = styled(Box)(({ theme }) => ({
-	backgroundColor: theme.palette.background.neutral,
 	paddingTop: "30px",
 	paddingBottom: "30px",
 }))
@@ -19,7 +18,7 @@ const FundInvestmentTerms = ({paragraph}) => {
 		<StyledFundInvestmentTerms id="terms">
 
 			<StyledContainer maxWidth="lg">
-				<Typography variant="h3" color="text.primary" sx={{marginBottom: "30px"}}>
+				<Typography variant="body2" color="text.primary" sx={{marginBottom: "30px",fontWeight: "900"}}>
 					Disclaimer
 				</Typography>
 				
@@ -30,7 +29,7 @@ const FundInvestmentTerms = ({paragraph}) => {
 									paragraph.map((el, i) => (
 										<Typography
 											key={i}
-											variant="body1"
+											variant="caption"
 											color="text.secondary"
 											sx={{
 												fontWeight: i === 0 ? "700" : "500",
