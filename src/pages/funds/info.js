@@ -1,4 +1,8 @@
 import { BsFileEarmarkSpreadsheetFill } from "react-icons/bs";
+import FundsInvestmentCase from "../../assets/documents/Henriot_Investment_Management_Ltd_-Deck_Q4_2022.pdf";
+import FundsHoldingCSV from "../../assets/documents/Fund_Holdings_CSV.xlsx";
+import FundsHoldingPDF from "../../assets/documents/Fund_Holdings_PDF.pdf";
+import SummaryProspectus from "../../assets/documents/Henriot_Investment_Memorandum.pdf";
 
 const styledIcon={
 
@@ -23,32 +27,32 @@ export const foreignExchangefundsItem = {
 		right : {
 			cards : [
 				{
-					number: "$100,000",
-					text:"Assets Under Management",
-					caption: "As of 7th March 2023",
+					number: "10%",
+					text:"Monthly Returns",
+					caption: "Average, based on past performance",
 					sideCaption: "",
-					info: "Some important info here",
+					info: "Monthly Return (MoM) is average month to month returns since inception",
 				},
 				{
-					text: "YTD Return",
-					number:"27.6%",
-					caption: "As of 7th March 2023",
+					text: "Yearly Return",
+					number:"220%",
+					caption: "Based on past performance average (140-300%)",
 					sideCaption: "",
-					info: "Some important info here",
+					info: "YTD(year to date). The time period starting from the beginning of the current calender year and continuing up to the current date",
 				},
 				{
-					text: "Since Inception",
-					number:"356%",
-					caption: "As of 7th March 2023",
+					text: "Quartely Returns",
+					number:"65%",
+					caption: "May deviate between 30%-100%",
 					sideCaption: "",
-					info: "Some important info here",
+					info: "Quartely Return (MoM) is average Quartely returns since inception",
 				},
 				{
-					text: "Trailing 12 Months",
-					number:"40.1%",
-					caption: "As of 7th March 2023",
+					text: "Drawdown",
+					number:"30%",
+					caption: "Losing months are rare, but floating draw-downs can occur",
 					sideCaption: "",
-					info: "Some important info here",
+					info: "The highest amount of losses at one particular time",
 				},
 			],
 			button: [
@@ -90,31 +94,35 @@ export const foreignExchangefundsItem = {
 	],
 	overviewItems : [
 		{
-			title: "Private Benchmark Index",
-			text: "ACMTFX"
+			title: "Equity",
+			text: "$ 0.2mln"
 		},
 		{
-			title: "AUM",
-			text: "$10,931,577.40"
+			title: "All Time High",
+			text: "280%"
 		},
 		{
-			title: "Instruments",
-			text: "21"
+			title: "Max Historic DD",
+			text: "35%"
 		},
 		{
-			title: "Average Position Period",
-			text: "12 Months"
+			title: "Yearly Profit",
+			text: "135%"
 		},
 		{
-			title: "Inception Date",
-			text: "12/03/16"
+			title: "Targeted Yearly Net",
+			text: "100%"
+		},
+		{
+			title: "Acceptable DD",
+			text: "40%"
 		},
 	],
 	overViewParagraph: [
 		{
-			title: "Fund Objective",
+			title: "",
 			paragraphs: [
-				`ARKK is an actively managed Exchange Traded Fund (ETF) that seeks long-term growth of capital by investing under normal circumstances primarily (at least 65% of its assets) in domestic and foreign equity securities of companies that are relevant to the Fund’s investment theme of disruptive innovation.`,
+				`The HG alpha is an actively managed Forex Fund that seeks long-term growth of capital by investing under normal circumstances primarily (at least 65% of its assets) in major Global currencies across the world. The HG alpha runs a set of sophisticated Algorithms that work simultaneously to yield positive returns.`,
 			],
 			list: [
 				``
@@ -123,8 +131,7 @@ export const foreignExchangefundsItem = {
 		{
 			title: "Fund Description",
 			paragraphs: [
-				`ARK defines ‘‘disruptive innovation’’ as the introduction of a technologically enabled new product or service that potentially changes the way the world works.`,
-				`Companies within ARKK include those that rely on or benefit from the development of new products or services, technological improvements and advancements in scientific research relating to the areas of:`,
+				`The H-alpha Fund uses an approach that focuses on intra-day, intra-week and sometimes longer timeframes trading to catch longer trends, as well as high impact news trading. With the volatility on the rise, the approach has been so far handling both market swings (New trading) and longer-term upward and downward trends (momentum). The Fund takes into account market structure, and focuses on switching between, momentum and swing trading.`,
 			],
 			list: [
 				`DNA Technologies and the “Genomic Revolution”`,
@@ -158,27 +165,33 @@ export const foreignExchangefundsItem = {
 	documentButtons: [
 		{
 			label: "Fact Sheet",
-			action: ""
+			action: "",
+			path:""
 		},
 		{
 			label: "Investment Case",
-			action: ""
+			action: "",
+			path: FundsInvestmentCase
 		},
 		{
 			label: "Summary Prospectus",
-			action: ""
+			action: "",
+			path: SummaryProspectus
 		},
 		{
 			label: "Fund Holdings CSV",
-			action: ""
+			action: "",
+			path: FundsHoldingCSV
 		},
 		{
 			label: "Quaterly Report",
-			action: ""
+			action: "",
+			path: ""
 		},
 		{
 			label: "Fund Holdings PDF",
-			action: ""
+			action: "",
+			path: FundsHoldingPDF
 		},
 	],
 

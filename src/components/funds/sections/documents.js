@@ -51,6 +51,7 @@ const styledLink = {
 }
 
 const FundsDocument = ({documentButtons}) => {
+
 	return (
 		<StyledFundsDocument maxWidth="lg" id="documents">
 			<StyledTopStack textAlign="left">
@@ -66,7 +67,9 @@ const FundsDocument = ({documentButtons}) => {
 				{
 					documentButtons.map((el, i) => (
 						<StyledGridItem item xs={12} sm={6} key={i}>
-							<StyledCardActionArea>
+							<StyledCardActionArea onClick={() => {
+								window.open(el.path, "_blank")
+							}}>
 								<StyledButtonStack direction="row" alignItems="center" justifyContent="space-between">
 									<Stack spacing={3} direction="row" alignItems="center">
 										<StylediconButtonContainer>
