@@ -18,13 +18,13 @@ const FundInvestmentTerms = ({paragraph}) => {
 		<StyledFundInvestmentTerms id="terms">
 
 			<StyledContainer maxWidth="lg">
-				<Typography variant="body2" color="text.primary" sx={{marginBottom: "30px",fontWeight: "900"}}>
+				<Typography variant="body2" color="text.primary" sx={{marginBottom: "10px",fontWeight: "900"}}>
 					Disclaimer
 				</Typography>
 				
 				{
 					paragraph ? (
-							<Stack spacing={3}>
+							<Stack spacing={1}>
 								{
 									paragraph.map((el, i) => (
 										<Typography

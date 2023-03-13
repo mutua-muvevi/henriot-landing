@@ -3,7 +3,7 @@ import { styled } from "@mui/system";
 
 const StyledFundsOverview = styled(Container)(({ theme }) => ({
 	minHeight: "20vh",
-	paddingBottom: "30px"
+	paddingBottom: "70px"
 }));
 
 const StyledGrid = styled(Grid)(({ theme }) => ({

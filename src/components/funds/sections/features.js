@@ -51,7 +51,7 @@ const StyledRightCardsItem = styled(Box)(({ theme }) => ({
 	border: "1px solid grey",
 	borderRadius: "5px",
 	padding: "10px",
-	height: "140px"
+	height: "150px"
 }));
 
 
@@ -72,7 +72,7 @@ const ExchangeFeatures = ({featuresContent}) => {
 				<StyledCard variant="outlined">
 					<StyledCardContent>
 						<StyledGrid container>
-							<StyledGridItem item xs={12} sm={12} md={5} lg={5} xl={5}>
+							<StyledGridItem item xs={12} sm={12} md={4} lg={4} xl={4}>
 								<StyledLeftStack direction="column" justifyContent="center" alignItems="center" spacing={1.5}>
 									<Typography variant="h4" color="text.primary">
 										{featuresContent.left.title}
@@ -87,7 +87,7 @@ const ExchangeFeatures = ({featuresContent}) => {
 
 							</StyledGridItem>
 
-							<StyledGridItem item xs={12} sm={12} md={7} lg={7} xl={7}>
+							<StyledGridItem item xs={12} sm={12} md={8} lg={8} xl={8}>
 								<StyledRightCardsSection>
 									<Grid container spacing={3}>
 										{
@@ -106,7 +106,7 @@ const ExchangeFeatures = ({featuresContent}) => {
 																{
 																	el.info ? (
 																		<Tooltip
-																			title="Something here"
+																			title={el.info}
 																			placement="bottom-start"
 																			TransitionComponent={Fade}
 																			TransitionProps={{ timeout: 900 }}
