@@ -144,7 +144,7 @@ const ExchangeFeatures = ({featuresContent}) => {
 														</StyledRightCardsItemMain>
 														{
 															el.caption ? (
-																<Typography variant="body1" color="text.primary">
+																<Typography variant="body1" color="text.secondary" sx={{fontStyle:"italic"}}>
 																	{el.caption}
 																</Typography>
 															) : ""

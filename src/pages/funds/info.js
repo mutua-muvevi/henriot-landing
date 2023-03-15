@@ -12,7 +12,7 @@ export const foreignExchangefundsItem = {
 	bannerItems : {
 		videoLink: "https://res.cloudinary.com/dqweh6zte/video/upload/v1677246028/henriot/video_vvjwad.mp4",
 		title: "FOREIGN EXCHANGE FUND",
-		subtitle: "Don't miss out on the Global opportunity. Maximize your investments with Henriot's Thematic Portfolios.",
+		subtitle: "Don't miss out on the Global opportunity. Maximize your investments with H-alpha Foreign Exchange Fund.",
 		button: {
 			label: "Buy",
 			action: ""
