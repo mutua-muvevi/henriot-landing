@@ -2,13 +2,11 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 const StyledFundInvestmentTerms = styled(Box)(({ theme }) => ({
-	paddingTop: "30px",
 	paddingBottom: "30px",
 }))
 
 
 const StyledContainer = styled(Container)(({ theme }) => ({
-	marginTop: "30px",
 	marginBottom: "30px",
 }));
 

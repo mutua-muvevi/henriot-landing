@@ -29,7 +29,7 @@ const FundsOverview = ({overviewItems, paragraph}) => {
 			<Typography variant="h3" color="text.primary" sx={{marginBottom: "20px"}}>
 				Overview
 			</Typography>
-			<StyledGrid container spacing={3}>
+			<StyledGrid container columnSpacing={15} rowSpacing={3}>
 				{
 					paragraph ? (
 						<StyledGridItem item xs={12} sm={12} md={12} lg={6} xl={6}>
