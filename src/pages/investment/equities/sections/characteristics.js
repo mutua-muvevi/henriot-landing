@@ -49,7 +49,7 @@ const EquityCharacteristics = () => {
 					characteristics.map((el, i) => (
 						<StyledGridItem item xs={12} sm={12} md={6} lg={6} xl={6} key={i}>
 							<Typography style={styledHugeFont} color="primary">
-								0{i}
+								0{i+1}
 							</Typography>
 							<Typography variant="h5" color="text.primary" sx={{ml:"30px", fontWeight: "800"}}>
 								{el.bolded} <span style={{color: "grey", fontWeight: "700"}}>{el.normal}</span>
