@@ -1,3 +1,6 @@
+import { FaBrain, FaCloudDownloadAlt, FaNetworkWired, FaTv, FaRobot } from "react-icons/fa";
+import { MdSendToMobile } from "react-icons/md";
+
 const BlogImage = "https://res.cloudinary.com/dqweh6zte/image/upload/v1679043191/henriot/pexels-%E6%B4%8B%E6%A6%A4-%E9%83%AD-2399840_re8cvb.jpg"
 
 export const equitiesData = [
@@ -31,6 +34,87 @@ export const otherFunds = {
 		image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
 	}
 }
+
+const styledIcons = {
+	fontSize:"50px"
+}
+
+export const focus = {
+	icons: [
+		{
+			icon: <FaBrain style={styledIcons}/>,
+			title: "Artificial Inteligence"
+		},
+		{
+			icon: <FaCloudDownloadAlt style={styledIcons}/>,
+			title: "Cloud computing"
+		},
+		{
+			icon: <FaTv style={styledIcons}/>,
+			title: "Digital Media"
+		},
+		{
+			icon: <FaNetworkWired style={styledIcons}/>,
+			title: "IoT"
+		},
+		{
+			icon: <MdSendToMobile style={styledIcons}/>,
+			title: "Mobile Payments"
+		},
+		{
+			icon: <FaRobot style={styledIcons}/>,
+			title: "Cloud computing"
+		},
+	],
+	overview : [
+		{
+			key: "Type",
+			value: "Active Equity"
+		},
+		{
+			key: "Typical # of Holding",
+			value: "35-50"
+		},
+		{
+			key: "Inception",
+			value: "Sept. 2014"
+		},
+		{
+			key: "Portfolio Manager",
+			value: "Catherine Wood"
+		},
+		{
+			key: "Analysts",
+			value: "Nick Grous Yassine Elmandjra"
+		},
+	],
+	description: {
+		title: "Decription",
+		paragraphs: [
+			`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+		]
+	}
+}
+
+//characteristics
+export const characteristics = [
+	{
+		bolded: "Actively managed,",
+		normal:"high conviction portfolio"
+	},
+	{
+		bolded: "Cross sector,",
+		normal:"geographies, and market capitalizations"
+	},
+	{
+		bolded: "Benchmark agnostic,",
+		normal:"with low overlap to broad market indicies"
+	},
+	{
+		bolded: "Research processr,",
+		normal:"driven by ARK’s Open Research Ecosystem"
+	},
+]
 
 //research blogs
 export const researchBlogs = [
