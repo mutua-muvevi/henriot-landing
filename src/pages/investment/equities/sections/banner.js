@@ -39,6 +39,9 @@ const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
 		paddingLeft: theme.spacing(3),
 		paddingRight: theme.spacing(3),
 	},
+	[theme.breakpoints.down("sm")]: {
+		minHeight:"40vh"
+	},
 	[theme.breakpoints.up("md")]: {
 		paddingLeft: theme.spacing(4),
 		paddingRight: theme.spacing(4),
