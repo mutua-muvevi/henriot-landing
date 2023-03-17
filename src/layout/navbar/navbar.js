@@ -182,24 +182,26 @@ const Navigation = () => {
 					</Toolbar>
 				</TopAppBar>
 				) : (
-					<TopAppBar>
-						<Container maxWidth="lg">
-							<Stack direction="row" justifyContent="space-between" alignItems="center">
-								<img src={logo} alt="Henriot mobile logo" style={styledMobileLogo}/>
-								<IconButton
-									size="large"
-									aria-label="account of current user"
-									aria-controls="menu-appbar"
-									aria-haspopup="true"
-									onClick={handleMobileNav}
-									color="inherit"
-									// sx={iconButtonSX}
-								>
-									<FaBars/>
-								</IconButton>
-							</Stack>
-						</Container>
-					</TopAppBar>
+					<Box sx={{marginBottom: "52px"}}>
+						<TopAppBar >
+							<Container maxWidth="lg">
+								<Stack direction="row" justifyContent="space-between" alignItems="center">
+									<img src={logo} alt="Henriot mobile logo" style={styledMobileLogo}/>
+									<IconButton
+										size="large"
+										aria-label="account of current user"
+										aria-controls="menu-appbar"
+										aria-haspopup="true"
+										onClick={handleMobileNav}
+										color="inherit"
+										// sx={iconButtonSX}
+									>
+										<FaBars/>
+									</IconButton>
+								</Stack>
+							</Container>
+						</TopAppBar>
+					</Box>
 				)
 
 			}

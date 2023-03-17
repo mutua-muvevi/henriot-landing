@@ -29,6 +29,7 @@ const FundInvestmentTerms = ({paragraph}) => {
 											key={i}
 											variant="caption"
 											color="text.secondary"
+											textAlign="justify"
 											sx={{
 												fontWeight: i === 0 ? "700" : "500",
 												color: i === 0 ? "#000000" : "",

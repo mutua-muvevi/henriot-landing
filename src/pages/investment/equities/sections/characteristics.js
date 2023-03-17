@@ -9,7 +9,9 @@ const StyledGContainer = styled(Container)(({ theme }) => ({
 	display: "flex",
 	flexDirection: "column",
 	justifyContent: "center",
-	alignItems: "flex-start"
+	alignItems: "flex-start",
+	paddingTop: "30px",
+	paddingBottom: "30px"
 }));
 
 const StyledGrid = styled(Grid)(({ theme }) => ({

@@ -35,7 +35,7 @@ const Footer = () => {
 					</Typography>
 					{
 						footerParagraph.map((el, i) => (
-								<Typography variant="subtitle1" key={i}>
+								<Typography variant="subtitle1" textAlign="justify" key={i}>
 									{el}
 								</Typography>
 						))

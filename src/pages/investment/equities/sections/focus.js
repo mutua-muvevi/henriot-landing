@@ -9,7 +9,9 @@ const StyledGContainer = styled(Container)(({ theme }) => ({
 	display: "flex",
 	flexDirection: "column",
 	alignItems: "left",
-	justifyContent: "center"
+	justifyContent: "center",
+	paddingTop: "30px",
+	paddingBottom: "30px"
 }));
 
 const StyledIconGrid = styled(Grid)(({ theme }) => ({
@@ -88,21 +90,18 @@ const EquityFocus = () => {
 				</StyledContentGridItem>
 
 				<StyledContentGridItem item xs={12} sm={12} md={12} lg={6} xl={6}>
-
-				<StyledContentGridItem item xs={12} sm={12} md={12} lg={6} xl={6}>
-					<Stack direction="column" textxAlign="left" spacing={3}>
+					<Stack direction="column" textAlign="left" spacing={3}>
 						<Typography variant="h4" color="text.primary">
 							{focus.description.title}
 						</Typography>
 						{
 							focus.description.paragraphs.map((el, i) => (
-								<Typography variant="subtitle2" color="text.secondary" key={i}>
+								<Typography variant="subtitle2" color="text.secondary" key={i} textAlign="justify">
 									{el}
 								</Typography>
 							))
 						}
 					</Stack>
-				</StyledContentGridItem>
 				</StyledContentGridItem>
 			</StyledContentGrid>
 		</StyledGContainer>

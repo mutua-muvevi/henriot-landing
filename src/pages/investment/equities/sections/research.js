@@ -7,7 +7,9 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { researchBlogs } from "../info";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
-	backgroundColor: theme.palette.background.neutral
+	backgroundColor: theme.palette.background.neutral,
+	paddingTop: "30px",
+	paddingBottom: "30px"
 }))
 
 const StyledGContainer = styled(Container)(({ theme }) => ({

@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
-import { otherFunds } from "./info";
 import EquitiesBanner from "./sections/banner";
 import EquityCharacteristics from "./sections/characteristics";
 import EquityFocus from "./sections/focus";
 import EquityResearch from "./sections/research";
+
 
 const StyledInvestmentEquities = styled(Box)(({ theme }) => ({
 
@@ -33,10 +33,7 @@ const InvestmentEquities = () => {
 
 	return (
 		<StyledInvestmentEquities>
-			<EquitiesBanner 
-				bannerContent={otherFunds.banner}
-				strategy={strategies}
-			/>
+			<EquitiesBanner/>
 			<EquityFocus/>
 			<EquityCharacteristics/>
 			<EquityResearch/>
