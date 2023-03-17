@@ -30,7 +30,8 @@ const EquitiesBanner = ({ bannerContent, strategies }) => {
 
 	return (
 		<StyledGContainer maxWidth="lg">
-			<StyledGridWrapper container>
+			Equity banner
+			{/* <StyledGridWrapper container>
 				<StyledGridItem item xs={12} lg={6.3}>
 					<StyledStackContent
 						direction="column"
@@ -69,7 +70,7 @@ const EquitiesBanner = ({ bannerContent, strategies }) => {
 						style={styledImage}
 					/>
 				</StyledGridItem>
-			</StyledGridWrapper>
+			</StyledGridWrapper> */}
 		</StyledGContainer>
 	)
 }
