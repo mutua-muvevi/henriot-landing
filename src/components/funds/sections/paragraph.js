@@ -26,7 +26,7 @@ const FundsParagraph = ({fundsParagraph}) => {
 				<StyledStack spacing={3} direction="column">
 					{
 						fundsParagraph.map((el, i) => (
-							<Typography variant="subtitle2" key={i}>
+							<Typography variant="subtitle2" key={i} textAlign="justify">
 								{el}
 							</Typography>
 						))
