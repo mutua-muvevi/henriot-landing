@@ -75,7 +75,7 @@ const EquityFocus = ({focus}) => {
 							{
 								focus.overview.map((el, i) => (
 									<Stack key={i} spacing={3} direction="row">
-										<Typography variant="subtitle1" color="text.primary" sx={{flex:1}}>
+										<Typography variant="subtitle1" color="text.primary" sx={{flex:2}}>
 											{el.key}
 										</Typography>
 										<Typography variant="subtitle1" color="text.secondary" sx={{flex:3}}>
