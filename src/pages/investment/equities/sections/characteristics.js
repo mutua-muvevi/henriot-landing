@@ -1,8 +1,8 @@
 
 import { Container, Grid, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/system';
+import { connect } from 'react-redux';
 
-import { characteristics } from '../info';
 
 const StyledGContainer = styled(Container)(({ theme }) => ({
 	minHeight: "60vh",
@@ -33,19 +33,20 @@ const styledHugeFont = {
 	lineHeight: "70%"
 }
 
-const EquityCharacteristics = () => {
+const EquityCharacteristics = ({characteristics}) => {
 
 
 	return (
 		<StyledGContainer maxWidth="lg">
 			<Stack textAlign="left">
 				<Typography variant="h3" color="text.primary">
-					Strategy Characteristics
+					Characteristics
 				</Typography>
 			</Stack>
 			
 			<StyledGrid container spacing={3}>
 				{
+					characteristics ?
 					characteristics.map((el, i) => (
 						<StyledGridItem item xs={12} sm={12} md={6} lg={6} xl={6} key={i}>
 							<Typography style={styledHugeFont} color="primary">
@@ -55,7 +56,7 @@ const EquityCharacteristics = () => {
 								{el.bolded} <span style={{color: "grey", fontWeight: "700"}}>{el.normal}</span>
 							</Typography>
 						</StyledGridItem>
-					))
+					)) : ""
 				}
 			</StyledGrid>
 
@@ -63,5 +64,8 @@ const EquityCharacteristics = () => {
 	)
 }
 
+const mapStateToProps = ({ investmentEquity }) => ({
+	characteristics : investmentEquity.data.reduxValue.characteristics
+})
 
-export default EquityCharacteristics
+export default connect(mapStateToProps)(EquityCharacteristics)

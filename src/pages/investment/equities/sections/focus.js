@@ -1,8 +1,7 @@
 
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/system';
-
-import { focus } from '../info';
+import { connect } from 'react-redux';
 
 const StyledGContainer = styled(Container)(({ theme }) => ({
 	minHeight: "60vh",
@@ -41,7 +40,7 @@ const StyledContentGridItem = styled(Grid)(({ theme }) => ({
 
 }));
 
-const EquityFocus = () => {
+const EquityFocus = ({focus}) => {
 
 
 	return (
@@ -57,7 +56,7 @@ const EquityFocus = () => {
 								<StyledIconBox>
 									{el.icon}
 								</StyledIconBox>
-								<Typography variant="h6" color="text.primary">
+								<Typography variant="h6" color="text.primary" textAlign="center">
 									{el.title}
 								</Typography>
 							</Stack>
@@ -108,5 +107,8 @@ const EquityFocus = () => {
 	)
 }
 
+const mapStateToProps = ({ investmentEquity }) => ({
+	focus : investmentEquity.data.reduxValue.focus
+})
 
-export default EquityFocus
+export default connect(mapStateToProps)(EquityFocus)

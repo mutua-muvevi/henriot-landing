@@ -3,24 +3,33 @@ import { Button, Menu, MenuItem, Stack, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { styled } from "@mui/system";
+import { selectData } from "../redux/action/equity";
+import { connect } from "react-redux";
 
 const StyledTextIconStack = styled(Stack)(({ theme }) => ({
 	colort: theme.palette.primary.main
 }))
 
 
-const ReusableTextDropDown = ({ options }) => {
+const ReusableTextDropDown = ({ options, setData }) => {
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [values, setValues] = useState(options[0])
 	const theme = useTheme()
 	
 	const handleClick = (e) => {
 		setAnchorEl(e.currentTarget);
+		
+		if(options.reduxValue){
+			
+			
+			// setData()
+		}
 	};
 	
 	const handleClose = () => {
 		setAnchorEl(null);
 	};
+
 	
 	
 	const isOpen = Boolean(anchorEl);
@@ -39,9 +48,10 @@ const ReusableTextDropDown = ({ options }) => {
 			</StyledTextIconStack>
 			<Menu anchorEl={anchorEl} open={isOpen} onClose={handleClose}>
 				{options.map((option, i) => (
-					<MenuItem key={option.value} onClick={() => {
+					<MenuItem key={i} onClick={() => {
 						setValues(option)
 						setAnchorEl(null);
+						setData(option)
 					}}>
 						{option.label}
 					</MenuItem>
@@ -51,4 +61,12 @@ const ReusableTextDropDown = ({ options }) => {
 	);
 }
 
-export default ReusableTextDropDown
+const mapStateToProps = () => ({
+
+})
+
+const mapDispatchtoProps = (dispatch) => ({
+	setData: (option) => dispatch(selectData(option))
+})
+
+export default connect(mapStateToProps, mapDispatchtoProps)(ReusableTextDropDown)

@@ -1,5 +1,7 @@
-import { FaBrain, FaCloudDownloadAlt, FaNetworkWired, FaTv, FaRobot } from "react-icons/fa";
+import { FaBrain, FaCar,  FaCloudDownloadAlt, FaNetworkWired, FaTv, FaRobot, FaBitcoin } from "react-icons/fa";
+import { BsPrinterFill } from "react-icons/bs"
 import { MdSendToMobile } from "react-icons/md";
+import { GiDeliveryDrone } from "react-icons/gi"
 
 const BlogImage = "https://res.cloudinary.com/dqweh6zte/image/upload/v1679043191/henriot/pexels-%E6%B4%8B%E6%A6%A4-%E9%83%AD-2399840_re8cvb.jpg"
 
@@ -15,7 +17,12 @@ export const equitiesData = [
 	}
 ]
 
-const options = [
+
+const styledIcons = {
+	fontSize:"50px"
+}
+
+const dropDown = [
 	{
 		label: "Market disruptor",
 		value: "market-disruptor"
@@ -82,6 +89,1444 @@ const options = [
 	},
 ]
 
+
+export const investmentEquityData = {
+	marketDisruptor: {
+		banner: {
+			title: "Henriot Disruptive innovation",
+			paragraph:"Aims to provide broad exposure to disruptive innovation. Henriot believes innovations centered around artificial intelligence, robotics, energy storage, DNA sequencing, and blockchain technology will change the way the world works and deliver outsized growth as industries transform.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Disruptive innovation"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	dnaGameChanger: {
+		banner: {
+			title: "DNA game changer",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	financeFrontier: {
+		banner: {
+			title: "Finance froontier",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	futureFabrication: {
+		banner: {
+			title: "Future fabrication",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	cryptoCraze: {
+		banner: {
+			title: "Crypto craze",
+			paragraph:"ARK believes public blockchains are powering novel forms of coordination across finance and the internet. The Investment Manager believes that cryptocurrency value and market share dynamics will be “power law distributed,” meaning that a few cryptocurrencies will capture the majority of value.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBitcoin style={styledIcons}/>,
+					title: "Crypto currencies"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active SMA"
+				},
+				{
+					key: "Investment manager",
+					value: "ARK Investment Management LLC"
+				},
+				{
+					key: "Analysts",
+					value: "Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`In addition to providing the foundation for digital money, public blockchains are powering novel forms of coordination across finance and the internet. By decentralizing institutions with open-source software, public blockchains minimize the need to trust centralized authorities. In finance, cryptoassets issued on public blockchains are facilitating the coordination of financial services and contracts outside the purview of traditional financial institutions. On the internet, cryptoassets issued on public blockchains are facilitating the coordination of identity, reputation, and data outside the purview of traditional media conglomerates and big tech. These forms of coordination are likely to impact all asset classes. Just as the internet turned information into packets online, we believe public blockchains are likely to turn all assets into transactions on-chain.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	augmentedReality: {
+		banner: {
+			title: "Augmented reality",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	decentralizedWeb3: {
+		banner: {
+			title: "Decentralized web 3",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	intelligentMachine: {
+		banner: {
+			title: "Intelligent machine",
+			paragraph:"Seeks to provide exposure to autonomous mobility, electric vehicles, robotics and automation, 3D printing, and space exploration. Advancements in these areas are enhancing productivity while reducing costs and transforming manufacturing, production, and infrastructure.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Inteligent Machines"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Robotics"
+				},
+				{
+					icon: <BsPrinterFill style={styledIcons}/>,
+					title: "3D Printing"
+				},
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Autonomous Technology"
+				},
+				{
+					icon: <FaCar style={styledIcons}/>,
+					title: "Autonomous Vehicles"
+				},
+				{
+					icon: <GiDeliveryDrone style={styledIcons}/>,
+					title: "Aerial Drones"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "MaaS"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "30-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Tasha Keeney Sam Korus"
+				},
+			],
+			description: {
+				title: "Strategy decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in the US listed securities, including ADRs, of companies focused on autonomous technology and robotics. Companies within this strategy aim to capture the substantial benefits of new products and services associated with scientific research and technological break-throughs in energy storage, transportation, automation and manufacturing, and materials, among other industries.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	galacticAdventure: {
+		banner: {
+			title: "Galactic adventure",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	siliconWadi: {
+		banner: {
+			title: "Silicon Wadi",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	digitalGold: {
+		banner: {
+			title: "Digital gold",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	futureUnicorns: {
+		banner: {
+			title: "Future Uniforms",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	onDemandMobility: {
+		banner: {
+			title: "On Demand Mobility",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	sustainableInvestment: {
+		banner: {
+			title: "Sustainable Investment",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+	otherFunds: {
+		banner: {
+			title: "other funds",
+			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			breadcrumbsItem: {
+				items: [
+					{
+						label: "Home",
+						link: "/landing/main"
+					},
+				],
+				last: {
+					label: "Other funds"
+				}
+			},
+			dropDown: dropDown,
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+		},
+		focus: {
+			icons: [
+				{
+					icon: <FaBrain style={styledIcons}/>,
+					title: "Artificial Inteligence"
+				},
+				{
+					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+				{
+					icon: <FaTv style={styledIcons}/>,
+					title: "Digital Media"
+				},
+				{
+					icon: <FaNetworkWired style={styledIcons}/>,
+					title: "IoT"
+				},
+				{
+					icon: <MdSendToMobile style={styledIcons}/>,
+					title: "Mobile Payments"
+				},
+				{
+					icon: <FaRobot style={styledIcons}/>,
+					title: "Cloud computing"
+				},
+			],
+			overview : [
+				{
+					key: "Type",
+					value: "Active Equity"
+				},
+				{
+					key: "Typical # of Holding",
+					value: "35-50"
+				},
+				{
+					key: "Inception",
+					value: "Sept. 2014"
+				},
+				{
+					key: "Portfolio Manager",
+					value: "Catherine Wood"
+				},
+				{
+					key: "Analysts",
+					value: "Nick Grous Yassine Elmandjra"
+				},
+			],
+			description: {
+				title: "Decription",
+				paragraphs: [
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+				]
+			}
+		},
+		characteristics: [
+			{
+				bolded: "Actively managed,",
+				normal:"high conviction portfolio"
+			},
+			{
+				bolded: "Cross sector,",
+				normal:"geographies, and market capitalizations"
+			},
+			{
+				bolded: "Benchmark agnostic,",
+				normal:"with low overlap to broad market indicies"
+			},
+			{
+				bolded: "Research processr,",
+				normal:"driven by Henriot’s Open Research Ecosystem"
+			},
+		]
+	},
+}
+
+export const options = [
+	{
+		label: "Market disruptor",
+		reduxValue: investmentEquityData.marketDisruptor
+	},
+	{
+		label: "DNA game-changer",
+		reduxValue: investmentEquityData.dnaGameChanger
+	},
+	{
+		label: "Finance frontier",
+		reduxValue: investmentEquityData.financeFrontier
+	},
+	{
+		label: "Future fabrication",
+		reduxValue: investmentEquityData.futureFabrication
+	},
+	{
+		label: "Crypto craze",
+		reduxValue: investmentEquityData.cryptoCraze
+	},
+	{
+		label: "Augmented reality",
+		reduxValue: investmentEquityData.augmentedReality
+	},
+	{
+		label: "Decentralized web 3.0",
+		reduxValue: investmentEquityData.decentralizedWeb3
+	},
+	{
+		label: "Intelligent machines",
+		reduxValue: investmentEquityData.intelligentMachine
+	},
+	{
+		label: "Galactic adventure",
+		reduxValue: investmentEquityData.galacticAdventure
+	},
+	{
+		label: "Silicon Wadi",
+		reduxValue: investmentEquityData.siliconWadi
+	},
+	{
+		label: "Digital gold",
+		reduxValue: investmentEquityData.digitalGold
+	},
+	{
+		label: "Future unicorns",
+		reduxValue: investmentEquityData.futureUnicorns
+	},
+	{
+		label: "On-demand mobility",
+		reduxValue: investmentEquityData.onDemandMobility
+	},
+	{
+		label: "Sustainable investment",
+		reduxValue: investmentEquityData.sustainableInvestment
+	},
+	{
+		label: "Other funds",
+		reduxValue: investmentEquityData.otherFunds
+	},
+]
+
+
+
+
+
 export const banner= {
 	title: "The big title here",
 	paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
@@ -96,13 +1541,11 @@ export const banner= {
 			label: "Other funds"
 		}
 	},
-	dropDown: options,
+	dropDown: dropDown,
 	image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
 }
 
-const styledIcons = {
-	fontSize:"50px"
-}
+
 
 export const focus = {
 	icons: [
@@ -177,7 +1620,7 @@ export const characteristics = [
 	},
 	{
 		bolded: "Research processr,",
-		normal:"driven by ARK’s Open Research Ecosystem"
+		normal:"driven by Henriot’s Open Research Ecosystem"
 	},
 ]
 

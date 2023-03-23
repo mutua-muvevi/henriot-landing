@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-import { Container, Grid, Stack,  Button, Menu, MenuItem, Box, Typography } from '@mui/material';
+import { Grid, Stack,  Button,  Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-import { banner } from '../info';
+import {  options } from '../info';
 import ReusableBreadcrumbs from '../../../../components/breadcrumbs';
 import ReusableTextDropDown from "../../../../components/textDropDown";
+import { connect } from "react-redux";
 
-const image = "https://res.cloudinary.com/dqweh6zte/image/upload/v1675816765/henriot/yiorgos-ntrahas-mcAUHlGirVs-unsplash_zos69m.jpg"
 
 const StyledBanner = styled(Box)(({theme}) => ({
 	backgroundColor: theme.palette.background.neutral,
@@ -60,16 +60,6 @@ const StyledGridItemRight = styled(Grid)(({ theme }) => ({
 
 }))
 
-const StyledImageBox = styled(Grid)(({ theme }) => ({
-	backgroundImage: `url(${image})`,
-	backgroundSize: "cover",
-	backgroundPosition: "center",
-	height: "60vh",
-	[theme.breakpoints.down("md")]: {
-		height: "50vh",
-	},
-}))
-
 const StyledButton = styled(Button)(({ theme }) => ({
 	width: "max-content",
 	paddingTop: "10px",
@@ -78,8 +68,18 @@ const StyledButton = styled(Button)(({ theme }) => ({
 	paddingRight: "20px",
 }))
 
-const EquitiesBanner = () => {
-
+const EquitiesBanner = ({banner}) => {
+	
+	const StyledImageBox = styled(Grid)(({ theme }) => ({
+		backgroundImage: `url(${banner.image})`,
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		height: "60vh",
+		[theme.breakpoints.down("md")]: {
+			height: "50vh",
+		},
+	}))
+	
 
 	return (
 		<StyledBanner>
@@ -90,15 +90,15 @@ const EquitiesBanner = () => {
 							<ReusableBreadcrumbs breadCrumbsItem={banner.breadcrumbsItem} />
 
 							<StyledDropDownSection>
-								<ReusableTextDropDown options={banner.dropDown} />
+								<ReusableTextDropDown options={options} />
 							</StyledDropDownSection>
 
 							<Typography variant="h3" color="text.primary">
-								Fintech Innovation
+								{banner.title}
 							</Typography>
 
 							<Typography variant="subtitle2" textAlign="justify" color="text.secondary" >
-								Aims to provide exposure to fintech innovations including mobile payments, digital wallets, peer-to-peer lending, blockchain technology, and financial risk transformation. These innovations should revolutionize the financial industry, impacting every sector of the global economy.
+								{banner.paragraph}
 							</Typography>
 
 							<StyledButton variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
@@ -118,5 +118,8 @@ const EquitiesBanner = () => {
 	)
 }
 
+const mapStateToProps = ({ investmentEquity }) => ({
+	banner : investmentEquity.data.reduxValue.banner
+})
 
-export default EquitiesBanner
+export default connect(mapStateToProps)(EquitiesBanner)
