@@ -42,7 +42,7 @@ const ReusableTextDropDown = ({ options, setData }) => {
 		<>
 			<StyledTextIconStack direction="row" spacing={2} onClick={handleClick} alignItems="center">
 				<Typography variant="subtitle2" color="primary">
-					{values.label}
+					Other funds
 				</Typography>
 				{isOpen ? <FaChevronUp style={styledIcon} /> : <FaChevronDown style={styledIcon} />}
 			</StyledTextIconStack>
