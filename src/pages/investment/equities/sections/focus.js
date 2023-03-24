@@ -1,6 +1,11 @@
 
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/system';
+
+import { MdDirectionsCar, MdSendToMobile } from 'react-icons/md';
+import { BiMicrochip, BiDna } from 'react-icons/bi';
+import { FaBitcoin, FaBrain, FaCloud, FaDna, FaFilm, FaMapMarkedAlt, FaMicroscope, FaWifi } from 'react-icons/fa';
+
 import { connect } from 'react-redux';
 
 const StyledGContainer = styled(Container)(({ theme }) => ({
@@ -40,6 +45,10 @@ const StyledContentGridItem = styled(Grid)(({ theme }) => ({
 
 }));
 
+const styledIcons = {
+	fontSize: "50px"
+}
+
 const EquityFocus = ({focus}) => {
 
 
@@ -48,13 +57,28 @@ const EquityFocus = ({focus}) => {
 			<Typography variant="h3" color="text.primary" sx={{mb:"30px"}}>
 				Investment Focus
 			</Typography>
+			
 			<StyledIconGrid container spacing={3}>
 				{
 					focus.icons.map((el, i) => (
 						<StyledIconGridItem key={i} item xs={6} sm={6} md={4} lg={2} xl={2}>
 							<Stack direction="column" alignItems="center" spacing={1.5}>
 								<StyledIconBox>
-									{el.icon}
+									{
+										el.title === "Autonomous Vehicles" ? <MdDirectionsCar style={styledIcons}/>:
+										el.title === "Artificial Intelligence" ? <FaBrain style={styledIcons}/>:
+										el.title === "MaaS" ? <FaMapMarkedAlt style={styledIcons}/>:
+										el.title === "Gene Editing" ? <FaDna style={styledIcons}/>:
+										el.title === "Genomic Revolution" ? <BiMicrochip style={styledIcons}/>:
+										el.title === "Crypto currencies" ? <FaBitcoin style={styledIcons}/>:
+										el.title === "Digital Media" ? <FaFilm style={styledIcons}/>:
+										el.title === "IoT" ? <FaWifi style={styledIcons}/>:
+										el.title === "Mobile Payments" ? <MdSendToMobile style={styledIcons}/>:
+										el.title === "Cloud computing" ? <FaCloud style={styledIcons}/>:
+										el.title === "Molecular Diagnostics" ? <FaMicroscope style={styledIcons}/>:
+										el.title === "Gene Therapy" || el.title === "DNA Sequencing" ? <BiDna style={styledIcons}/>:
+										<FaBrain style={styledIcons}/>
+									}
 								</StyledIconBox>
 								<Typography variant="h6" color="text.primary" textAlign="center">
 									{el.title}

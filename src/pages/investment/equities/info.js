@@ -112,27 +112,27 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "Fabrain",
 					title: "Artificial Inteligence"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					icon: "FaCloudDownloadAlt",
 					title: "Cloud computing"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
+					icon: "FaTv",
 					title: "Digital Media"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
+					icon: "FaNetworkWired",
 					title: "IoT"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
+					icon: "MdSendToMobile",
 					title: "Mobile Payments"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
+					icon: "FaRobot",
 					title: "Cloud computing"
 				},
 			],
@@ -187,7 +187,7 @@ export const investmentEquityData = {
 	dnaGameChanger: {
 		banner: {
 			title: "DNA game changer",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Aims to provide exposure to DNA sequencing technology, gene editing, CRISPR, therapeutics, agricultural biology, and molecular diagnostics. These innovations can help us restructuring health care, agriculture, pharmaceuticals, and enhancing the quality of life.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -196,7 +196,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "DNA Game changer"
 				}
 			},
 			dropDown: dropDown,
@@ -205,28 +205,28 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
-					title: "Artificial Inteligence"
+					icon: "FaDna",
+					title: "DNA Sequencing"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "BiDna",
+					title: "Gene Editing"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
+					icon: "GiDnaHelix",
+					title: "Gene Therapy"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
+					icon: "AiOutlineTestTub",
+					title: "Ag Bio"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
+					icon: "BiTarget ",
+					title: "Targeted Therapeutics"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "GiDna",
+					title: "Molecular Diagnostics"
 				},
 			],
 			overview : [
@@ -236,11 +236,11 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "30-50"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "Oct. 2014"
 				},
 				{
 					key: "Portfolio Manager",
@@ -248,39 +248,21 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Simon Barnett Alexandra Urman"
 				},
 			],
 			description: {
-				title: "Decription",
+				title: "Strategy Description",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`This actively managed equity strategy seeks long-term capital growth by investing in the US listed securities, including ADRs, of companies focused on the genomics revolution. Companies within this strategy aim to capture the substantial benefits of new products and services associated with technological and scientific developments in DNA sequencing, gene editing, targeted therapeutics, bioinformatics, and agricultural biology.`
 				]
 			}
 		},
-		characteristics: [
-			{
-				bolded: "Actively managed,",
-				normal:"high conviction portfolio"
-			},
-			{
-				bolded: "Cross sector,",
-				normal:"geographies, and market capitalizations"
-			},
-			{
-				bolded: "Benchmark agnostic,",
-				normal:"with low overlap to broad market indicies"
-			},
-			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
-			},
-		]
 	},
 	financeFrontier: {
 		banner: {
 			title: "Finance froontier",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Aims to provide exposure to fintech innovations including mobile payments, digital wallets, peer-to-peer lending, blockchain technology, and financial risk transformation. These innovations should revolutionize the financial industry, impacting every sector of the global economy.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -289,7 +271,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Finance Frontier"
 				}
 			},
 			dropDown: dropDown,
@@ -298,28 +280,28 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
-					title: "Artificial Inteligence"
+					icon: "FaBrain",
+					title: "Digital Wallets"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
-				},
-				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
-				},
-				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
-				},
-				{
-					icon: <MdSendToMobile style={styledIcons}/>,
+					icon: "FaCloudDownloadAlt",
 					title: "Mobile Payments"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaTv",
+					title: "Lending"
+				},
+				{
+					icon: "FaNetworkWired",
+					title: "Risk Transformation"
+				},
+				{
+					icon: "MdSendToMobile",
+					title: "Artificial Intelligence"
+				},
+				{
+					icon: "FaRobot",
+					title: "eCommerce"
 				},
 			],
 			overview : [
@@ -329,11 +311,11 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "35-55"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "Dec. 2014"
 				},
 				{
 					key: "Portfolio Manager",
@@ -341,7 +323,7 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Max Friedrich Will Summerlin Yassine Elmandjra Yulong Cui"
 				},
 			],
 			description: {
@@ -351,29 +333,11 @@ export const investmentEquityData = {
 				]
 			}
 		},
-		characteristics: [
-			{
-				bolded: "Actively managed,",
-				normal:"high conviction portfolio"
-			},
-			{
-				bolded: "Cross sector,",
-				normal:"geographies, and market capitalizations"
-			},
-			{
-				bolded: "Benchmark agnostic,",
-				normal:"with low overlap to broad market indicies"
-			},
-			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
-			},
-		]
 	},
 	futureFabrication: {
 		banner: {
 			title: "Future fabrication",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Seeks to provide targeted exposure to companies in the 3D printing ecosystem, including 3D printing hardware, software, measurement, and materials. 3D printing should transform manufacturing by providing greater design complexity, accuracy, efficiency, and customization.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -382,7 +346,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Future fabrication"
 				}
 			},
 			dropDown: dropDown,
@@ -391,42 +355,42 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
-					title: "Artificial Inteligence"
+					icon: "FaBrain",
+					title: "3D Printing Hardware"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaCloudDownloadAlt",
+					title: "Scanning & Measurement"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
+					icon: "FaTv",
+					title: "Materials"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
+					icon: "FaNetworkWired",
+					title: "Software"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
+					icon: "MdSendToMobile",
+					title: "Enabling Technology"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaRobot",
+					title: "Artificial Intelligence"
 				},
 			],
 			overview : [
 				{
 					key: "Type",
-					value: "Active Equity"
+					value: "Index Equity"
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "50"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "July 2016"
 				},
 				{
 					key: "Portfolio Manager",
@@ -434,34 +398,16 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Tasha Keeney"
 				},
 			],
 			description: {
-				title: "Decription",
+				title: "Strategy Decription",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`This index-based equity strategy seeks to provide investment results that closely correspond to the performance of the Total 3D-Printing Index, which is designed to track the price movements of stocks of companies involved in the 3D printing industry. The Total 3D-Printing Index is based on ARK’s research and is composed of equity securities and depositary receipts of companies that are engaged in 3D printing related businesses within the following business lines: (i) 3D printing hardware, (ii) computer aided design (“CAD”) and 3D printing simulation software, (iii) 3D printing centers, (iv) scanning and measurement, and (v) 3D printing materials.`
 				]
 			}
 		},
-		characteristics: [
-			{
-				bolded: "Actively managed,",
-				normal:"high conviction portfolio"
-			},
-			{
-				bolded: "Cross sector,",
-				normal:"geographies, and market capitalizations"
-			},
-			{
-				bolded: "Benchmark agnostic,",
-				normal:"with low overlap to broad market indicies"
-			},
-			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
-			},
-		]
 	},
 	cryptoCraze: {
 		banner: {
@@ -505,33 +451,15 @@ export const investmentEquityData = {
 			description: {
 				title: "Decription",
 				paragraphs: [
-					`In addition to providing the foundation for digital money, public blockchains are powering novel forms of coordination across finance and the internet. By decentralizing institutions with open-source software, public blockchains minimize the need to trust centralized authorities. In finance, cryptoassets issued on public blockchains are facilitating the coordination of financial services and contracts outside the purview of traditional financial institutions. On the internet, cryptoassets issued on public blockchains are facilitating the coordination of identity, reputation, and data outside the purview of traditional media conglomerates and big tech. These forms of coordination are likely to impact all asset classes. Just as the internet turned information into packets online, we believe public blockchains are likely to turn all assets into transactions on-chain.`
+					`Since the emergence of Bitcoin, we have witnessed the rise of a global battle among monetary systems, both sovereign and non-sovereign. ARK believes cryptocurrencies governed by neutral, open source networks have the potential to win this battle. By unlocking a new mechanism to store and transfer value, cryptocurrencies have the opportunity to create an open foundation of strong assurances in wealth and monetary integrity. ARK believes cryptocurrencies will contribute more dramatically and profoundly to the evolution of monetary systems than any other breakthrough in history. Instead of relying on centralized intermediaries to enforce its rules, cryptocurrencies rely on a distributed network of computers. This architecture enables it not only to function outside the purview of legacy systems, but also to challenge them. In the absence of central enforcement, its integrity is likely to be a function of its openness and transparency, a shift away from old world central banks and monetary institutions.`
 				]
 			}
 		},
-		characteristics: [
-			{
-				bolded: "Actively managed,",
-				normal:"high conviction portfolio"
-			},
-			{
-				bolded: "Cross sector,",
-				normal:"geographies, and market capitalizations"
-			},
-			{
-				bolded: "Benchmark agnostic,",
-				normal:"with low overlap to broad market indicies"
-			},
-			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
-			},
-		]
 	},
 	augmentedReality: {
 		banner: {
 			title: "Augmented reality",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Seeks to provide exposure to artificial intelligence, deep learning, big data, cloud computing, cybersecurity, and blockchain technology. These innovations are changing the way the world manages information, analyzes data, purchases and consumes goods, and communicates across the globe",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -540,7 +468,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Augmented Reality"
 				}
 			},
 			dropDown: dropDown,
@@ -549,27 +477,27 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "FaBrain",
 					title: "Artificial Inteligence"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					icon: "FaCloudDownloadAlt",
 					title: "Cloud computing"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
+					icon: "FaTv",
 					title: "Digital Media"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
+					icon: "FaNetworkWired",
 					title: "IoT"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
+					icon: "MdSendToMobile",
 					title: "Mobile Payments"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
+					icon: "FaRobot",
 					title: "Cloud computing"
 				},
 			],
@@ -602,29 +530,11 @@ export const investmentEquityData = {
 				]
 			}
 		},
-		characteristics: [
-			{
-				bolded: "Actively managed,",
-				normal:"high conviction portfolio"
-			},
-			{
-				bolded: "Cross sector,",
-				normal:"geographies, and market capitalizations"
-			},
-			{
-				bolded: "Benchmark agnostic,",
-				normal:"with low overlap to broad market indicies"
-			},
-			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
-			},
-		]
 	},
 	decentralizedWeb3: {
 		banner: {
 			title: "Decentralized web 3",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on the Metaverse. Companies within this strategy are focused on building the future of the internet. The Metaverse is a shared virtual universe that could ultimately connect everyone and everything. As it matures its primary function will be to host and connect 3D-rich virtual environments and worlds.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -633,7 +543,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Decentralized web 3"
 				}
 			},
 			dropDown: dropDown,
@@ -642,28 +552,32 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "FaBrain",
 					title: "Artificial Inteligence"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					icon: "FaCloudDownloadAlt",
 					title: "Cloud computing"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
+					icon: "FaTv",
 					title: "Digital Media"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
+					icon: "FaNetworkWired",
 					title: "IoT"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
+					icon: "MdSendToMobile",
 					title: "Mobile Payments"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
+					icon: "FaRobot",
 					title: "Cloud computing"
+				},
+				{
+					icon: "FaRobot",
+					title: "Social media"
 				},
 			],
 			overview : [
@@ -673,11 +587,11 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "30-50"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "2022"
 				},
 				{
 					key: "Portfolio Manager",
@@ -685,13 +599,13 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Nick Grous Andrew Kim Frank Downing"
 				},
 			],
 			description: {
 				title: "Decription",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on the Metaverse. Companies within this strategy are focused on building the future of the internet. The Metaverse is a shared virtual universe that could ultimately connect everyone and everything. As it matures its primary function will be to host and connect 3D-rich virtual environments and worlds.`
 				]
 			}
 		},
@@ -735,27 +649,27 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaRobot style={styledIcons}/>,
+					icon: "FaRobot",
 					title: "Robotics"
 				},
 				{
-					icon: <BsPrinterFill style={styledIcons}/>,
+					icon: "BsPrinterFill",
 					title: "3D Printing"
 				},
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "FaBrain",
 					title: "Autonomous Technology"
 				},
 				{
-					icon: <FaCar style={styledIcons}/>,
+					icon: "FaCar",
 					title: "Autonomous Vehicles"
 				},
 				{
-					icon: <GiDeliveryDrone style={styledIcons}/>,
+					icon: "GiDeliveryDrone",
 					title: "Aerial Drones"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
+					icon: "MdSendToMobile",
 					title: "MaaS"
 				},
 			],
@@ -810,7 +724,7 @@ export const investmentEquityData = {
 	galacticAdventure: {
 		banner: {
 			title: "Galactic adventure",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Seeks to provide exposure to companies involved in space-related businesses like reusable rockets, satellites, drones, and other orbital and sub-orbital aircrafts. These innovations should transform logistics, observation, agriculture, telecom, drones, and may even put humans on Mars.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -819,7 +733,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Galactic adventure"
 				}
 			},
 			dropDown: dropDown,
@@ -828,28 +742,28 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
-					title: "Artificial Inteligence"
+					icon: "FaBrain",
+					title: "Reusable Rockets"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaCloudDownloadAlt",
+					title: "Orbital Aerospace"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
+					icon: "FaTv",
+					title: "Suborbital Aerospace"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
+					icon: "FaNetworkWired",
+					title: "Aerial Drones"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
+					icon: "MdSendToMobile",
+					title: "3D Printing"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaRobot",
+					title: "Enabling Technology"
 				},
 			],
 			overview : [
@@ -859,11 +773,11 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "30-50"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "Aug. 2018"
 				},
 				{
 					key: "Portfolio Manager",
@@ -871,13 +785,13 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Sam Korus Tasha Keeney"
 				},
 			],
 			description: {
-				title: "Decription",
+				title: "Strategy Description",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on space exploration. What used to be a monopolistic and bureaucratic industry is being upended by both rocket and satellite cost declines. As a result of advancements within deep learning, mobile connectivity, sensors, 3D printing, and robotics, decades of ballooning costs have reversed trend and are beginning to decline, leading to a proliferation of satellite launches and rocket landings.`
 				]
 			}
 		},
@@ -903,7 +817,7 @@ export const investmentEquityData = {
 	siliconWadi: {
 		banner: {
 			title: "Silicon Wadi",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Aims to provide targeted exposure to Israeli companies at the forefront of innovation across health care, manufacturing, communications, and information technology. These companies are working to enhance many sectors of the global economy.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -912,7 +826,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Silicon Wadi"
 				}
 			},
 			dropDown: dropDown,
@@ -921,42 +835,42 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "FaBrain",
 					title: "Artificial Inteligence"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
-				},
-				{
-					icon: <FaTv style={styledIcons}/>,
+					icon: "FaTv",
 					title: "Digital Media"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
+					icon: "FaCloudDownloadAlt",
+					title: "3D Printring"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
+					icon: "FaNetworkWired",
+					title: "eCommerce"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "MdSendToMobile",
+					title: "Autonomous Technology"
+				},
+				{
+					icon: "FaRobot",
+					title: "Biotech"
 				},
 			],
 			overview : [
 				{
 					key: "Type",
-					value: "Active Equity"
+					value: "Index Equity"
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "35-45"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "Sept. 2017"
 				},
 				{
 					key: "Portfolio Manager",
@@ -964,39 +878,31 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Collective Team"
 				},
 			],
 			description: {
-				title: "Decription",
+				title: "Strategy Description",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`This index-based equity strategy seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the ARK Israeli Innovation Index, which is designed to track the price movements of exchange-listed Israeli companies whose main business operations are causing disruptive innovation in the areas of genomics, health care, biotechnology, industrials, manufacturing, the Internet or information technology. The Index includes equity securities and depositary receipts of exchange listed companies that are incorporated and/or domiciled in Israel (‘‘Israeli Companies’’) and are included in one of the following economic sectors as defined by FactSet Research Systems: (i) health technology, (ii) communications, (iii) technology services, (iv) electronic technology, (v) consumer services, or (vi) producer manufacturing.`
 				]
 			}
 		},
 		characteristics: [
 			{
-				bolded: "Actively managed,",
-				normal:"high conviction portfolio"
+				bolded: "Targeted Exposure ",
+				normal:"to Israeli Innovation"
 			},
 			{
-				bolded: "Cross sector,",
-				normal:"geographies, and market capitalizations"
-			},
-			{
-				bolded: "Benchmark agnostic,",
-				normal:"with low overlap to broad market indicies"
-			},
-			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
+				bolded: "Equal ",
+				normal:"market capitalization weighting"
 			},
 		]
 	},
 	digitalGold: {
 		banner: {
 			title: "Digital gold",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"ARK believes public blockchains are powering novel forms of coordination across finance and the internet. The Investment Manager believes that cryptocurrency value and market share dynamics will be “power law distributed,” meaning that a few cryptocurrencies will capture the majority of value.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -1005,7 +911,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Digital gold"
 				}
 			},
 			dropDown: dropDown,
@@ -1014,82 +920,36 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
-					title: "Artificial Inteligence"
-				},
-				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
-				},
-				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
-				},
-				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
-				},
-				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
-				},
-				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaBitcoin",
+					title: "Cryptocurrencies"
 				},
 			],
 			overview : [
 				{
 					key: "Type",
-					value: "Active Equity"
+					value: "Active SMA"
 				},
 				{
-					key: "Typical # of Holding",
-					value: "35-50"
-				},
-				{
-					key: "Inception",
-					value: "Sept. 2014"
-				},
-				{
-					key: "Portfolio Manager",
-					value: "Catherine Wood"
+					key: "Investment Manager",
+					value: "ARK Investment Management LLC"
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: " Yassine Elmandjra"
 				},
 			],
 			description: {
 				title: "Decription",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`In addition to providing the foundation for digital money, public blockchains are powering novel forms of coordination across finance and the internet. By decentralizing institutions with open-source software, public blockchains minimize the need to trust centralized authorities. In finance, cryptoassets issued on public blockchains are facilitating the coordination of financial services and contracts outside the purview of traditional financial institutions. On the internet, cryptoassets issued on public blockchains are facilitating the coordination of identity, reputation, and data outside the purview of traditional media conglomerates and big tech. These forms of coordination are likely to impact all asset classes. Just as the internet turned information into packets online, we believe public blockchains are likely to turn all assets into transactions on-chain.`
 				]
 			}
 		},
-		characteristics: [
-			{
-				bolded: "Actively managed,",
-				normal:"high conviction portfolio"
-			},
-			{
-				bolded: "Cross sector,",
-				normal:"geographies, and market capitalizations"
-			},
-			{
-				bolded: "Benchmark agnostic,",
-				normal:"with low overlap to broad market indicies"
-			},
-			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
-			},
-		]
 	},
 	futureUnicorns: {
 		banner: {
-			title: "Future Uniforms",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			title: "Future Unicorns",
+			paragraph:"Aims to provide broad exposure to early-stage disruptors in the public markets. ARK believes at the forefront of the innovation wave are “early-stage disruptors”— either newer public companies or companies that introduced new technologically-enabled products or services that are in the early stages of development.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -1098,7 +958,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Future Unicorms"
 				}
 			},
 			dropDown: dropDown,
@@ -1107,28 +967,28 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "FaBrain",
 					title: "Artificial Inteligence"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaCloudDownloadAlt",
+					title: "Autonomous Vehicles"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
+					icon: "FaTv",
+					title: "Fintech"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
+					icon: "FaNetworkWired",
+					title: "DNA Sequencing"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
+					icon: "MdSendToMobile",
+					title: "Robotics"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaRobot",
+					title: "3D Printing"
 				},
 			],
 			overview : [
@@ -1138,11 +998,11 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "25"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "Aug. 2021"
 				},
 				{
 					key: "Portfolio Manager",
@@ -1150,7 +1010,7 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Collective Team"
 				},
 			],
 			description: {
@@ -1174,15 +1034,15 @@ export const investmentEquityData = {
 				normal:"with low overlap to broad market indicies"
 			},
 			{
-				bolded: "Research processr,",
-				normal:"driven by Henriot’s Open Research Ecosystem"
+				bolded: "Exposure to",
+				normal:"Early Stage Disruptors"
 			},
 		]
 	},
 	onDemandMobility: {
 		banner: {
 			title: "On Demand Mobility",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Aims to provide exposure to companies involved in self-driving vehicles, electric vehicles, autonomous ridesharing platforms, and aerial drones. These innovations should spur a transformative boost in economic productivity and subsume the traditional automotive industry.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -1191,7 +1051,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "On Demand Mobility"
 				}
 			},
 			dropDown: dropDown,
@@ -1200,28 +1060,28 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "FaTv",
+					title: "Autonomous Technology"
+				},
+				{
+					icon: "FaCloudDownloadAlt",
+					title: "Autonomous Vehicles"
+				},
+				{
+					icon: "FaBrain",
 					title: "Artificial Inteligence"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaNetworkWired",
+					title: "New Infrastructure"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
+					icon: "MdSendToMobile",
+					title: "Aerial Drones"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
-				},
-				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
-				},
-				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaRobot",
+					title: "MaaS"
 				},
 			],
 			overview : [
@@ -1231,11 +1091,11 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "30-50"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "Jan. 2017"
 				},
 				{
 					key: "Portfolio Manager",
@@ -1243,13 +1103,13 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Tasha Keeney Sam Korus"
 				},
 			],
 			description: {
 				title: "Decription",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on mobility-as-a-service (MaaS). Companies within this strategy are focused on electric mobility and autonomous mobility-as-a-service and spans from personal MaaS, such as autonomous taxi platforms, to Logistics-as-a-Service, such as autonomous electric trucks, delivery drones, and delivery robots.`
 				]
 			}
 		},
@@ -1275,7 +1135,7 @@ export const investmentEquityData = {
 	sustainableInvestment: {
 		banner: {
 			title: "Sustainable Investment",
-			paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
+			paragraph:"Positive Change Innovation aims to incorporate companies most likely to deliver long-term capital growth and to positively impact global progress towards the UN SDGs.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -1284,7 +1144,7 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Other funds"
+					label: "Sustainable Investment"
 				}
 			},
 			dropDown: dropDown,
@@ -1293,28 +1153,32 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
-					title: "Artificial Inteligence"
+					icon: "FaBrain",
+					title: "Autonomous Vehicles"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaCloudDownloadAlt",
+					title: "Artificial Intelligence"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
-					title: "Digital Media"
+					icon: "FaTv",
+					title: "MaaS"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
-					title: "IoT"
+					icon: "FaNetworkWired",
+					title: "Gene Editing"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
-					title: "Mobile Payments"
+					icon: "MdSendToMobile",
+					title: "Genomic Revolution"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
-					title: "Cloud computing"
+					icon: "FaRobot",
+					title: "Biotech"
+				},
+				{
+					icon: "FaRobot",
+					title: "Next Generation Internet"
 				},
 			],
 			overview : [
@@ -1324,11 +1188,11 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Typical # of Holding",
-					value: "35-50"
+					value: "30-50"
 				},
 				{
 					key: "Inception",
-					value: "Sept. 2014"
+					value: "May 2021"
 				},
 				{
 					key: "Portfolio Manager",
@@ -1336,13 +1200,13 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Analysts",
-					value: "Nick Grous Yassine Elmandjra"
+					value: "Collective Team"
 				},
 			],
 			description: {
 				title: "Decription",
 				paragraphs: [
-					`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
+					`This actively managed equity strategy aims to incorporate companies most likely to deliver long-term capital growth and to positively impact global progress towards the UN SDGs. ARK groups the SDGs into four major sustainable development themes. By dimensioning the impact that innovation could have on accelerating progress against these themes, ARK seeks to identify companies most likely to deliver growth while positively impacting global progress.`
 				]
 			}
 		},
@@ -1386,27 +1250,27 @@ export const investmentEquityData = {
 		focus: {
 			icons: [
 				{
-					icon: <FaBrain style={styledIcons}/>,
+					icon: "FaBrain",
 					title: "Artificial Inteligence"
 				},
 				{
-					icon: <FaCloudDownloadAlt style={styledIcons}/>,
+					icon: "FaCloudDownloadAlt",
 					title: "Cloud computing"
 				},
 				{
-					icon: <FaTv style={styledIcons}/>,
+					icon: "FaTv",
 					title: "Digital Media"
 				},
 				{
-					icon: <FaNetworkWired style={styledIcons}/>,
+					icon: "FaNetworkWired",
 					title: "IoT"
 				},
 				{
-					icon: <MdSendToMobile style={styledIcons}/>,
+					icon: "MdSendToMobile",
 					title: "Mobile Payments"
 				},
 				{
-					icon: <FaRobot style={styledIcons}/>,
+					icon: "FaRobot",
 					title: "Cloud computing"
 				},
 			],
@@ -1517,112 +1381,9 @@ export const options = [
 		label: "Sustainable investment",
 		reduxValue: investmentEquityData.sustainableInvestment
 	},
-	{
-		label: "Other funds",
-		reduxValue: investmentEquityData.otherFunds
-	},
 ]
 
 
-
-
-
-export const banner= {
-	title: "The big title here",
-	paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum fringilla ligula, a porta mi viverra nec. Nullam vel ipsum ligula. Fusce vel metus venenatis, lobortis metus vitae, gravida magna. Vivamus accumsan, diam eu interdum fermentum, tortor est dignissim quam, vel consectetur sem lectus nec magna. Donec commodo ultrices porttitor. Morbi aliquet, eros non vulputate aliquet, purus odio accumsan risus, sit amet lacinia urna turpis nec diam. Etiam pharetra iaculis ex nec accumsan. Proin vel turpis at lectus ultrices tristique ac et lectus. Nam egestas, turpis vitae vulputate faucibus, leo sem vestibulum lectus, ac auctor nisi sem mollis velit. Duis lacinia sed ex tristique blandit. Etiam vitae ultricies purus. Aliquam sit amet nulla tortor. Phasellus pretium risus tortor, eu bibendum risus congue eu.",
-	breadcrumbsItem: {
-		items: [
-			{
-				label: "Home",
-				link: "/landing/main"
-			},
-		],
-		last: {
-			label: "Other funds"
-		}
-	},
-	dropDown: dropDown,
-	image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
-}
-
-
-
-export const focus = {
-	icons: [
-		{
-			icon: <FaBrain style={styledIcons}/>,
-			title: "Artificial Inteligence"
-		},
-		{
-			icon: <FaCloudDownloadAlt style={styledIcons}/>,
-			title: "Cloud computing"
-		},
-		{
-			icon: <FaTv style={styledIcons}/>,
-			title: "Digital Media"
-		},
-		{
-			icon: <FaNetworkWired style={styledIcons}/>,
-			title: "IoT"
-		},
-		{
-			icon: <MdSendToMobile style={styledIcons}/>,
-			title: "Mobile Payments"
-		},
-		{
-			icon: <FaRobot style={styledIcons}/>,
-			title: "Cloud computing"
-		},
-	],
-	overview : [
-		{
-			key: "Type",
-			value: "Active Equity"
-		},
-		{
-			key: "Typical # of Holding",
-			value: "35-50"
-		},
-		{
-			key: "Inception",
-			value: "Sept. 2014"
-		},
-		{
-			key: "Portfolio Manager",
-			value: "Catherine Wood"
-		},
-		{
-			key: "Analysts",
-			value: "Nick Grous Yassine Elmandjra"
-		},
-	],
-	description: {
-		title: "Decription",
-		paragraphs: [
-			`This actively managed equity strategy seeks long-term capital growth by investing in domestic and foreign equity securities of companies focused on innovations within financial technology (“fintech”). Companies within this strategy are focused on changing the way the financial sector works, removing friction, and increasing accessibility to financial products and services.`
-		]
-	}
-}
-
-//characteristics
-export const characteristics = [
-	{
-		bolded: "Actively managed,",
-		normal:"high conviction portfolio"
-	},
-	{
-		bolded: "Cross sector,",
-		normal:"geographies, and market capitalizations"
-	},
-	{
-		bolded: "Benchmark agnostic,",
-		normal:"with low overlap to broad market indicies"
-	},
-	{
-		bolded: "Research processr,",
-		normal:"driven by Henriot’s Open Research Ecosystem"
-	},
-]
 
 //research blogs
 export const researchBlogs = [
