@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Grid, Stack,  Button,  Box, Typography } from '@mui/material';
+import { Grid, Stack,  Button,  Box, Typography, Container } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -26,6 +26,22 @@ const StyledBanner = styled(Box)(({theme}) => ({
 	},
 }))
 
+const StyledAbsoluteWrapper = styled(Box)(({ theme }) => ({
+	position: "absolute",
+	width: "100%",
+	left: 0,
+	top: "12vw"
+}));
+
+const StyledContentStack = styled(Stack)(({ theme }) => ({
+	[theme.breakpoints.up("lg")]: {
+		width: "70%"
+	},
+	[theme.breakpoints.down("md")]: {
+		width: "100%"
+	},
+}))
+
 const StyledGrid = styled(Grid)(({ theme }) => ({
 	
 }))
@@ -40,7 +56,7 @@ const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
 		paddingRight: theme.spacing(3),
 	},
 	[theme.breakpoints.down("sm")]: {
-		minHeight:"40vh"
+		minHeight:"30vh"
 	},
 	[theme.breakpoints.up("md")]: {
 		paddingLeft: theme.spacing(4),
@@ -57,7 +73,10 @@ const StyledDropDownSection = styled(Box)(({ theme }) => ({
 }))
 
 const StyledGridItemRight = styled(Grid)(({ theme }) => ({
-
+	width: "100%",
+	[theme.breakpoints.down("md")]: {
+		marginBottom: "50px",
+	},
 }))
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -75,17 +94,19 @@ const EquitiesBanner = ({banner}) => {
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		height: "60vh",
-		[theme.breakpoints.down("md")]: {
-			height: "50vh",
+		[theme.breakpoints.down("lg")]: {
+			width: "80%",
+			marginBotton: "30px"
 		},
+		borderRadius: "5px"
 	}))
 	
 
 	return (
 		<StyledBanner>
-			<StyledGrid container spacing={3}>
-				<StyledGridItemLeft item xs={12} sm={12} md={12} lg={7} xl={8}>
-					<Stack spacing={6} direction="column">
+			<StyledAbsoluteWrapper>
+				<Container maxWidth="lg">
+					<StyledContentStack spacing={6} direction="column">
 						<Stack spacing={3} direction="column" sx={{mr: "30px"}}>
 							<ReusableBreadcrumbs breadCrumbsItem={banner.breadcrumbsItem} />
 
@@ -97,7 +118,7 @@ const EquitiesBanner = ({banner}) => {
 								{banner.title}
 							</Typography>
 
-							<Typography variant="subtitle2" textAlign="justify" color="text.secondary" >
+							<Typography variant="h6" textAlign="justify" color="text.secondary" sx={{fontWeight: 500}}>
 								{banner.paragraph}
 							</Typography>
 
@@ -105,10 +126,15 @@ const EquitiesBanner = ({banner}) => {
 								Explore Strategy
 							</StyledButton>
 						</Stack>
-					</Stack>
+					</StyledContentStack>
+				</Container>
+			</StyledAbsoluteWrapper>
+
+			<StyledGrid container spacing={3}>
+				<StyledGridItemLeft item xs={12} sm={12} md={12} lg={7} xl={8}>
 				</StyledGridItemLeft>
 
-				<StyledGridItemRight item xs={12} sm={12} md={6} lg={5} xl={4}>
+				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5} xl={4}>
 					<StyledImageBox>
 
 					</StyledImageBox>
