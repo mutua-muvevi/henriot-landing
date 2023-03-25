@@ -42,7 +42,7 @@ const StyledContentGrid = styled(Grid)(({ theme }) => ({
 	paddingLeft: "20px",
 	paddingRight: "20px",
 	paddingBottom: "50px",
-	marginTop: "30px"
+	marginTop: "31px"
 }));
 
 const StyledContentGridItem = styled(Grid)(({ theme }) => ({
