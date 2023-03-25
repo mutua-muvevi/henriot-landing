@@ -93,7 +93,7 @@ const dropDown = [
 export const investmentEquityData = {
 	marketDisruptor: {
 		banner: {
-			title: "Henriot Disruptive innovation",
+			title: "Market Disruptor",
 			paragraph:"Aims to provide broad exposure to disruptive innovation. Henriot believes innovations centered around artificial intelligence, robotics, energy storage, DNA sequencing, and blockchain technology will change the way the world works and deliver outsized growth as industries transform.",
 			breadcrumbsItem: {
 				items: [
@@ -103,11 +103,11 @@ export const investmentEquityData = {
 					},
 				],
 				last: {
-					label: "Disruptive innovation"
+					label: "Market disruptor"
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733726/henriot/pexels-pok-rie-5807886_laufb3.jpg"
 		},
 		focus: {
 			icons: [
@@ -200,7 +200,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733733/henriot/pexels-chokniti-khongchum-2280547_fyl2ph.jpg"
 		},
 		focus: {
 			icons: [
@@ -275,7 +275,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733691/henriot/finance_frontier_eix15z.jpg"
 		},
 		focus: {
 			icons: [
@@ -350,7 +350,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733690/henriot/future_fabrication_yqykho.jpg"
 		},
 		focus: {
 			icons: [
@@ -404,7 +404,7 @@ export const investmentEquityData = {
 			description: {
 				title: "Strategy Decription",
 				paragraphs: [
-					`This index-based equity strategy seeks to provide investment results that closely correspond to the performance of the Total 3D-Printing Index, which is designed to track the price movements of stocks of companies involved in the 3D printing industry. The Total 3D-Printing Index is based on ARK’s research and is composed of equity securities and depositary receipts of companies that are engaged in 3D printing related businesses within the following business lines: (i) 3D printing hardware, (ii) computer aided design (“CAD”) and 3D printing simulation software, (iii) 3D printing centers, (iv) scanning and measurement, and (v) 3D printing materials.`
+					`This index-based equity strategy seeks to provide investment results that closely correspond to the performance of the Total 3D-Printing Index, which is designed to track the price movements of stocks of companies involved in the 3D printing industry. The Total 3D-Printing Index is based on Henriot’s research and is composed of equity securities and depositary receipts of companies that are engaged in 3D printing related businesses within the following business lines: (i) 3D printing hardware, (ii) computer aided design (“CAD”) and 3D printing simulation software, (iii) 3D printing centers, (iv) scanning and measurement, and (v) 3D printing materials.`
 				]
 			}
 		},
@@ -412,7 +412,7 @@ export const investmentEquityData = {
 	cryptoCraze: {
 		banner: {
 			title: "Crypto craze",
-			paragraph:"ARK believes public blockchains are powering novel forms of coordination across finance and the internet. The Investment Manager believes that cryptocurrency value and market share dynamics will be “power law distributed,” meaning that a few cryptocurrencies will capture the majority of value.",
+			paragraph:"Henriot believes public blockchains are powering novel forms of coordination across finance and the internet. The Investment Manager believes that cryptocurrency value and market share dynamics will be “power law distributed,” meaning that a few cryptocurrencies will capture the majority of value.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -425,7 +425,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733720/henriot/pexels-daniel-dan-7708811_xqx7ks.jpg"
 		},
 		focus: {
 			icons: [
@@ -441,7 +441,7 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Investment manager",
-					value: "ARK Investment Management LLC"
+					value: "Henriot Investment Management LLC"
 				},
 				{
 					key: "Analysts",
@@ -451,7 +451,7 @@ export const investmentEquityData = {
 			description: {
 				title: "Decription",
 				paragraphs: [
-					`Since the emergence of Bitcoin, we have witnessed the rise of a global battle among monetary systems, both sovereign and non-sovereign. ARK believes cryptocurrencies governed by neutral, open source networks have the potential to win this battle. By unlocking a new mechanism to store and transfer value, cryptocurrencies have the opportunity to create an open foundation of strong assurances in wealth and monetary integrity. ARK believes cryptocurrencies will contribute more dramatically and profoundly to the evolution of monetary systems than any other breakthrough in history. Instead of relying on centralized intermediaries to enforce its rules, cryptocurrencies rely on a distributed network of computers. This architecture enables it not only to function outside the purview of legacy systems, but also to challenge them. In the absence of central enforcement, its integrity is likely to be a function of its openness and transparency, a shift away from old world central banks and monetary institutions.`
+					`Since the emergence of Bitcoin, we have witnessed the rise of a global battle among monetary systems, both sovereign and non-sovereign. Henriot believes cryptocurrencies governed by neutral, open source networks have the potential to win this battle. By unlocking a new mechanism to store and transfer value, cryptocurrencies have the opportunity to create an open foundation of strong assurances in wealth and monetary integrity. Henriot believes cryptocurrencies will contribute more dramatically and profoundly to the evolution of monetary systems than any other breakthrough in history. Instead of relying on centralized intermediaries to enforce its rules, cryptocurrencies rely on a distributed network of computers. This architecture enables it not only to function outside the purview of legacy systems, but also to challenge them. In the absence of central enforcement, its integrity is likely to be a function of its openness and transparency, a shift away from old world central banks and monetary institutions.`
 				]
 			}
 		},
@@ -472,7 +472,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733755/henriot/pexels-markus-spiske-177598_vskau8.jpg"
 		},
 		focus: {
 			icons: [
@@ -547,7 +547,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733731/henriot/decentralized_web_ditdsv.jpg"
 		},
 		focus: {
 			icons: [
@@ -644,7 +644,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733719/henriot/pexels-dan-cristian-p%C4%83dure%C8%9B-1476321_biws3r.jpg"
 		},
 		focus: {
 			icons: [
@@ -737,7 +737,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733717/henriot/pexels-pixabay-2159_vslozc.jpg"
 		},
 		focus: {
 			icons: [
@@ -830,7 +830,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733746/henriot/silicon_wadi_ee4csr.jpg"
 		},
 		focus: {
 			icons: [
@@ -884,7 +884,7 @@ export const investmentEquityData = {
 			description: {
 				title: "Strategy Description",
 				paragraphs: [
-					`This index-based equity strategy seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the ARK Israeli Innovation Index, which is designed to track the price movements of exchange-listed Israeli companies whose main business operations are causing disruptive innovation in the areas of genomics, health care, biotechnology, industrials, manufacturing, the Internet or information technology. The Index includes equity securities and depositary receipts of exchange listed companies that are incorporated and/or domiciled in Israel (‘‘Israeli Companies’’) and are included in one of the following economic sectors as defined by FactSet Research Systems: (i) health technology, (ii) communications, (iii) technology services, (iv) electronic technology, (v) consumer services, or (vi) producer manufacturing.`
+					`This index-based equity strategy seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the Henriot Israeli Innovation Index, which is designed to track the price movements of exchange-listed Israeli companies whose main business operations are causing disruptive innovation in the areas of genomics, health care, biotechnology, industrials, manufacturing, the Internet or information technology. The Index includes equity securities and depositary receipts of exchange listed companies that are incorporated and/or domiciled in Israel (‘‘Israeli Companies’’) and are included in one of the following economic sectors as defined by FactSet Research Systems: (i) health technology, (ii) communications, (iii) technology services, (iv) electronic technology, (v) consumer services, or (vi) producer manufacturing.`
 				]
 			}
 		},
@@ -902,7 +902,7 @@ export const investmentEquityData = {
 	digitalGold: {
 		banner: {
 			title: "Digital gold",
-			paragraph:"ARK believes public blockchains are powering novel forms of coordination across finance and the internet. The Investment Manager believes that cryptocurrency value and market share dynamics will be “power law distributed,” meaning that a few cryptocurrencies will capture the majority of value.",
+			paragraph:"Henriot believes public blockchains are powering novel forms of coordination across finance and the internet. The Investment Manager believes that cryptocurrency value and market share dynamics will be “power law distributed,” meaning that a few cryptocurrencies will capture the majority of value.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -915,7 +915,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733698/henriot/digital_gold_nptpwn.jpg"
 		},
 		focus: {
 			icons: [
@@ -931,7 +931,7 @@ export const investmentEquityData = {
 				},
 				{
 					key: "Investment Manager",
-					value: "ARK Investment Management LLC"
+					value: "Henriot Investment Management LLC"
 				},
 				{
 					key: "Analysts",
@@ -949,7 +949,7 @@ export const investmentEquityData = {
 	futureUnicorns: {
 		banner: {
 			title: "Future Unicorns",
-			paragraph:"Aims to provide broad exposure to early-stage disruptors in the public markets. ARK believes at the forefront of the innovation wave are “early-stage disruptors”— either newer public companies or companies that introduced new technologically-enabled products or services that are in the early stages of development.",
+			paragraph:"Aims to provide broad exposure to early-stage disruptors in the public markets. Henriot believes at the forefront of the innovation wave are “early-stage disruptors”— either newer public companies or companies that introduced new technologically-enabled products or services that are in the early stages of development.",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -962,7 +962,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733701/henriot/future_unicorns_jdwipf.jpg"
 		},
 		focus: {
 			icons: [
@@ -1055,7 +1055,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733708/henriot/on_demand_mobility_neoswu.jpg"
 		},
 		focus: {
 			icons: [
@@ -1206,7 +1206,7 @@ export const investmentEquityData = {
 			description: {
 				title: "Decription",
 				paragraphs: [
-					`This actively managed equity strategy aims to incorporate companies most likely to deliver long-term capital growth and to positively impact global progress towards the UN SDGs. ARK groups the SDGs into four major sustainable development themes. By dimensioning the impact that innovation could have on accelerating progress against these themes, ARK seeks to identify companies most likely to deliver growth while positively impacting global progress.`
+					`This actively managed equity strategy aims to incorporate companies most likely to deliver long-term capital growth and to positively impact global progress towards the UN SDGs. Henriot groups the SDGs into four major sustainable development themes. By dimensioning the impact that innovation could have on accelerating progress against these themes, Henriot seeks to identify companies most likely to deliver growth while positively impacting global progress.`
 				]
 			}
 		},
@@ -1245,7 +1245,7 @@ export const investmentEquityData = {
 				}
 			},
 			dropDown: dropDown,
-			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1675814582/henriot/stocks_lf852q.jpg"
+			image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733714/henriot/other_funds_jn5jvz.jpg"
 		},
 		focus: {
 			icons: [

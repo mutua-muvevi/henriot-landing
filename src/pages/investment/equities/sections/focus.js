@@ -34,11 +34,15 @@ const StyledIconBox = styled(Box)(({ theme }) => ({
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
-	color:theme.palette.primary.main
+	color:theme.palette.primary.main,
 }))
 
 const StyledContentGrid = styled(Grid)(({ theme }) => ({
-
+	border: "1px solid grey",
+	paddingLeft: "20px",
+	paddingRight: "20px",
+	paddingBottom: "50px",
+	marginTop: "30px"
 }));
 
 const StyledContentGridItem = styled(Grid)(({ theme }) => ({
@@ -80,7 +84,7 @@ const EquityFocus = ({focus}) => {
 										<FaBrain style={styledIcons}/>
 									}
 								</StyledIconBox>
-								<Typography variant="h6" color="text.primary" textAlign="center">
+								<Typography variant="subtitle1" color="text.primary" textAlign="center">
 									{el.title}
 								</Typography>
 							</Stack>
@@ -119,7 +123,7 @@ const EquityFocus = ({focus}) => {
 						</Typography>
 						{
 							focus.description.paragraphs.map((el, i) => (
-								<Typography variant="subtitle2" color="text.secondary" key={i} textAlign="justify">
+								<Typography variant="h6" color="text.secondary" key={i} textAlign="justify" style={{fontWeight: "500"}}>
 									{el}
 								</Typography>
 							))
