@@ -145,7 +145,7 @@ const EquitiesBanner = ({banner}) => {
 }
 
 const mapStateToProps = ({ investmentEquity }) => ({
-	banner : investmentEquity.data.reduxValue.banner
+	banner : investmentEquity.data.banner
 })
 
 export default connect(mapStateToProps)(EquitiesBanner)

@@ -5,10 +5,17 @@ import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider
 
 import { FaBars } from "react-icons/fa";
 
-import { menuItems } from "../info";
-import { NavLink } from 'react-router-dom';
+import { menuItems } from "./info";
+import { options } from '../../pages/investment/equities/info';
+import { NavLink, useNavigate } from 'react-router-dom';
+
 
 import SwipeableSideDrawer from './drawer';
+import { NavHashLink } from 'react-router-hash-link';
+
+import { connect } from 'react-redux';
+import { selectData } from "../../redux/action/equity";
+
 
 const TopAppBar = styled(AppBar)({
 	zIndex: 3,
@@ -36,7 +43,63 @@ const styledLink = {
 	color: "inherit"
 }
 
-const DropdownMenu = ({ menuItems }) => {
+const NestedMenuItem = ({ label, link, children, setParentAnchorEl, setData }) => {
+	const [anchorEl, setAnchorEl] = useState(null);
+	const navigate = useNavigate()
+  
+	const handleClick = (event) => {
+	  setAnchorEl(event.currentTarget);
+	};
+	
+	const handleClose = () => {
+		setAnchorEl(null);
+		setParentAnchorEl(null)
+		navigate(link)
+	};
+  
+	return (
+	  <div>
+		<MenuItem onClick={handleClick}>
+		  <Typography variant="subtitle2" color="text.primary" style={{ textTransform: 'uppercase' }}>
+			{label}
+		  </Typography>
+		</MenuItem>
+		<Menu
+		  anchorEl={anchorEl}
+		  open={Boolean(anchorEl)}
+		  onClose={handleClose}
+		  anchorOrigin={{
+			vertical: 'top',
+			horizontal: 'right',
+		  }}
+		  transformOrigin={{
+			vertical: 'top',
+			horizontal: 'left',
+		  }}
+		>
+		  {children.map((child, index) => (
+			<NavHashLink to={child.reduxValue ? link : child.link} style={styledLink} key={index} >
+			  <MenuItem onClick={() => {
+					if(child.reduxValue){
+						setData(child.reduxValue)
+					}
+					setAnchorEl(null);
+					setParentAnchorEl(null)
+				}}>
+				<Typography variant="subtitle2" color="text.primary" style={{ textTransform: 'uppercase' }}>
+				  {child.label}
+				  {console.log("Child", typeof(link))}
+				</Typography>
+			  </MenuItem>
+			</NavHashLink>
+		  ))}
+		</Menu>
+	  </div>
+	);
+  };
+  
+
+const DropdownMenu = ({ menuItems, setData }) => {
 	const [anchorEl, setAnchorEl] = useState(null);
 	const buttonRef = useRef(null);
 
@@ -57,11 +120,12 @@ const DropdownMenu = ({ menuItems }) => {
   
 	return (
 		<div>
-			<StyledNavButton sx={{textAlign: "left"}} variant="text" onClick={handleClick}>
-				<Typography variant="subtitle1" color="text.primary" style={{textTransform: "uppercase"}}>
+			<StyledNavButton sx={{ textAlign: 'left' }} variant="text" ref={buttonRef} onClick={handleClick}>
+				<Typography variant="subtitle1" color="text.primary" style={{ textTransform: 'uppercase', minWidth: "180px" }}>
 					{menuItems.label}
 				</Typography>
 			</StyledNavButton>
+
 			<Menu
 				anchorEl={anchorEl}
 				open={Boolean(anchorEl)}
@@ -75,17 +139,21 @@ const DropdownMenu = ({ menuItems }) => {
 					horizontal: 'left',
 				}}
 			>
-				{menuItems.navItems.map((item, index) => (
-					<NavLink to={item.link} style={styledLink}>
-						<MenuItem key={index} onClick={handleClose}>
-							<Typography variant="subtitle2" color="text.primary"  style={{textTransform: "uppercase"}}>
+				{menuItems.navItems.map((item, index) =>
+					item.children ? (
+					<NestedMenuItem label={item.label} link={item.link} key={index} setData={setData} children={item.children} setParentAnchorEl={setAnchorEl} />
+					) : (
+					<NavHashLink to={item.link} style={styledLink} key={index}>
+						<MenuItem onClick={handleClose}>
+							<Typography variant="subtitle2" color="text.primary" style={{ textTransform: 'uppercase' }}>
 								{item.label}
 							</Typography>
 						</MenuItem>
-					</NavLink>
-				))}
+					</NavHashLink>
+					)
+				)}
 			</Menu>
-		</div>
+	  </div>
 	);
 };
 
@@ -104,7 +172,7 @@ const styledMobileLogo = {
 	height: "40px"
 }
 
-const Navigation = () => {
+const Navigation = ({setData}) => {
 	const [anchorEl, setAnchorEl] = useState(null);
 
 	const handleMenuClick = (event) => {
@@ -171,7 +239,7 @@ const Navigation = () => {
 								{
 									menuItems.map((item, index) => (
 										<div key={index}>
-											<DropdownMenu menuItems={item} />
+											<DropdownMenu menuItems={item} setData={setData}/>
 										</div>
 									))
 								}
@@ -211,4 +279,13 @@ const Navigation = () => {
 	);
 };
 
-export default Navigation;
+
+const mapStateToProps = () => ({
+
+})
+
+const mapDispatchtoProps = (dispatch) => ({
+	setData: (option) => dispatch(selectData(option))
+})
+
+export default connect(mapStateToProps, mapDispatchtoProps)(Navigation);

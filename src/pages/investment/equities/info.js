@@ -258,6 +258,7 @@ export const investmentEquityData = {
 				]
 			}
 		},
+		characteristics: []
 	},
 	financeFrontier: {
 		banner: {
@@ -333,6 +334,7 @@ export const investmentEquityData = {
 				]
 			}
 		},
+		characteristics: []
 	},
 	futureFabrication: {
 		banner: {
@@ -408,6 +410,7 @@ export const investmentEquityData = {
 				]
 			}
 		},
+		characteristics: []
 	},
 	cryptoCraze: {
 		banner: {
@@ -455,6 +458,7 @@ export const investmentEquityData = {
 				]
 			}
 		},
+		characteristics: []
 	},
 	augmentedReality: {
 		banner: {
@@ -530,6 +534,7 @@ export const investmentEquityData = {
 				]
 			}
 		},
+		characteristics: []
 	},
 	decentralizedWeb3: {
 		banner: {
@@ -945,6 +950,7 @@ export const investmentEquityData = {
 				]
 			}
 		},
+		characteristics: []
 	},
 	futureUnicorns: {
 		banner: {

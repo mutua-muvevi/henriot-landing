@@ -65,7 +65,7 @@ const EquityCharacteristics = ({characteristics}) => {
 }
 
 const mapStateToProps = ({ investmentEquity }) => ({
-	characteristics : investmentEquity.data.reduxValue.characteristics
+	characteristics : investmentEquity.data.characteristics.length >= 1 ? investmentEquity.data.characteristics: null
 })
 
 export default connect(mapStateToProps)(EquityCharacteristics)
