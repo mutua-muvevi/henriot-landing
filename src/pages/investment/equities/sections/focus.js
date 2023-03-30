@@ -136,7 +136,7 @@ const EquityFocus = ({focus}) => {
 }
 
 const mapStateToProps = ({ investmentEquity }) => ({
-	focus : investmentEquity.data.reduxValue.focus
+	focus : investmentEquity.data.focus
 })
 
 export default connect(mapStateToProps)(EquityFocus)

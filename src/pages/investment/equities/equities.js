@@ -25,7 +25,9 @@ const InvestmentEquities = ({characteristics}) => {
 }
 
 const mapStateToProps = ({ investmentEquity }) => ({
-	characteristics : investmentEquity.data.reduxValue.characteristics
+	characteristics :  investmentEquity.data.characteristics.length >= 1 ? investmentEquity.data.characteristics: null,
+	banner: investmentEquity.data.banner
+
 })
 
 

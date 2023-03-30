@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Box, Collapse, Divider, IconButton, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 import { styled } from "@mui/system";
 
-import { drawerMenuItems } from "../info";
+import { drawerMenuItems } from "./info";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 
 const Logo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1658133237/henriot/logo/henriot_logo_mefxsi.png";

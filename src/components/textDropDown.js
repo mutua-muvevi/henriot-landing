@@ -46,6 +46,7 @@ const ReusableTextDropDown = ({ options, setData }) => {
 				</Typography>
 				{isOpen ? <FaChevronUp style={styledIcon} /> : <FaChevronDown style={styledIcon} />}
 			</StyledTextIconStack>
+			
 			<Menu anchorEl={anchorEl} open={isOpen} onClose={handleClose}>
 				{options.map((option, i) => (
 					<MenuItem key={i} onClick={() => {
