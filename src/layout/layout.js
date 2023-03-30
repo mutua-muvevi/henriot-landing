@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Box, Stack } from '@mui/material';
 import { styled } from '@mui/system';
 
-import Footer from './footer';
+import Footer from './footer/footer';
 import Navbar from './navbar/navbar';
 
 const StyledMain = styled(Box)(({ theme }) => ({
