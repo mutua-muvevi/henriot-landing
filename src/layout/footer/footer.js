@@ -6,7 +6,7 @@ import FooterTop from "./top";
 
 
 const StyledFooter = styled(Box)(({ theme }) => ({
-	backgroundColor: theme.palette.background.neutral
+	backgroundColor: theme.palette.background.neutral,
 }));
 
 const StyledBottomContainer = styled(Container)(({ theme }) => ({

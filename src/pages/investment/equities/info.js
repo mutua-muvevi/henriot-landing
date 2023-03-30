@@ -262,7 +262,7 @@ export const investmentEquityData = {
 	},
 	financeFrontier: {
 		banner: {
-			title: "Finance froontier",
+			title: "Finance frontier",
 			paragraph:"Aims to provide exposure to fintech innovations including mobile payments, digital wallets, peer-to-peer lending, blockchain technology, and financial risk transformation. These innovations should revolutionize the financial industry, impacting every sector of the global economy.",
 			breadcrumbsItem: {
 				items: [
@@ -302,7 +302,7 @@ export const investmentEquityData = {
 				},
 				{
 					icon: "FaRobot",
-					title: "eCommerce"
+					title: "e-Commerce"
 				},
 			],
 			overview : [
@@ -853,7 +853,7 @@ export const investmentEquityData = {
 				},
 				{
 					icon: "FaNetworkWired",
-					title: "eCommerce"
+					title: "e-Commerce"
 				},
 				{
 					icon: "MdSendToMobile",
