@@ -1,4 +1,5 @@
 import { investmentEquityData } from "../../pages/investment/equities/info"
+import { investmentForexData } from "../../pages/investment/forex/info"
 
 export const navItems = [
 	{
@@ -116,7 +117,35 @@ export const menuItems = [
 		navItems: [
 			{
 				label: "Forex",
-				link:"/landing/investment-solutions/forex"
+				link:"/landing/investment-solutions/forex",
+				buttonAction: true,
+				children: [
+					{
+						label: "HG Delta",
+						value: "hgDelta",
+						reduxValue: investmentForexData
+					},
+					{
+						label: "HG Alpha",
+						value: "hgAlpha",
+						reduxValue: investmentForexData
+					},
+					{
+						label: "HG Beta",
+						value: "hgBeta",
+						reduxValue: investmentForexData
+					},
+					{
+						label: "HG Gamma",
+						value: "hgGamma",
+						reduxValue: investmentForexData
+					},
+					{
+						label: "HG Sigma",
+						value: "hgSigma",
+						reduxValue: investmentForexData
+					},
+				]
 			},
 			{
 				label: "Equities",

@@ -58,43 +58,43 @@ const NestedMenuItem = ({ label, link, children, setParentAnchorEl, setData }) =
 	};
   
 	return (
-	  <div>
-		<MenuItem onClick={handleClick}>
-		  <Typography variant="subtitle2" color="text.primary" style={{ textTransform: 'uppercase' }}>
-			{label}
-		  </Typography>
-		</MenuItem>
-		<Menu
-		  anchorEl={anchorEl}
-		  open={Boolean(anchorEl)}
-		  onClose={handleClose}
-		  anchorOrigin={{
-			vertical: 'top',
-			horizontal: 'right',
-		  }}
-		  transformOrigin={{
-			vertical: 'top',
-			horizontal: 'left',
-		  }}
-		>
-		  {children.map((child, index) => (
-			<NavHashLink to={child.reduxValue ? link : child.link} style={styledLink} key={index} >
-			  <MenuItem onClick={() => {
-					if(child.reduxValue){
-						setData(child.reduxValue)
-					}
-					setAnchorEl(null);
-					setParentAnchorEl(null)
-				}}>
+		<div>
+			<MenuItem onClick={handleClick}>
 				<Typography variant="subtitle2" color="text.primary" style={{ textTransform: 'uppercase' }}>
-				  {child.label}
-				  {console.log("Child", typeof(link))}
+					{label}
 				</Typography>
-			  </MenuItem>
-			</NavHashLink>
-		  ))}
-		</Menu>
-	  </div>
+			</MenuItem>
+			<Menu
+				anchorEl={anchorEl}
+				open={Boolean(anchorEl)}
+				onClose={handleClose}
+				anchorOrigin={{
+					vertical: 'top',
+					horizontal: 'right',
+				}}
+				transformOrigin={{
+					vertical: 'top',
+					horizontal: 'left',
+				}}
+			>
+			{children.map((child, index) => (
+				<NavHashLink to={child.reduxValue ? link : child.link} style={styledLink} key={index} >
+					<MenuItem onClick={() => {
+							if(child.reduxValue){
+								setData(child.reduxValue)
+							}
+							setAnchorEl(null);
+							setParentAnchorEl(null)
+						}}>
+						<Typography variant="subtitle2" color="text.primary" style={{ textTransform: 'uppercase' }}>
+							{child.label}
+							{console.log("Child is", child)}
+						</Typography>
+					</MenuItem>
+				</NavHashLink>
+			))}
+			</Menu>
+		</div>
 	);
   };
   
