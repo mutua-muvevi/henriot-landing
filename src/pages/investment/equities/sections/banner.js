@@ -131,10 +131,10 @@ const EquitiesBanner = ({banner}) => {
 			</StyledAbsoluteWrapper>
 
 			<StyledGrid container spacing={3}>
-				<StyledGridItemLeft item xs={12} sm={12} md={12} lg={7} xl={8}>
+				<StyledGridItemLeft item xs={12} sm={12} md={12} lg={6.5} xl={7}>
 				</StyledGridItemLeft>
 
-				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5} xl={4}>
+				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5.5} xl={5}>
 					<StyledImageBox>
 
 					</StyledImageBox>

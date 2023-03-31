@@ -5,7 +5,7 @@ import { footerParagraph } from "./info"
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "30px",
-	paddingBottom: "30px"
+	paddingBottom: "30px",
 }))
 
 const PrivacyPolicy = () => {

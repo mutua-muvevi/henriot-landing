@@ -13,7 +13,7 @@ const GREY = {
 	200: '#F4F6F8',
 	300: '#DFE3E8',
 	400: '#C4CDD5',
-	500: '#919EAB',
+	500: 'rgba(157, 157, 157, 1)',
 	600: '#637381',
 	700: '#454F5B',
 	800: '#1b1b1c',
@@ -86,6 +86,7 @@ const BACKGROUND = {
 	paper: '#fff', 
 	default: GREY[100], 
 	neutral: GREY[300],
+	grey: GREY[500],
 	dark:"rgba(1, 0, 1, 1)"
 }
 
