@@ -12,6 +12,8 @@ import ForexThreeContent from "./sections/threeContent";
 import ForexTwoContent from "./sections/twoContent";
 import ForexWhatIs from "./sections/whatIs";
 
+import { singleInfo } from "./info";
+
 const StyledInvestmentForex = styled(Box)(({ theme }) => ({
 
 }))
@@ -19,17 +21,17 @@ const StyledInvestmentForex = styled(Box)(({ theme }) => ({
 const InvestmentForex = () => {
 	return (
 		<StyledInvestmentForex>
-			<ForexBanner/>
-			<ForexFeatures/>
-			<ForexWhatIs/>
-			<ForexThreeContent/>
-			<ForexTwoContent/>
-			<ForexPricing/>
-			<ForexProfitShare/>
-			<ForexBrokerAccount/>
-			<ForexCalculator/>
-			<ForexReviews/>
-			<ForexFAQ/>
+			<ForexBanner banner={singleInfo.banner}/>
+			<ForexFeatures features={singleInfo.features}/>
+			<ForexWhatIs whatIs={singleInfo.whatIs}/>
+			<ForexThreeContent threeContent={singleInfo.threeContent}/>
+			<ForexTwoContent twoContent={singleInfo.twoContent}/>
+			<ForexPricing pricing={singleInfo.pricing}/>
+			<ForexProfitShare profitShare={singleInfo.profitShare}/>
+			<ForexBrokerAccount brokerAccount={singleInfo.brokerAccount}/>
+			<ForexCalculator calculator={singleInfo.calculator}/>
+			<ForexReviews reviews={singleInfo.reviews}/>
+			<ForexFAQ faq={singleInfo.faq}/>
 		</StyledInvestmentForex>
 	)
 }
