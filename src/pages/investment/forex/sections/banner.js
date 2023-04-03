@@ -4,10 +4,6 @@ import { Grid, Stack,  Button,  Box, Typography, Container } from '@mui/material
 import { styled } from '@mui/system';
 
 import { FaLongArrowAltRight } from "react-icons/fa";
-
-import {  options } from '../info';
-import ReusableBreadcrumbs from '../../../../components/breadcrumbs';
-import ReusableTextDropDown from "../../../../components/textDropDown";
 import { connect } from "react-redux";
 
 
@@ -66,18 +62,14 @@ const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
 		paddingLeft: theme.spacing(20),
 		paddingRight: theme.spacing(3),
 	},
-}))
-
-const StyledDropDownSection = styled(Box)(({ theme }) => ({
-	
-}))
+}));
 
 const StyledGridItemRight = styled(Grid)(({ theme }) => ({
 	width: "100%",
 	[theme.breakpoints.down("md")]: {
 		marginBottom: "50px",
 	},
-}))
+}));
 
 const StyledButton = styled(Button)(({ theme }) => ({
 	width: "max-content",
@@ -85,7 +77,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 	paddingBottom: "10px",
 	paddingLeft: "20px",
 	paddingRight: "20px",
-}))
+}));
 
 const ForexBanner = ({banner}) => {
 
@@ -99,28 +91,35 @@ const ForexBanner = ({banner}) => {
 			marginBotton: "30px"
 		},
 		borderRadius: "5px"
-	}))
+	}));
 
 	return (
 		<StyledBanner>
 			<StyledAbsoluteWrapper>
 				<Container maxWidth="lg">
 					<StyledContentStack spacing={6} direction="column">
-						<Stack spacing={3} direction="column" sx={{mr: "30px"}}>
-							<ReusableBreadcrumbs breadCrumbsItem={banner.breadcrumbsItem} />
+						<Stack spacing={1.5} direction="column" sx={{mr: "30px"}}>
 
-							<Typography variant="h3" color="text.primary">
+							<Typography variant="h2" color="text.primary">
+								{banner.boldTitle}
+							</Typography>
+
+							<Typography variant="h3" color="text.primary" sx={{fontWeight: 500}}>
 								{banner.title}
 							</Typography>
 
-							<Typography variant="h6" textAlign="justify" color="text.secondary" sx={{fontWeight: 500}}>
-								{banner.paragraph}
+							<Typography variant="subtitle1" textAlign="justify" color="text.secondary" sx={{fontWeight: 500}}>
+								{banner.caption}
 							</Typography>
-
-							<StyledButton variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
-								Explore Strategy
-							</StyledButton>
 						</Stack>
+
+						<StyledButton type="button" onClick={banner.button.action} variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
+							{banner.button.label}
+						</StyledButton>
+
+						<Typography variant="caption" textAlign="justify" color="text.secondary">
+							{banner.captionTwo}
+						</Typography>
 					</StyledContentStack>
 				</Container>
 			</StyledAbsoluteWrapper>

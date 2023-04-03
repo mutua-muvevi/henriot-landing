@@ -2038,8 +2038,27 @@ export const singleInfo = {
 				label: "HG Delta"
 			}
 		},
+		button: {
+			action: () => {console.log("Hello there")},
+			label: "Pricing"
+		}
 	},
 	features: {
+		breadcrumbsItem: {
+			items: [
+				{
+					label: "Home",
+					link: "/landing/main"
+				},
+				{
+					label: "Investment solution",
+					link: "/landing/investment-solutions"
+				},
+			],
+			last: {
+				label: "HG Delta"
+			}
+		},
 		content: [
 			{
 				title: "Consistent Returns",
