@@ -1,12 +1,12 @@
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
-import { FaChevronRight } from "react-icons/fa"
+import { BsFillCircleFill } from "react-icons/bs";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
 	paddingBottom : "50px",
-	backgroundColor: theme.palette.background.neutral
+	backgroundColor: theme.palette.gradient.primary
 }));
 
 const StyledTopContainer = styled(Container)(({ theme }) => ({
@@ -25,15 +25,16 @@ const StyledGridItem = styled(Grid)(({ theme }) => ({
 
 }));
 
+const StyledGraphBox = styled(Box)(({ theme }) => ({
+	width: "150px",
+	backgroundColor: theme.palette.primary.main,
+	padding: "10px",
+	borderRadius: "5px"
+}))
+
 const creatorImageStyles = {
 	width: "100px",
 	height: "100px"
-}
-
-const styledPresentRecord = {
-	maxWidth: "400px",
-	maxHeight: "500px",
-	borderRadius: "5px"
 }
 
 const ForexWhatIs = ({whatIs}) => {
@@ -52,81 +53,117 @@ const ForexWhatIs = ({whatIs}) => {
 				<StyledMainContainer maxWidth="xl">
 					<StyledGrid container spacing={3}>
 						<StyledGridItem item xs={12} sm={12} md={12} lg={4} xl={4}>
-							<Typography variant="h5">
-								Bar chart here
-							</Typography>
-						</StyledGridItem>
-						{
-							whatIs.lists.map((el, i) => (
-								<StyledGridItem item key={i} xs={12} sm={12} md={12} lg={4} xl={4}>
-									<Stack direction="column" spacing={1.5}>
-										<Typography variant="h5" color="text.primary">
-											{el.title}
-										</Typography>
-
-										<List dense>
-											{
-												el.items.map((item, index) => (
-													<ListItem key={index}>
-														<ListItemIcon>
-															<FaChevronRight />
-														</ListItemIcon>
-														<ListItemText primary={
-															<Typography variant="subtitle1" color="text.secondary" sx={{fontWeight: 500}} textAlign="justify">
-																{item}
-															</Typography>
-														} />
-													</ListItem>
-												))
-											}
-										</List>
-									</Stack>
-								</StyledGridItem>
-							))
-						}
-					</StyledGrid>
-					
-					<Grid container spacing={3}>
-						<Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-
-						</Grid>
-
-						<Grid  item xs={12} sm={12} md={12} lg={4} xl={4}>
-							<Stack direction="column" spacing={3}>
-								<Typography variant="h5" color="text.primary">
-									Creators: 
-								</Typography>
-
+							<Stack spacing={3} direction="row" alignItems="flex-end">
 								{
-									whatIs.creators.map((cr, i) => (
-											<Stack key={i} direction="row" spacing={3}>
-												<img src={cr.image} alt="Creators" style={creatorImageStyles}/>
-												<Stack firection="column">
-													<Typography variant="h6" color="text.primary">
-														{cr.text}
-													</Typography>
-													<Typography variant="h6" color="text.secondary">
-														{cr.role}
-													</Typography>
+									whatIs.graph.map((el, i) => (
+										<div key={i}>
+											<Typography variant="h5" color="primary" style={{fontSize: "500"}}>
+												{el.title}
+											</Typography>
+											<StyledGraphBox
+												
+												style={{
+													height: el.height
+												}}
+											>
+												<Typography variant="h5" sx={{color: "#fff"}} style={{fontWeight: "500"}}>
+													{el.number}
+												</Typography>
+												<Typography variant="h5" sx={{color: "#fff"}} style={{fontWeight: "500"}}>
+													Average
+												</Typography>
+											</StyledGraphBox>
 
-												</Stack>
-											</Stack>
+										</div>
 									))
 								}
 							</Stack>
-						</Grid>
+						</StyledGridItem>
 
-						<Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-							<Stack direction="column" spacing={3}>
-								<Typography variant="h5" color="text.primary">
-									Present Record 
-								</Typography>
+						<StyledGridItem item xs={12} sm={12} md={12} lg={8} xl={8}>
+							<Stack direction="column" spacing={5}>
+								<div>
+									<Grid container spacing={3}>
+										{
+											whatIs.lists.map((el, i) => (
+												<Grid key={i} item xs={12} sm={12} md={12} lg={6} xl={6}>
+													<Stack direction="column" spacing={3}>
+														<Typography variant="h5" color="text.primary">
+															{el.title}
+														</Typography>
 
-								<img src={whatIs.presentRecord} alt="Henriots present record" style={styledPresentRecord}/>
+														<div>
+															<Grid container spacing={3}>
+																<Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+																	<List dense>
+																		{
+																			el.items.map((item, index) => (
+																				<ListItem key={index}>
+																					<ListItemIcon>
+																						<BsFillCircleFill />
+																					</ListItemIcon>
+																					<ListItemText primary={
+																						<Typography variant="subtitle1" color="text.secondary" sx={{fontWeight: 500}} textAlign="justify">
+																							{item}
+																						</Typography>
+																					} />
+																				</ListItem>
+																			))
+																		}
+																	</List>
+																</Grid>
+															</Grid>
+														</div>
+
+													</Stack>
+												</Grid>
+											))
+										}
+									</Grid>
+
+									<Grid container spacing={3}>
+										<Grid  item xs={12} sm={12} md={12} lg={4} xl={3}>
+											<Typography variant="h5" color="text.primary">
+												Creators: 
+											</Typography>
+										</Grid>
+											
+
+										{
+											whatIs.creators.map((cr, i) => (
+												<Grid key={i} item xs={12} sm={12} md={12} lg={4} xl={4.5}>
+													<Stack key={i} direction="row" spacing={3}>
+														<img src={cr.image} alt="Creators" style={creatorImageStyles}/>
+														<Stack direction="column" justifyContent="center">
+															<Typography variant="h6" color="text.primary">
+																{cr.text}
+															</Typography>
+															<Typography variant="h6" color="text.secondary">
+																{cr.role}
+															</Typography>
+														</Stack>
+													</Stack>
+												</Grid>
+											))
+										}
+									</Grid>
+
+									<div>
+										<Grid container spacing={3} style={{marginTop:"50px"}}>
+											<Stack direction="column" spacing={3}>
+												<Typography variant="h5" color="text.primary">
+													Present Record 
+												</Typography>
+
+												<Typography variant="h1">Widget here</Typography>
+											</Stack>
+										</Grid>
+									</div>
+								</div>
 							</Stack>
+						</StyledGridItem>
 
-						</Grid>
-					</Grid>
+					</StyledGrid>
 
 				</StyledMainContainer>
 			</Box>

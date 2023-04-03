@@ -29,9 +29,11 @@ const GREY = {
 };
 
 const PRIMARY = {
+	quaterOpacity: "rgba(101, 207, 187, 0.25)",
+	halfOpacity: "rgba(101, 207, 187, 0.5)",
 	lighter: "#b0e6dc",
 	light: "#92ddcf",
-	main: "#65cfbb",
+	main: "rgba(101, 207, 187, 1)",
 	dark: "#37af98",
 	darker: '#32a08b',
 	contrastText: '#000000',
@@ -115,7 +117,7 @@ const palette = {
 	warning: { ...WARNING },
 	error: { ...ERROR },
 	grey: GREY,
-	gradients: GRADIENTS,
+	gradient: GRADIENTS,
 	chart: CHART_COLORS,
 	divider: GREY[500_24],
 	text: { primary: GREY[900], secondary: GREY[700], disabled: GREY[600] },

@@ -79,6 +79,12 @@ const StyledButton = styled(Button)(({ theme }) => ({
 	paddingRight: "20px",
 }));
 
+const linkStyle = {
+	textDecoration: "none",
+	color: "inherit",
+	cursor: "pointer"
+}
+
 const ForexBanner = ({banner}) => {
 
 	const StyledImageBox = styled(Grid)(({ theme }) => ({
@@ -117,9 +123,16 @@ const ForexBanner = ({banner}) => {
 							{banner.button.label}
 						</StyledButton>
 
-						<Typography variant="caption" textAlign="justify" color="text.secondary">
-							{banner.captionTwo}
-						</Typography>
+						<Stack direction="column" spacing={0.5}>
+							<Typography variant="caption" textAlign="justify" color="text.secondary">
+								{banner.captionTwo}
+							</Typography>
+							<a href="https://www.myfxbook.com" target="_blank" rel="noreferrer" style={linkStyle}>
+								<Typography variant="subtitle2" textAlign="justify" color="text.primary" sx={{fontWeight: 500}}>
+									{banner.verifier}
+								</Typography>
+							</a>
+						</Stack>
 					</StyledContentStack>
 				</Container>
 			</StyledAbsoluteWrapper>
