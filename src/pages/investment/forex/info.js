@@ -2140,11 +2140,13 @@ export const singleInfo = {
 		creators: [
 			{
 				image: image,
-				text: "Kennedy Muturi"
+				text: "Kennedy Muturi",
+				role: "Strategy provider"
 			},
 			{
 				image: image,
-				text: "Kennedy Muturi"
+				text: "Kennedy Muturi",
+				role: "Strategy provider"
 			},
 		],
 		graph: {},
