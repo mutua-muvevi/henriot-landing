@@ -2,7 +2,7 @@ import { BsXLg, BsFillEmojiSmileFill, BsShieldLock, BsFileEarmarkText } from "re
 import { FaCheck, FaInfoCircle, FaQuestion } from "react-icons/fa";
 import { CgArrowLongUp, CgHome } from "react-icons/cg";
 import { FiSliders } from "react-icons/fi";
-import { FcNeutralTrading, FcBullish, FcCollaboration, FcHome, FcManager    } from "react-icons/fc"
+import { FcNeutralTrading, FcBullish, FcCollaboration, FcHome, FcManager, FcBusinessman,    } from "react-icons/fc"
 
 const image = "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733726/henriot/pexels-pok-rie-5807886_laufb3.jpg"
 
@@ -2032,6 +2032,10 @@ const largerColoredIconStyles ={
 	fontSize: "30px"
 }
 
+const reviewIconStyles = {
+	fontSize: "50px"
+}
+
 export const singleInfo = {
 	banner: {
 		boldTitle: "1-10% Monthly",
@@ -2404,31 +2408,31 @@ export const singleInfo = {
 	},
 	reviews: [
 		{
-			image: image,
+			icon: <FcBusinessman style={reviewIconStyles}/>,
 			name: "James Ndungu 1",
 			location: "Nairobi Kenya",
 			text: "They taught me new concepts to read the forex market and respect its rules. Daily analysis to capture possible negotiable movements. Mandatory reading their emails 7 days a week"
 		},
 		{
-			image: image,
+			icon: <FcBusinessman style={reviewIconStyles}/>,
 			name: "James Ndungu 2",
 			location: "Nairobi Kenya",
 			text: "They taught me new concepts to read the forex market and respect its rules. Daily analysis to capture possible negotiable movements. Mandatory reading their emails 7 days a week"
 		},
 		{
-			image: image,
+			icon: <FcBusinessman style={reviewIconStyles}/>,
 			name: "James Ndungu 3",
 			location: "Nairobi Kenya",
 			text: "They taught me new concepts to read the forex market and respect its rules. Daily analysis to capture possible negotiable movements. Mandatory reading their emails 7 days a week"
 		},
 		{
-			image: image,
+			icon: <FcBusinessman style={reviewIconStyles}/>,
 			name: "James Ndungu 4",
 			location: "Nairobi Kenya",
 			text: "They taught me new concepts to read the forex market and respect its rules. Daily analysis to capture possible negotiable movements. Mandatory reading their emails 7 days a week"
 		},
 		{
-			image: image,
+			icon: <FcBusinessman style={reviewIconStyles}/>,
 			name: "James Ndungu 5",
 			location: "Nairobi Kenya",
 			text: "They taught me new concepts to read the forex market and respect its rules. Daily analysis to capture possible negotiable movements. Mandatory reading their emails 7 days a week"

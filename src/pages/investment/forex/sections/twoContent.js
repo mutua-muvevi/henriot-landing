@@ -22,7 +22,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const ForexTwoContent = ({twoContent}) => {
 	return (
 		<StyledWrapper>
-			<Container maxWidth="xl">
+			<Container maxWidth="lg">
 				<StyledGrid container spacing={3}>
 					{
 						twoContent.map((el, i) => (
