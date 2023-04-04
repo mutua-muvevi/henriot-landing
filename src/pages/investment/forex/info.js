@@ -2273,28 +2273,30 @@ export const singleInfo = {
 		}
 	},
 	profitShare: {
-		table: [
-			{
-				key: "Net Capital",
-				value: "Profit Sharing"
-			},
-			{
-				key: "$400",
-				value: "35%"
-			},
-			{
-				key: "$800",
-				value: "30%"
-			},
-			{
-				key: "$5000",
-				value: "25%"
-			},
-			{
-				key: "$15000",
-				value: "20%"
-			},
-		],
+		table: {
+			head: [
+				"Net Capital",
+				"Profit Sharing",
+			],
+			body: [
+				{
+					key: "$400",
+					value: "35%"
+				},
+				{
+					key: "$800",
+					value: "30%"
+				},
+				{
+					key: "$5000",
+					value: "25%"
+				},
+				{
+					key: "$15000",
+					value: "20%"
+				},
+			],
+		},
 		additionalContent: [
 			{
 				icon: <FaQuestion style={styledIcon}/>,

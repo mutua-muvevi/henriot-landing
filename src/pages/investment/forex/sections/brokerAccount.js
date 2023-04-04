@@ -152,7 +152,7 @@ const ForexBrokerAccount = ({brokerAccount}) => {
 
 	return (
 		<StyledWrapper>
-			<Container maxWith="lg">
+			<Container maxWidth="lg">
 				<Stack direction="column" spacing={5}>
 					<div>
 						<StyledGrid container spacing={5}>
