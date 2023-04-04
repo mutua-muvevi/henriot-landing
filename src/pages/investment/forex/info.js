@@ -2313,14 +2313,14 @@ export const singleInfo = {
 			{
 				image: image,
 				title: "XM Global",
-				stars: 4,
+				stars: 3.4,
 				items : [
 					{
-						key: "Trading Platform:",
+						key: "Trading Platform",
 						value: "MT4, MT5"
 					},
 					{
-						key: "Max Leverage:",
+						key: "Max Leverage",
 						value: "500:1"
 					},
 					{
@@ -2340,14 +2340,14 @@ export const singleInfo = {
 			{
 				image: image,
 				title: "VT Global",
-				stars: 4,
+				stars: 4.5,
 				items : [
 					{
-						key: "Trading Platform:",
+						key: "Trading Platform",
 						value: "MT4, MT5"
 					},
 					{
-						key: "Max Leverage:",
+						key: "Max Leverage",
 						value: "500:1"
 					},
 					{

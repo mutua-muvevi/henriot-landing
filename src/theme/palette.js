@@ -49,12 +49,14 @@ const SECONDARY = {
 };
 
 const INFO = {
-	lighter: '#D0F2FF',
-	light: '#74CAFF',
-	main: '#65cfbb',
-	dark: '#0C53B7',
-	darker: '#04297A',
-	contrastText: '#fff',
+	quaterOpacity: "rgba(101, 207, 187, 0.25)",
+	halfOpacity: "rgba(101, 207, 187, 0.5)",
+	lighter: "#b0e6dc",
+	light: "#92ddcf",
+	main: "rgba(101, 207, 187, 1)",
+	dark: "#37af98",
+	darker: '#32a08b',
+	contrastText: '#000000',
 };
 
 const SUCCESS = {

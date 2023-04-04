@@ -1,9 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import { Box, Card, CardContent, Container, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useTheme } from "@emotion/react";
 
 const Wrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
@@ -26,27 +28,45 @@ const StyledIconBox = styled(Box)(({ theme }) => ({
 	backgroundColor: theme.palette.primary.quaterOpacity,
 }))
 
-const styledIcon = {
-	fontSize: "20px"
+const SlickArrowLeft = (props) => {
+	const { className, style, onClick, backgroundColor, color } = props;
+
+	return (
+		<div
+			className={className}
+			style={{
+				...style,
+				display: "block",
+				backgroundColor: backgroundColor,
+				color: color,
+			}}
+			onClick={onClick}
+		/>
+	)
 }
 
-const Arrow = styled(Box)(({ theme }) => ({
-	cursor: "pointer",
-}));
+const SlickArrowRight = (props) => {
+	const { className, style, onClick , backgroundColor, color} = props;
 
-const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-	<Arrow {...props}>
-		<FaChevronLeft size={32} style={styledIcon}/>
-	</Arrow>
-);
+	return (
+		<div
+			className={className}
+			style={{
+				...style,
+				display: "block",
+				backgroundColor: backgroundColor,
+				color: color,
+			}}
+			onClick={onClick}
+		/>
+	)
+}
 
-const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-	<Arrow {...props}>
-		<FaChevronRight size={32} style={styledIcon}/>
-	</Arrow>
-);
+
 
 const ForexReviews = ({ reviews }) => {
+	const theme = useTheme();
+
 	const settings = {
 		className: "center",
 		centerMode: true,
@@ -59,8 +79,8 @@ const ForexReviews = ({ reviews }) => {
 		autoplaySpeed: 5000,
 		pauseOnHover: true,
 		arrows: true,
-		prevArrow: <SlickArrowLeft />,
-		nextArrow: <SlickArrowRight />,
+		prevArrow: <SlickArrowLeft color={theme.palette.primary.main} backgroundColor={theme.palette.primary.halfOpacity}/>,
+		nextArrow: <SlickArrowRight color={theme.palette.primary.main} backgroundColor={theme.palette.primary.halfOpacity}/>,
 		responsive: [
 			{
 				breakpoint: 1024,
