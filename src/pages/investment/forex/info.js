@@ -2441,43 +2441,43 @@ export const singleInfo = {
 	faq: [
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
-			text: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
+			question: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
+			answer: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
 		},
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "What kind of results are possible with the HG-delta EA method?",
-			text: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
+			question: "What kind of results are possible with the HG-delta EA method?",
+			answer: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
 		},
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
-			text: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
+			question: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
+			answer: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
 		},
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "What kind of results are possible with the HG-delta EA method?",
-			text: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
+			question: "What kind of results are possible with the HG-delta EA method?",
+			answer: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
 		},
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
-			text: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
+			question: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
+			answer: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
 		},
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "What kind of results are possible with the HG-delta EA method?",
-			text: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
+			question: "What kind of results are possible with the HG-delta EA method?",
+			answer: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
 		},
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
-			text: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
+			question: "How are trading decisions, entries, exits, and trade management done for HG-delta EA?",
+			answer: "The HG-delta EA is fully based on technical analysis. The trading system is only traded on the EUR/USD. It consists of two EAs that work simultaneously, one to buy and the other to sell. Also, depending on the balance, the two EAs must run at the same time on several EUR/USD charts with different timeframes. The EA opens a lot of trades in a day, both longs and shorts (hedging is used). The entries and exits are based on a mixture of moving averages, oscillators, and price swings."
 		},
 		{
 			icon: <FaQuestion style={styledIcon} />,
-			tite: "What kind of results are possible with the HG-delta EA method?",
-			text: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
+			question: "What kind of results are possible with the HG-delta EA method?",
+			answer: "The best results we managed to make were 28% gain per month. But this was with the highest risk settings. With lower risk settings, the lowest gain was +8% per month on average. Usually, the EA aims for results between 13% and 20% per month"
 		},
 	]
 }

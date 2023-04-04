@@ -7,7 +7,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Wrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
-	padingBottom : "50px",
+	paddingBottom : "50px",
 	minHeight: "60vh",
 	display: "flex",
 	flexDirection: "column",
@@ -100,7 +100,7 @@ const ForexReviews = ({ reviews }) => {
 
 	return (
 		<Wrapper>
-			<Container maxWidth="xl">
+			<Container maxWidth="lg">
 				<Stack direction="column" spacing={5}>
 					<Typography variant="h3" color="text.primary">
 						Reviews
