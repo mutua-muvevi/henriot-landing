@@ -10,7 +10,7 @@ const styledLink = {
 const ReusableBreadcrumbs = ({breadCrumbsItem}) => {
 	return (
 		<div role="presentation" >
-			<Breadcrumbs separator=">" maxItems={2} aria-label="breadcrumb">
+			<Breadcrumbs separator=">" maxItems={3} aria-label="breadcrumb">
 				{
 					breadCrumbsItem.items.map((el, i) => (
 						<Link to={el.link} style={styledLink} key={i}>

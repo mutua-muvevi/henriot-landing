@@ -29,9 +29,11 @@ const GREY = {
 };
 
 const PRIMARY = {
+	quaterOpacity: "rgba(101, 207, 187, 0.25)",
+	halfOpacity: "rgba(101, 207, 187, 0.5)",
 	lighter: "#b0e6dc",
 	light: "#92ddcf",
-	main: "#65cfbb",
+	main: "rgba(101, 207, 187, 1)",
 	dark: "#37af98",
 	darker: '#32a08b',
 	contrastText: '#000000',
@@ -47,12 +49,14 @@ const SECONDARY = {
 };
 
 const INFO = {
-	lighter: '#D0F2FF',
-	light: '#74CAFF',
-	main: '#65cfbb',
-	dark: '#0C53B7',
-	darker: '#04297A',
-	contrastText: '#fff',
+	quaterOpacity: "rgba(101, 207, 187, 0.25)",
+	halfOpacity: "rgba(101, 207, 187, 0.5)",
+	lighter: "#b0e6dc",
+	light: "#92ddcf",
+	main: "rgba(101, 207, 187, 1)",
+	dark: "#37af98",
+	darker: '#32a08b',
+	contrastText: '#000000',
 };
 
 const SUCCESS = {
@@ -91,6 +95,7 @@ const BACKGROUND = {
 }
 
 const GRADIENTS = {
+	primaryLight: createGradient(PRIMARY.halfOpacity, PRIMARY.quaterOpacity),
 	primary: createGradient(PRIMARY.light, PRIMARY.main),
 	info: createGradient(INFO.light, INFO.main),
 	success: createGradient(SUCCESS.light, SUCCESS.main),
@@ -115,7 +120,7 @@ const palette = {
 	warning: { ...WARNING },
 	error: { ...ERROR },
 	grey: GREY,
-	gradients: GRADIENTS,
+	gradient: GRADIENTS,
 	chart: CHART_COLORS,
 	divider: GREY[500_24],
 	text: { primary: GREY[900], secondary: GREY[700], disabled: GREY[600] },
