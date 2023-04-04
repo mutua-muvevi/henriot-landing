@@ -2394,16 +2394,18 @@ export const singleInfo = {
 	calculator: {
 		left: {
 			title: "Calculate your expected profit with Portfolio HG-Delta",
-			profitPerMonth: 14,
-			possibleDD: 33
-		},
-		right: {
-			expectedReturns: 14,
-			averageProfit: 30,
-			accountEquity: 0,
-			profitRental: 0,
-			profitManaged: 0,
-			profitShareFees: 0
+			items: [
+				{
+					key: "Average Profit Per Month",
+					value: 14,
+					tooltip: "Some important information here"
+				},
+				{
+					key: "Possible DD",
+					value: 33,
+					tooltip: "Some important information here"
+				},
+			],
 		}
 	},
 	reviews: [

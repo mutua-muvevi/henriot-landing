@@ -93,6 +93,7 @@ const BACKGROUND = {
 }
 
 const GRADIENTS = {
+	primaryLight: createGradient(PRIMARY.halfOpacity, PRIMARY.quaterOpacity),
 	primary: createGradient(PRIMARY.light, PRIMARY.main),
 	info: createGradient(INFO.light, INFO.main),
 	success: createGradient(SUCCESS.light, SUCCESS.main),

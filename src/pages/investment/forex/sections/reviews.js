@@ -135,6 +135,9 @@ const ForexReviews = ({ reviews }) => {
 							</div>
 						))}
 					</Slider>
+					<Typography variant="subtitle1" color="text.primary" sx={{fontWeight: 500}}>
+						*Some of the reviews have been modified for gramma and spelling. 
+					</Typography>
 				</Stack>
 			</Container>
 		</Wrapper>

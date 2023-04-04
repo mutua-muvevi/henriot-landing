@@ -1,8 +1,8 @@
-import { TextField } from "@mui/material";
+import { InputAdornment, TextField } from "@mui/material";
 import React from 'react';
 import { useField } from "formik";
 
-const TextFieldWrapper = ({name, variant, multiline, size, shrink, ...otherProps}) => {
+const TextFieldWrapper = ({name, variant, multiline, size, shrink, startIcon,...otherProps}) => {
 
 	const [field, meta] = useField(name)
 
@@ -15,7 +15,14 @@ const TextFieldWrapper = ({name, variant, multiline, size, shrink, ...otherProps
 		multiline : multiline === true ? multiline : false,
 		InputLabelProps: {
 			shrink: shrink ? null : true
-		}
+		},
+		InputProps: startIcon
+      ? {
+          startAdornment: (
+            <InputAdornment position="start">{startIcon}</InputAdornment>
+          ),
+        }
+      : {},
 	}
 
 	if (meta && meta.touched && meta.error){
