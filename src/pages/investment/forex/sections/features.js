@@ -75,8 +75,8 @@ const ForexFeatures = ({features}) => {
 
 												</div>
 												
-												<Stack direction="column" spacing={1.5}>
-													<Typography variant="h5" color="text.primary">
+												<Stack direction="column">
+													<Typography variant="h6" color="text.primary">
 														{el.title}
 													</Typography>
 													<Typography variant="h6" textAlign="justify" color="text.secondary" sx={{fontWeight: "500"}}>

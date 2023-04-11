@@ -1,11 +1,13 @@
 import { useState } from "react";
 
-import { Grid, Stack,  Button,  Box, Typography, Container } from '@mui/material';
+import { Grid, Stack,  Button,  Box, Typography, Container, Rating } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { connect } from "react-redux";
 
+const fpaLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1681211694/henriot/fpa-removebg-preview_ehpacx.png"
+const fxBookLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1681211492/henriot/myfxbook-300-removebg-preview_o5rwnf.png"
 
 const StyledBanner = styled(Box)(({theme}) => ({
 	backgroundColor: theme.palette.background.neutral,
@@ -85,18 +87,27 @@ const linkStyle = {
 	cursor: "pointer"
 }
 
+const styledFPALogo = {
+	height: "60px"
+}
+
+const styledFXLogoImage = {
+	width: "100px"
+}
+
+const StyledRating = styled(Rating)(({ theme }) => ({
+	'& .MuiRating-iconFilled': {
+		color: theme.palette.text.secondary,
+	},
+	'& .MuiRating-iconHover': {
+		color: '#ff3d47',
+	},
+}));
+
 const ForexBanner = ({banner}) => {
 
 	const StyledImageBox = styled(Grid)(({ theme }) => ({
-		backgroundImage: `url(${banner.image})`,
-		backgroundSize: "cover",
-		backgroundPosition: "center",
-		height: "60vh",
-		[theme.breakpoints.down("lg")]: {
-			width: "80%",
-			marginBotton: "30px"
-		},
-		borderRadius: "5px"
+		borderRadius: "5px",
 	}));
 
 	return (
@@ -104,17 +115,17 @@ const ForexBanner = ({banner}) => {
 			<StyledAbsoluteWrapper>
 				<Container maxWidth="lg">
 					<StyledContentStack spacing={6} direction="column">
-						<Stack spacing={1.5} direction="column" sx={{mr: "30px"}}>
+						<Stack direction="column" sx={{mr: "30px"}}>
 
 							<Typography variant="h2" color="text.primary">
 								{banner.boldTitle}
 							</Typography>
 
-							<Typography variant="h3" color="text.primary" sx={{fontWeight: 500}}>
+							<Typography variant="h3" color="text.secondary" style={{fontWeight: 600}}>
 								{banner.title}
 							</Typography>
 
-							<Typography variant="subtitle1" textAlign="justify" color="text.secondary" sx={{fontWeight: 500}}>
+							<Typography variant="subtitle2" textAlign="justify" color="text.primary" sx={{fontWeight: 500}}>
 								{banner.caption}
 							</Typography>
 						</Stack>
@@ -123,15 +134,31 @@ const ForexBanner = ({banner}) => {
 							{banner.button.label}
 						</StyledButton>
 
-						<Stack direction="column" spacing={0.5}>
-							<Typography variant="caption" textAlign="justify" color="text.secondary">
-								{banner.captionTwo}
-							</Typography>
-							<a href="https://www.myfxbook.com" target="_blank" rel="noreferrer" style={linkStyle}>
-								<Typography variant="subtitle2" textAlign="justify" color="text.primary" sx={{fontWeight: 500}}>
-									{banner.verifier}
+						<Stack direction="row" spacing={3}>
+							<Stack direction="row" spacing={1.5}>
+								<img src={fpaLogo} style={styledFPALogo} alt="FPA Logo"/>
+								<Stack direction="column">
+									<StyledRating 
+										value={5}
+										readOnly
+										size="small"
+									/>
+									<Typography variant="subtitle2" color="text.primary" sx={{fontWeight: 700}}>
+										Excellent
+									</Typography>
+									<Typography variant="subtitle2" color="text.primary" sx={{fontWeight: 600}}>
+										Forex Peace Army
+									</Typography>
+								</Stack>
+							</Stack>
+							<Stack direction="column" spacing={0.5}>
+								<Typography variant="subtitle2" textAlign="justify" color="text.secondary">
+									{banner.captionTwo}
 								</Typography>
-							</a>
+								<a href="https://www.myfxbook.com" target="_blank" rel="noreferrer" style={linkStyle}>
+									<img src={fxBookLogo} alt="myfxbook logo" style={styledFXLogoImage}/>
+								</a>
+							</Stack>
 						</Stack>
 					</StyledContentStack>
 				</Container>
@@ -142,9 +169,7 @@ const ForexBanner = ({banner}) => {
 				</StyledGridItemLeft>
 
 				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5.5} xl={5}>
-					<StyledImageBox>
-
-					</StyledImageBox>
+					<video src={banner.video} width="100%" height="100%"  autoPlay muted loop controls={false}></video>
 				</StyledGridItemRight>
 			</StyledGrid>
 		</StyledBanner>

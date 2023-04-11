@@ -26,7 +26,7 @@ const InvestmentForex = () => {
 			<ForexWhatIs whatIs={singleInfo.whatIs}/>
 			<ForexThreeContent threeContent={singleInfo.threeContent}/>
 			<ForexTwoContent twoContent={singleInfo.twoContent}/>
-			<ForexPricing pricing={singleInfo.pricing}/>
+			{/* <ForexPricing pricing={singleInfo.pricing}/> */}
 			<ForexProfitShare profitShare={singleInfo.profitShare}/>
 			<ForexBrokerAccount brokerAccount={singleInfo.brokerAccount}/>
 			<ForexCalculator calculator={singleInfo.calculator}/>
