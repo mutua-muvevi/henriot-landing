@@ -2040,10 +2040,10 @@ export const singleInfo = {
 	banner: {
 		boldTitle: "1-10% Monthly",
 		title: "Explosive account growth with an MT4 EA automated system.",
-		caption: "Risk Warning:  Remember financial trading is highly speculative & may lead to the loss of your funds.",
+		caption: <span><strong>Risk Warning: </strong>Remember financial trading is highly speculative & may lead to the loss of your funds.</span>,
 		captionTwo: "Verified by:",
 		verifier: "myFxBook",
-		image: "https://res.cloudinary.com/dqweh6zte/image/upload/v1679733726/henriot/pexels-pok-rie-5807886_laufb3.jpg",
+		video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1681212645/henriot/pexels-pressmaster-3130182-3840x2160-30fps_zigaup.mp4",
 		breadcrumbsItem: {
 			items: [
 				{
