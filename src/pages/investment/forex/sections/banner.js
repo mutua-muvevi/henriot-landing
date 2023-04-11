@@ -1,16 +1,17 @@
 import { useState } from "react";
 
-import { Grid, Stack,  Button,  Box, Typography, Container, Rating } from '@mui/material';
+import { Grid, Stack,  Button,  Box, Typography, Container, Rating, IconButton } from '@mui/material';
 import { styled } from '@mui/system';
 
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight, FaPlay } from "react-icons/fa";
 import { connect } from "react-redux";
+import { useTheme } from "@emotion/react";
 
 const fpaLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1681211694/henriot/fpa-removebg-preview_ehpacx.png"
 const fxBookLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1681211492/henriot/myfxbook-300-removebg-preview_o5rwnf.png"
 
 const StyledBanner = styled(Box)(({theme}) => ({
-	backgroundColor: theme.palette.background.neutral,
+	background: theme.palette.background.neutral,
 	minHeight: "60vh",
 	paddingLeft:"5%",
 	[theme.breakpoints.up("md")]: {
@@ -105,10 +106,7 @@ const StyledRating = styled(Rating)(({ theme }) => ({
 }));
 
 const ForexBanner = ({banner}) => {
-
-	const StyledImageBox = styled(Grid)(({ theme }) => ({
-		borderRadius: "5px",
-	}));
+	const theme = useTheme();
 
 	return (
 		<StyledBanner>
@@ -121,7 +119,7 @@ const ForexBanner = ({banner}) => {
 								{banner.boldTitle}
 							</Typography>
 
-							<Typography variant="h3" color="text.secondary" style={{fontWeight: 600}}>
+							<Typography variant="h3" color="text.secondary" style={{fontWeight: 500}}>
 								{banner.title}
 							</Typography>
 
@@ -130,9 +128,18 @@ const ForexBanner = ({banner}) => {
 							</Typography>
 						</Stack>
 
-						<StyledButton type="button" onClick={banner.button.action} variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
-							{banner.button.label}
-						</StyledButton>
+						<Stack direction="row" spacing={3}>
+							<StyledButton type="button" onClick={banner.button.action} variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
+								{banner.button.label}
+							</StyledButton>
+							
+							<IconButton>
+								<FaPlay style={{
+									fontSize: "25px",
+									color: theme.palette.primary.main
+								}}/>
+							</IconButton>
+						</Stack>
 
 						<Stack direction="row" spacing={3}>
 							<Stack direction="row" spacing={1.5}>
