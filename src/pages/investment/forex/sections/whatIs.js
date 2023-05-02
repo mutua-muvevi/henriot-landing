@@ -65,10 +65,10 @@ const ForexWhatIs = ({whatIs}) => {
 													height: el.height
 												}}
 											>
-												<Typography variant="h5" sx={{color: "#fff"}} style={{fontWeight: "500"}}>
+												<Typography variant="h5" sx={{color: "#fff"}} >
 													{el.number}
 												</Typography>
-												<Typography variant="h5" sx={{color: "#fff"}} style={{fontWeight: "500"}}>
+												<Typography variant="h5" sx={{color: "#fff"}} >
 													Average
 												</Typography>
 											</StyledGraphBox>

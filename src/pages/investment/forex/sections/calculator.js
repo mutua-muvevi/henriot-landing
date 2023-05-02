@@ -117,12 +117,6 @@ const ForexCalculator = ({ calculator }) => {
     	setCalculatedValues(calculateValues(values.startingCapital, values.months, values.currency));
 	};
 
-	const formik = useFormik({
-		initialValues: initialValues,
-		validationSchema: validationSchema,
-		onSubmit: submitHandler,
-	});
-
 	
 
 	return (
