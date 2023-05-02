@@ -106,7 +106,7 @@ const ForexFeatures = ({features}) => {
 											...(i === features.cardGroup.length - 1 && { borderBottom: 'none' }),
 											...(i % 4 === 3 && { borderRight: 'none' }),
 										}}>
-											<Stack direction="column" spacing={1.5} sx={{padding: "20px"}}>
+											<Stack direction="column" spacing={1.5} sx={{padding: "10px"}} alignItems="center">
 												<Typography variant="h3" color="primary">
 													{el.number.slice(0, -1)}
 													<span style={{ opacity: 0.6 }}>
@@ -116,7 +116,7 @@ const ForexFeatures = ({features}) => {
 												<Typography variant="h5" color="primary">
 													{el.title}
 												</Typography>
-												<Typography variant="h6" color="text.secondary" textAlign="justify">
+												<Typography variant="subtitle2" color="text.secondary" textAlign="center" sx={{fontWeight: "600"}}>
 													{el.text}
 												</Typography>
 											</Stack>

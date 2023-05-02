@@ -69,10 +69,26 @@ const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
 
 const StyledGridItemRight = styled(Grid)(({ theme }) => ({
 	width: "100%",
+	position: "relative",
 	[theme.breakpoints.down("md")]: {
 		marginBottom: "50px",
 	},
 }));
+
+const StyledVideo = styled("video")(({ theme }) => ({
+	position: "absolute",
+	top: 0,
+	left: 0,
+	width: "100%",
+	height: "inherit",
+	objectFit: "cover",
+	objectPosition: "center",
+	[theme.breakpoints.down("sm")]: {
+		height: "30vh",
+	},
+}));
+
+
 
 const StyledButton = styled(Button)(({ theme }) => ({
 	width: "max-content",
@@ -132,13 +148,6 @@ const ForexBanner = ({banner}) => {
 							<StyledButton type="button" onClick={banner.button.action} variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
 								{banner.button.label}
 							</StyledButton>
-							
-							<IconButton>
-								<FaPlay style={{
-									fontSize: "25px",
-									color: theme.palette.primary.main
-								}}/>
-							</IconButton>
 						</Stack>
 
 						<Stack direction="row" spacing={3}>
@@ -176,7 +185,7 @@ const ForexBanner = ({banner}) => {
 				</StyledGridItemLeft>
 
 				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5.5} xl={5}>
-					<video src={banner.video} width="100%" height="100%"  autoPlay muted loop controls={false}></video>
+					<StyledVideo  src={banner.video} width="100%" height="100%"  autoPlay muted loop controls={false}></StyledVideo>
 				</StyledGridItemRight>
 			</StyledGrid>
 		</StyledBanner>

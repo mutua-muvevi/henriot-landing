@@ -44,7 +44,7 @@ const StyledCardContent = styled(CardContent)(({ theme }) => ({
 }));
 
 const initialValues = {
-	currency: "euro",
+	currency: "usd",
 	startingCapital: "",
 	months: "",
 };
@@ -55,30 +55,35 @@ const validationSchema = Yup.object().shape({
 	months: Yup.number().required("Required"),
 });
 
+const averageProfitPerMonth = 0.14
+const averageProfitShare = 0.4
+
+
 const calculateValues = (startingCapital, months, currency) => {
-	const start = parseFloat(startingCapital);
+	const capital = parseFloat(startingCapital);
 	const mon = parseFloat(months);
-	const expectedAccountEquity = start * mon;
-	const profitRental = start * mon;
-	const profitManaged = start + mon;
-	const profitShareFees = (start * mon) / 2;
+
+	const expectedAccountEquity = capital * (1 +  averageProfitPerMonth)**mon;
+	const profitRental = expectedAccountEquity - capital;
+	const profitManaged = profitRental * (1-averageProfitShare);
+	const profitShareFees = profitRental - profitManaged;
   
 	return [
 		{
 			key: "Expected Account Equity",
-			value: `${currency === "euro" ? "€" : "$"}${expectedAccountEquity}`,
+			value: `${currency === "usd" ? "$" : "€"}${expectedAccountEquity}`,
 		},
 		{
 			key: "Profit (Rental)",
-			value: `${currency === "euro" ? "€" : "$"}${profitRental}`,
+			value: `${currency === "usd" ? "$" : "€"}${profitRental}`,
 		},
 		{
 			key: "Profit (Managed)",
-			value: `${currency === "euro" ? "€" : "$"}${profitManaged}`,
+			value: `${currency === "usd" ? "$" : "€"}${profitManaged}`,
 		},
 		{
 			key: "Profit Share Fees",
-			value: `${currency === "euro" ? "€" : "$"}${profitShareFees}`,
+			value: `${currency === "usd" ? "$" : "€"}${profitShareFees}`,
 		},
 	];
 };
@@ -104,7 +109,6 @@ const ForexCalculator = ({ calculator }) => {
 	]);
 
 	const radioOptions = [
-		{ label: "Euro", value: "euro" },
 		{ label: "USD", value: "usd" },
 	];
 
@@ -203,6 +207,26 @@ const ForexCalculator = ({ calculator }) => {
 															placeholder="Months"
 															label="Months"
 														/>
+													</Stack>
+
+													<Stack direction="row" justifyContent="space-between">
+														<Typography variant="h6">
+															Expected Monthly Returns
+														</Typography>
+
+														<Typography variant="h6" color="primary">
+															14%
+														</Typography>
+													</Stack>
+
+													<Stack direction="row" justifyContent="space-between">
+														<Typography variant="h6">
+															Average Profit Share Fee
+														</Typography>
+
+														<Typography variant="h6" color="primary">
+															40%
+														</Typography>
 													</Stack>
 
 													<Button
