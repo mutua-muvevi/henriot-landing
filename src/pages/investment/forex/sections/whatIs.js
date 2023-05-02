@@ -29,23 +29,22 @@ const StyledGraphBox = styled(Box)(({ theme }) => ({
 	width: "150px",
 	backgroundColor: theme.palette.primary.main,
 	padding: "10px",
-	borderRadius: "5px"
+	borderRadius: "5px",
+	display: "flex",
+	flexDirection: "column",
+	alignItems: "center",
+	justifyContent: "flex-end"
 }))
-
-const creatorImageStyles = {
-	width: "100px",
-	height: "100px"
-}
 
 const ForexWhatIs = ({whatIs}) => {
 	return (
 		<StyledWrapper>
 			<Box>
 				<StyledTopContainer maxWidth="lg">
-					<Typography variant="h3" color="text.primary">
+					<Typography variant="h2" color="text.primary">
 						{whatIs.title}
 					</Typography>
-					<Typography variant="subtitle1" color="text.primary">
+					<Typography variant="h5" color="text.primary">
 						{whatIs.subtitle}
 					</Typography>
 				</StyledTopContainer>
@@ -57,7 +56,7 @@ const ForexWhatIs = ({whatIs}) => {
 								{
 									whatIs.graph.map((el, i) => (
 										<div key={i}>
-											<Typography variant="h5" color="primary" style={{fontSize: "500"}}>
+											<Typography variant="h5" color="primary"textAlign="center" style={{fontSize: "500"}}>
 												{el.title}
 											</Typography>
 											<StyledGraphBox
@@ -98,7 +97,7 @@ const ForexWhatIs = ({whatIs}) => {
 																	<List dense>
 																		{
 																			el.items.map((item, index) => (
-																				<ListItem key={index}>
+																				<ListItem key={index} sx={{borderTop: "1px solid grey"}}>
 																					<ListItemIcon>
 																						<BsFillCircleFill />
 																					</ListItemIcon>
@@ -115,33 +114,6 @@ const ForexWhatIs = ({whatIs}) => {
 															</Grid>
 														</div>
 
-													</Stack>
-												</Grid>
-											))
-										}
-									</Grid>
-
-									<Grid container spacing={3}>
-										<Grid  item xs={12} sm={12} md={12} lg={4} xl={3}>
-											<Typography variant="h5" color="text.primary">
-												Creators: 
-											</Typography>
-										</Grid>
-											
-
-										{
-											whatIs.creators.map((cr, i) => (
-												<Grid key={i} item xs={12} sm={12} md={12} lg={4} xl={4.5}>
-													<Stack key={i} direction="row" spacing={3}>
-														<img src={cr.image} alt="Creators" style={creatorImageStyles}/>
-														<Stack direction="column" justifyContent="center">
-															<Typography variant="h6" color="text.primary">
-																{cr.text}
-															</Typography>
-															<Typography variant="h6" color="text.secondary">
-																{cr.role}
-															</Typography>
-														</Stack>
 													</Stack>
 												</Grid>
 											))
