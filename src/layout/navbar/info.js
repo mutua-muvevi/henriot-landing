@@ -64,23 +64,23 @@ export const menuItems = [
 				children : [
 					{
 						label: "Overview",
-						link: "/landing/exchange#overview"
+						link: "/landing/cec#overview"
 					},
 					{
 						label: "Features",
-						link: "/landing/exchange#paragraph"
+						link: "/landing/cec#paragraph"
 					},
 					{
 						label: "Performance",
-						link: "/landing/exchange#perfomance"
+						link: "/landing/cec#perfomance"
 					},
 					{
 						label: "Investment Terms",
-						link: "/landing/exchange#terms"
+						link: "/landing/cec#terms"
 					},
 					{
 						label: "Documents",
-						link: "/landing/exchange#documents"
+						link: "/landing/cec#documents"
 					},
 				]
 			},
@@ -90,23 +90,23 @@ export const menuItems = [
 				children : [
 					{
 						label: "Overview",
-						link: "/landing/exchange#overview"
+						link: "/landing/diverse#overview"
 					},
 					{
 						label: "Features",
-						link: "/landing/exchange#paragraph"
+						link: "/landing/diverse#paragraph"
 					},
 					{
 						label: "Performance",
-						link: "/landing/exchange#perfomance"
+						link: "/landing/diverse#perfomance"
 					},
 					{
 						label: "Investment Terms",
-						link: "/landing/exchange#terms"
+						link: "/landing/diverse#terms"
 					},
 					{
 						label: "Documents",
-						link: "/landing/exchange#documents"
+						link: "/landing/diverse#documents"
 					},
 				]
 			},
