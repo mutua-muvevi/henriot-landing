@@ -123,27 +123,27 @@ export const menuItems = [
 					{
 						label: "HG Delta",
 						value: "hgDelta",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgDelta
 					},
 					{
 						label: "HG Alpha",
 						value: "hgAlpha",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgAlpha
 					},
 					{
 						label: "HG Beta",
 						value: "hgBeta",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgBeta
 					},
 					{
 						label: "HG Gamma",
 						value: "hgGamma",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgGamma
 					},
 					{
 						label: "HG Sigma",
 						value: "hgSigma",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgSigma
 					},
 				]
 			},
