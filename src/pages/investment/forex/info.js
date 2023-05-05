@@ -33,7 +33,7 @@ export const investmentForexData = {
 			caption: `Risk Warning: Remember financial trading is highly speculative & may lead to the loss of your funds.`,
 			captionTwo: "Verified by:",
 			verifier: "myFxBook",
-			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1681212645/henriot/pexels-pressmaster-3130182-3840x2160-30fps_zigaup.mp4",
+			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1683298245/henriot/delta_rqaz8i.mp4",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -488,7 +488,7 @@ export const investmentForexData = {
 			caption: `Risk Warning: Remember financial trading is highly speculative & may lead to the loss of your funds.`,
 			captionTwo: "Verified by:",
 			verifier: "myFxBook",
-			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1681212645/henriot/pexels-pressmaster-3130182-3840x2160-30fps_zigaup.mp4",
+			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1683298719/henriot/alpha_uyivlv.mp4",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -943,7 +943,7 @@ export const investmentForexData = {
 			caption: `Risk Warning: Remember financial trading is highly speculative & may lead to the loss of your funds.`,
 			captionTwo: "Verified by:",
 			verifier: "myFxBook",
-			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1681212645/henriot/pexels-pressmaster-3130182-3840x2160-30fps_zigaup.mp4",
+			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1683298228/henriot/beta_elqvtg.mp4",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -1398,7 +1398,7 @@ export const investmentForexData = {
 			caption: `Risk Warning: Remember financial trading is highly speculative & may lead to the loss of your funds.`,
 			captionTwo: "Verified by:",
 			verifier: "myFxBook",
-			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1681212645/henriot/pexels-pressmaster-3130182-3840x2160-30fps_zigaup.mp4",
+			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1683298169/henriot/gamma_oyzy1d.mp4",
 			breadcrumbsItem: {
 				items: [
 					{
@@ -1853,7 +1853,7 @@ export const investmentForexData = {
 			caption: `Risk Warning: Remember financial trading is highly speculative & may lead to the loss of your funds.`,
 			captionTwo: "Verified by:",
 			verifier: "myFxBook",
-			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1681212645/henriot/pexels-pressmaster-3130182-3840x2160-30fps_zigaup.mp4",
+			video: "https://res.cloudinary.com/dqweh6zte/video/upload/v1683297976/henriot/sigma_qvmnme.mp4",
 			breadcrumbsItem: {
 				items: [
 					{

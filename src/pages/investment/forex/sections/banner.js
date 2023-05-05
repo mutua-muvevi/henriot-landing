@@ -12,8 +12,7 @@ const fxBookLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v168121149
 
 const StyledBanner = styled(Box)(({theme}) => ({
 	background: theme.palette.background.neutral,
-	minHeight: "60vh",
-	paddingLeft:"5%",
+	padding: 0,
 	[theme.breakpoints.up("md")]: {
 		paddingLeft: theme.spacing(2),
 	},
@@ -42,44 +41,23 @@ const StyledContentStack = styled(Stack)(({ theme }) => ({
 }))
 
 const StyledGrid = styled(Grid)(({ theme }) => ({
-	
+	height: "auto"
 }))
 
 const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
-	display: "flex",
-	flexDirection: "column",
-	justifyContent: "center",
-	height: "60vh",
-	[theme.breakpoints.up("sm")]: {
-		paddingLeft: theme.spacing(3),
-		paddingRight: theme.spacing(3),
-	},
-	[theme.breakpoints.down("sm")]: {
-		minHeight:"30vh"
-	},
-	[theme.breakpoints.up("md")]: {
-		paddingLeft: theme.spacing(4),
-		paddingRight: theme.spacing(4),
-	},
-	[theme.breakpoints.up("lg")]: {
-		paddingLeft: theme.spacing(20),
-		paddingRight: theme.spacing(3),
-	},
+
 }));
 
 const StyledGridItemRight = styled(Grid)(({ theme }) => ({
+	minHeight: "60vh",
 	width: "100%",
-	position: "relative",
 	[theme.breakpoints.down("md")]: {
 		marginBottom: "50px",
 	},
 }));
 
 const StyledVideo = styled("video")(({ theme }) => ({
-	position: "absolute",
-	top: 0,
-	left: 0,
-	width: "100%",
+	
 	height: "inherit",
 	objectFit: "cover",
 	objectPosition: "center",
@@ -188,7 +166,9 @@ const ForexBanner = ({banner, data}) => {
 				</StyledGridItemLeft>
 
 				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5.5} xl={5}>
-					<StyledVideo  src={data.video} width="100%" height="100%"  autoPlay muted loop controls={false}></StyledVideo>
+					<Stack direction="column" justifyContent="center" sx={{height: "100%",}}>
+						<StyledVideo  src={data.video} width="100%" height="100%"  autoPlay muted loop controls={false}></StyledVideo>
+					</Stack>
 				</StyledGridItemRight>
 			</StyledGrid>
 		</StyledBanner>

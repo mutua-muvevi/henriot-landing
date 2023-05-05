@@ -72,40 +72,45 @@ const calculateValues = (startingCapital, months, currency) => {
 	return [
 		{
 			key: "Expected Account Equity",
-			value: `${currency === "usd" ? "$" : "€"}${expectedAccountEquity}`,
+			value: expectedAccountEquity,
+			currency: currency === "usd" ? "$" : "€",
 		},
 		{
 			key: "Profit (Rental)",
-			value: `${currency === "usd" ? "$" : "€"}${profitRental}`,
+			value: profitRental,
+			currency: currency === "usd" ? "$" : "€",
 		},
 		{
 			key: "Profit (Managed)",
-			value: `${currency === "usd" ? "$" : "€"}${profitManaged}`,
+			value: profitManaged,
+			currency: currency === "usd" ? "$" : "€",
 		},
 		{
 			key: "Profit Share Fees",
-			value: `${currency === "usd" ? "$" : "€"}${profitShareFees}`,
+			value: profitShareFees,
+			currency: currency === "usd" ? "$" : "€",
 		},
 	];
+	
 };
 
 const ForexCalculator = ({ calculator }) => {
 	const [calculatedValues, setCalculatedValues] = useState([
 		{
 			key: "Expected Account Equity",
-			value: 0,
+			value: 0.00,
 		},
 		{
 			key: "Profit (Rental)",
-			value: 0,
+			value: 0.00,
 		},
 		{
 			key: "Profit (Managed)",
-			value: 0,
+			value: 0.00,
 		},
 		{
 			key: "Profit Share Fees",
-			value: 0,
+			value: 0.00,
 		},
 	]);
 
@@ -316,7 +321,7 @@ const ForexCalculator = ({ calculator }) => {
 															1
 													}
 												>
-													{item.value}
+													{item.currency}{item.value.toFixed(2)}
 												</Typography>
 											</Stack>
 										))}
