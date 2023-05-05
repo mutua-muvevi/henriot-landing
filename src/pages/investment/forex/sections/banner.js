@@ -12,8 +12,7 @@ const fxBookLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v168121149
 
 const StyledBanner = styled(Box)(({theme}) => ({
 	background: theme.palette.background.neutral,
-	minHeight: "60vh",
-	paddingLeft:"5%",
+	padding: 0,
 	[theme.breakpoints.up("md")]: {
 		paddingLeft: theme.spacing(2),
 	},
@@ -42,44 +41,23 @@ const StyledContentStack = styled(Stack)(({ theme }) => ({
 }))
 
 const StyledGrid = styled(Grid)(({ theme }) => ({
-	
+	height: "auto"
 }))
 
 const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
-	display: "flex",
-	flexDirection: "column",
-	justifyContent: "center",
-	height: "60vh",
-	[theme.breakpoints.up("sm")]: {
-		paddingLeft: theme.spacing(3),
-		paddingRight: theme.spacing(3),
-	},
-	[theme.breakpoints.down("sm")]: {
-		minHeight:"30vh"
-	},
-	[theme.breakpoints.up("md")]: {
-		paddingLeft: theme.spacing(4),
-		paddingRight: theme.spacing(4),
-	},
-	[theme.breakpoints.up("lg")]: {
-		paddingLeft: theme.spacing(20),
-		paddingRight: theme.spacing(3),
-	},
+
 }));
 
 const StyledGridItemRight = styled(Grid)(({ theme }) => ({
+	minHeight: "60vh",
 	width: "100%",
-	position: "relative",
 	[theme.breakpoints.down("md")]: {
 		marginBottom: "50px",
 	},
 }));
 
 const StyledVideo = styled("video")(({ theme }) => ({
-	position: "absolute",
-	top: 0,
-	left: 0,
-	width: "100%",
+	
 	height: "inherit",
 	objectFit: "cover",
 	objectPosition: "center",
@@ -121,8 +99,10 @@ const StyledRating = styled(Rating)(({ theme }) => ({
 	},
 }));
 
-const ForexBanner = ({banner}) => {
+const ForexBanner = ({banner, data}) => {
 	const theme = useTheme();
+
+
 
 	return (
 		<StyledBanner>
@@ -132,21 +112,22 @@ const ForexBanner = ({banner}) => {
 						<Stack direction="column" sx={{mr: "30px"}}>
 
 							<Typography variant="h2" color="text.primary">
-								{banner.boldTitle}
+								{data.boldTitle}
 							</Typography>
 
 							<Typography variant="h3" color="text.secondary" style={{fontWeight: 500}}>
-								{banner.title}
+								{data.title}
 							</Typography>
 
 							<Typography variant="subtitle2" textAlign="justify" color="text.primary" sx={{fontWeight: 500}}>
-								{banner.caption}
+								{data.caption}
+								{console.log("The data is: ", data)}
 							</Typography>
 						</Stack>
 
 						<Stack direction="row" spacing={3}>
-							<StyledButton type="button" onClick={banner.button.action} variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
-								{banner.button.label}
+							<StyledButton type="button" onClick={data.button.action} variant="contained" color="primary" endIcon={<FaLongArrowAltRight/>}>
+								{data.button.label}
 							</StyledButton>
 						</Stack>
 
@@ -169,7 +150,7 @@ const ForexBanner = ({banner}) => {
 							</Stack>
 							<Stack direction="column" spacing={0.5}>
 								<Typography variant="subtitle2" textAlign="justify" color="text.secondary">
-									{banner.captionTwo}
+									{data.captionTwo}
 								</Typography>
 								<a href="https://www.myfxbook.com" target="_blank" rel="noreferrer" style={linkStyle}>
 									<img src={fxBookLogo} alt="myfxbook logo" style={styledFXLogoImage}/>
@@ -185,11 +166,18 @@ const ForexBanner = ({banner}) => {
 				</StyledGridItemLeft>
 
 				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5.5} xl={5}>
-					<StyledVideo  src={banner.video} width="100%" height="100%"  autoPlay muted loop controls={false}></StyledVideo>
+					<Stack direction="column" justifyContent="center" sx={{height: "100%",}}>
+						<StyledVideo  src={data.video} width="100%" height="100%"  autoPlay muted loop controls={false}></StyledVideo>
+					</Stack>
 				</StyledGridItemRight>
 			</StyledGrid>
 		</StyledBanner>
 	)
 }
 
-export default ForexBanner
+
+const mapStateToProps = ({investmentEquity}) => ({
+	data: investmentEquity.data.banner
+})
+
+export default connect(mapStateToProps)(ForexBanner)

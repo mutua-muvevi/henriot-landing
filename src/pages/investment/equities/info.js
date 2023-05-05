@@ -1,7 +1,4 @@
-import { FaBrain, FaCar,  FaCloudDownloadAlt, FaNetworkWired, FaTv, FaRobot, FaBitcoin } from "react-icons/fa";
-import { BsPrinterFill } from "react-icons/bs"
-import { MdSendToMobile } from "react-icons/md";
-import { GiDeliveryDrone } from "react-icons/gi"
+import { FaBitcoin } from "react-icons/fa";
 
 const BlogImage = "https://res.cloudinary.com/dqweh6zte/image/upload/v1679043191/henriot/pexels-%E6%B4%8B%E6%A6%A4-%E9%83%AD-2399840_re8cvb.jpg"
 

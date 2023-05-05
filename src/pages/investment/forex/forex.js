@@ -34,4 +34,5 @@ const InvestmentForex = () => {
 	)
 }
 
+
 export default InvestmentForex

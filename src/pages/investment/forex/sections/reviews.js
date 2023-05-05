@@ -6,6 +6,7 @@ import { Box, Card, CardContent, Container, Stack, Typography } from "@mui/mater
 import { styled } from "@mui/system";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useTheme } from "@emotion/react";
+import { FcBusinessman } from "react-icons/fc";
 
 const Wrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
@@ -63,6 +64,9 @@ const SlickArrowRight = (props) => {
 }
 
 
+const iconStyle = {
+	fontSize: "50px"
+}
 
 const ForexReviews = ({ reviews }) => {
 	const theme = useTheme();
@@ -135,7 +139,7 @@ const ForexReviews = ({ reviews }) => {
 											<Stack direction="column" spacing={3}>
 												<Stack direction="row" spacing={3}>
 													<StyledIconBox>
-														{review.icon}
+														<FcBusinessman style={iconStyle} />
 													</StyledIconBox>
 
 													<Stack direction="column" spacing={1}>

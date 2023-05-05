@@ -20,6 +20,8 @@ import TextFieldWrapper from "../../../../components/formui/textfield/textfield"
 import { Formik, Form, useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
+import { connect } from "react-redux";
+
 
 const Wrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
@@ -40,7 +42,7 @@ const StyledGridItemRight = styled(Grid)(({ theme }) => ({}));
 const StyledCard = styled(Card)(({ theme }) => ({}));
 
 const StyledCardContent = styled(CardContent)(({ theme }) => ({
-	padding: "30px"
+	padding: "30px",
 }));
 
 const initialValues = {
@@ -55,75 +57,87 @@ const validationSchema = Yup.object().shape({
 	months: Yup.number().required("Required"),
 });
 
-const averageProfitPerMonth = 0.14
-const averageProfitShare = 0.4
-
+const averageProfitPerMonth = 0.14;
+const averageProfitShare = 0.4;
 
 const calculateValues = (startingCapital, months, currency) => {
 	const capital = parseFloat(startingCapital);
 	const mon = parseFloat(months);
 
-	const expectedAccountEquity = capital * (1 +  averageProfitPerMonth)**mon;
+	const expectedAccountEquity = capital * (1 + averageProfitPerMonth) ** mon;
 	const profitRental = expectedAccountEquity - capital;
-	const profitManaged = profitRental * (1-averageProfitShare);
+	const profitManaged = profitRental * (1 - averageProfitShare);
 	const profitShareFees = profitRental - profitManaged;
-  
+
 	return [
 		{
 			key: "Expected Account Equity",
-			value: `${currency === "usd" ? "$" : "€"}${expectedAccountEquity}`,
+			value: expectedAccountEquity,
+			currency: currency === "usd" ? "$" : "€",
 		},
 		{
 			key: "Profit (Rental)",
-			value: `${currency === "usd" ? "$" : "€"}${profitRental}`,
+			value: profitRental,
+			currency: currency === "usd" ? "$" : "€",
 		},
 		{
 			key: "Profit (Managed)",
-			value: `${currency === "usd" ? "$" : "€"}${profitManaged}`,
+			value: profitManaged,
+			currency: currency === "usd" ? "$" : "€",
 		},
 		{
 			key: "Profit Share Fees",
-			value: `${currency === "usd" ? "$" : "€"}${profitShareFees}`,
+			value: profitShareFees,
+			currency: currency === "usd" ? "$" : "€",
 		},
 	];
+	
 };
 
 const ForexCalculator = ({ calculator }) => {
 	const [calculatedValues, setCalculatedValues] = useState([
 		{
 			key: "Expected Account Equity",
-			value: 0
+			value: 0.00,
 		},
 		{
 			key: "Profit (Rental)",
-			value: 0
+			value: 0.00,
 		},
 		{
 			key: "Profit (Managed)",
-			value: 0
+			value: 0.00,
 		},
 		{
 			key: "Profit Share Fees",
-			value: 0
+			value: 0.00,
 		},
 	]);
 
-	const radioOptions = [
-		{ label: "USD", value: "usd" },
-	];
+	const radioOptions = [{ label: "USD", value: "usd" }];
 
 	const submitHandler = (values) => {
-		console.log("Form data", values);
-    	setCalculatedValues(calculateValues(values.startingCapital, values.months, values.currency));
+		setCalculatedValues(
+			calculateValues(
+				values.startingCapital,
+				values.months,
+				values.currency
+			)
+		);
 	};
-
-	
 
 	return (
 		<Wrapper>
 			<Container maxWidth="lg">
 				<StyledGridContainer container spacing={3}>
-					<StyledGridItemLeft item xs={12} sm={12} md={12} lg={6} xl={6}>
+					<StyledGridItemLeft
+						item
+						xs={12}
+						sm={12}
+						md={12}
+						lg={6}
+						xl={6}
+					>
 						<Stack direction="column" spacing={1.5}>
 							<Typography variant="h2" color="text.primary">
 								{calculator.left.title}
@@ -145,6 +159,12 @@ const ForexCalculator = ({ calculator }) => {
 										>
 											{el.key}
 										</Typography>
+										<Typography
+											variant="h5"
+											color="text.secondary"
+										>
+											{el.value}
+										</Typography>
 										<Tooltip
 											title={el.tooltip}
 											arrow
@@ -165,7 +185,14 @@ const ForexCalculator = ({ calculator }) => {
 						</Stack>
 					</StyledGridItemLeft>
 
-					<StyledGridItemRight item xs={12} sm={12} md={12} lg={6} xl={6}>
+					<StyledGridItemRight
+						item
+						xs={12}
+						sm={12}
+						md={12}
+						lg={6}
+						xl={6}
+					>
 						<StyledCard>
 							<StyledCardContent>
 								<Stack direction="column" spacing={3}>
@@ -174,10 +201,16 @@ const ForexCalculator = ({ calculator }) => {
 										validationSchema={validationSchema}
 										onSubmit={submitHandler}
 									>
-										{({values}) => (
+										{({ values }) => (
 											<Form>
-												<Stack rirection="column" spacing={3}>
-													<Typography variant="h4" component="h2" >
+												<Stack
+													rirection="column"
+													spacing={3}
+												>
+													<Typography
+														variant="h4"
+														component="h2"
+													>
 														Expect Profit Calcuator
 													</Typography>
 
@@ -188,14 +221,25 @@ const ForexCalculator = ({ calculator }) => {
 														row
 													/>
 
-													<Stack direction="row" justifyContent="space-between" spacing={3}>
+													<Stack
+														direction="row"
+														justifyContent="space-between"
+														spacing={3}
+													>
 														<TextFieldWrapper
 															name="startingCapital"
 															placeholder="5000"
 															label="Starting capital"
-															startIcon={values.currency === "euro" ? <FaEuroSign /> : <FaDollarSign />}
+															startIcon={
+																values.currency ===
+																"euro" ? (
+																	<FaEuroSign />
+																) : (
+																	<FaDollarSign />
+																)
+															}
 														/>
-														
+
 														<TextFieldWrapper
 															name="months"
 															placeholder="Months"
@@ -203,22 +247,36 @@ const ForexCalculator = ({ calculator }) => {
 														/>
 													</Stack>
 
-													<Stack direction="row" justifyContent="space-between">
+													<Stack
+														direction="row"
+														justifyContent="space-between"
+													>
 														<Typography variant="h6">
-															Expected Monthly Returns
+															Expected Monthly
+															Returns
 														</Typography>
 
-														<Typography variant="h6" color="primary">
+														<Typography
+															variant="h6"
+															color="primary"
+														>
 															14%
 														</Typography>
 													</Stack>
 
-													<Stack direction="row" justifyContent="space-between">
+													<Stack
+														direction="row"
+														justifyContent="space-between"
+													>
 														<Typography variant="h6">
-															Average Profit Share Fee
+															Average Profit Share
+															Fee
 														</Typography>
 
-														<Typography variant="h6" color="primary">
+														<Typography
+															variant="h6"
+															color="primary"
+														>
 															40%
 														</Typography>
 													</Stack>
@@ -232,24 +290,42 @@ const ForexCalculator = ({ calculator }) => {
 													</Button>
 												</Stack>
 											</Form>
-
 										)}
 									</Formik>
-									
+
 									<Stack direction="column" spacing={1.5}>
 										{calculatedValues.map((item, index) => (
-											<Stack direction="row" justifyContent="space-between" alignItems="center">
-												<Typography key={index} variant="h5" gutterBottom={index !== calculatedValues.length - 1}>
+											<Stack
+												direction="row"
+												justifyContent="space-between"
+												alignItems="center"
+											>
+												<Typography
+													key={index}
+													variant="h5"
+													gutterBottom={
+														index !==
+														calculatedValues.length -
+															1
+													}
+												>
 													{item.key}
 												</Typography>
-												<Typography key={index} variant="h6" color="text.secondary" gutterBottom={index !== calculatedValues.length - 1}>
-													{item.value}
+												<Typography
+													key={index}
+													variant="h6"
+													color="text.secondary"
+													gutterBottom={
+														index !==
+														calculatedValues.length -
+															1
+													}
+												>
+													{item.currency}{item.value.toFixed(2)}
 												</Typography>
-
 											</Stack>
 										))}
 									</Stack>
-
 								</Stack>
 							</StyledCardContent>
 						</StyledCard>
@@ -260,4 +336,8 @@ const ForexCalculator = ({ calculator }) => {
 	);
 };
 
-export default ForexCalculator;
+const mapStateToProps = ({investmentEquity}) => ({
+	calculator: investmentEquity.data.calculator
+})
+
+export default connect(mapStateToProps)(ForexCalculator);

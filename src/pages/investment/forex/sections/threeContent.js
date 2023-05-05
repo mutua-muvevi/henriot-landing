@@ -1,5 +1,7 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
+import { FcBullish, FcCollaboration, FcNeutralTrading } from "react-icons/fc";
+import { connect } from "react-redux";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
@@ -15,10 +17,9 @@ const StyledGridItem = styled(Grid)(({ theme }) => ({
 
 }));
 
-const imageStyle = {
-	width: "200px",
-	height: "200px"
-};
+const iconStyle = {
+	fontSize: "25px"
+}
 
 
 const StyledIconBox = styled(Box)(({ theme }) => ({
@@ -42,7 +43,12 @@ const ForexThreeContent = ({threeContent}) => {
 							<StyledGridItem item key={i} xs={12} sm={12} md={12} lg={4} xl={4}>
 								<Stack direction="column" spacing={3}>
 									<StyledIconBox>
-										{el.icon}
+										{
+											el.icon === "FcNeutralTrading" ? <FcNeutralTrading style={iconStyle}/> :
+											el.icon === "FcBullish" ? <FcBullish style={iconStyle}/> :
+											el.icon === "FcCollaboration" ? <FcCollaboration style={iconStyle}/> :
+											""
+										}
 									</StyledIconBox>
 
 									<Typography variant="h5" color="text.primary">
@@ -62,4 +68,9 @@ const ForexThreeContent = ({threeContent}) => {
 	)
 }
 
-export default ForexThreeContent
+
+const mapStateToProps = ({investmentEquity}) => ({
+	threeContent: investmentEquity.data.threeContent
+})
+
+export default connect(mapStateToProps)(ForexThreeContent)

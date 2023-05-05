@@ -37,6 +37,10 @@ export const menuItems = [
 				link:"/landing/exchange",
 				children : [
 					{
+						label: "Top",
+						link: "/landing/exchange"
+					},
+					{
 						label: "Overview",
 						link: "/landing/exchange#overview"
 					},
@@ -63,6 +67,10 @@ export const menuItems = [
 				link:"/landing/cec",
 				children : [
 					{
+						label: "Top",
+						link: "/landing/cec"
+					},
+					{
 						label: "Overview",
 						link: "/landing/cec#overview"
 					},
@@ -88,6 +96,10 @@ export const menuItems = [
 				label: "Diverse Fund",
 				link:"/landing/diverse",
 				children : [
+					{
+						label: "Top",
+						link: "/landing/diverse"
+					},
 					{
 						label: "Overview",
 						link: "/landing/diverse#overview"
@@ -123,27 +135,27 @@ export const menuItems = [
 					{
 						label: "HG Delta",
 						value: "hgDelta",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgDelta
 					},
 					{
 						label: "HG Alpha",
 						value: "hgAlpha",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgAlpha
 					},
 					{
 						label: "HG Beta",
 						value: "hgBeta",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgBeta
 					},
 					{
 						label: "HG Gamma",
 						value: "hgGamma",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgGamma
 					},
 					{
 						label: "HG Sigma",
 						value: "hgSigma",
-						reduxValue: investmentForexData
+						reduxValue: investmentForexData.hgSigma
 					},
 				]
 			},
@@ -224,10 +236,10 @@ export const menuItems = [
 					},
 				]
 			},
-			{
-				label: "Structured Products",
-				link:"/landing/investment-solutions/structures-products"
-			},
+			// {
+			// 	label: "Structured Products",
+			// 	link:"/landing/investment-solutions/structures-products"
+			// },
 			{
 				label: "Portfolios",
 				link:"/landing/investment-solutions/portfolios"
