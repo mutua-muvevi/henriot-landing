@@ -2,6 +2,7 @@ import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Stack
 import { styled } from "@mui/system";
 
 import { BsFillCircleFill } from "react-icons/bs";
+import { connect } from "react-redux";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
@@ -143,4 +144,9 @@ const ForexWhatIs = ({whatIs}) => {
 	)
 }
 
-export default ForexWhatIs
+const mapStateToProps = ({investmentEquity}) => ({
+	whatIs: investmentEquity.data.whatIs
+})
+
+
+export default connect(mapStateToProps)(ForexWhatIs)

@@ -73,32 +73,38 @@ export const investmentForexData = {
 			content: [
 				{
 					title: "Consistent Returns",
-					icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
+					icon: "CgArrowLongUp",
+					// icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
 					text: "Remarkable 5-25% monthly returns based on 2+ years of live trading."
 				},
 				{
 					title: "Rental & Managed",
-					icon: <CgHome style={styledFeaturesIcon}/>,
+					// icon: <CgHome style={styledFeaturesIcon}/>,
+					icon: "CgHome",
 					text: "Trade on your account or invest in a managed account at €0 upfront cost."
 				},
 				{
 					title: "Sit Back & Relax",
-					icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					// icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					icon: "BsFillEmojiSmileFill",
 					text: "No previous experience with MT4 EAs required for neither rental nor managed accounts."
 				},
 				{
 					title: "Risk Management",
-					icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					// icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					icon: "BsShieldLock",
 					text: "By playing with risk levels, you can increase/decrease a profitability factor."
 				},
 				{
 					title: "Reporting & Transparency",
-					icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					// icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					icon: "BsFileEarmarkText",
 					text: "No hidden fees, clear reporting and full verification via Myfxbook."
 				},
 				{
 					title: "Full Capital Control",
-					icon: <FiSliders style={styledFeaturesIcon}/>,
+					// icon: <FiSliders style={styledFeaturesIcon}/>,
+					icon: "FiSliders",
 					text: `No "freezing the capital", withdraw profits or top up your account at any moment.`
 				},
 			],
@@ -176,24 +182,24 @@ export const investmentForexData = {
 		},
 		threeContent: [
 			{
-				icon: <FcNeutralTrading style={coloredIconStyles}/>,
+				icon: "FcNeutralTrading",
 				title: "$5k Makes $5,6k in a Year",
 				text: "Balance comouding (no profit withdrawing) and personal money management principles (removing some profits)."
 			},
 			{
-				icon: <FcBullish style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Funding & Onboarding",
 				text: "Fast-track KYC via a supported broker with no capital restrictions and flexible top-up options."
 			},
 			{
-				icon: <FcCollaboration style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Installation Support",
 				text: "You are getting a free installation support, plus we are always online."
 			},
 		],
 		twoContent: [
 			{
-				icon: <FcHome style={largerColoredIconStyles}/>,
+				icon: "FcHome",
 				title: "Rental",
 				text: "You’ll just need to have an account with a broker ready and install the EA on a VPS and supporting it throughout the investment cycles. This approach works best with above €4,000 (for under €4,000 ask broker for a cent account).",
 				button: {
@@ -201,7 +207,7 @@ export const investmentForexData = {
 				}
 			},
 			{
-				icon: <FcManager  style={largerColoredIconStyles}/>,
+				icon: "FcManager",
 				title: "Managed Account",
 				text: "A broker technology allows you to join in via a trusted environment without bothering about installation files and MetaTrader as a whole. Best for investors looking for a hands-off approach with as low as €400.",
 				button: {
@@ -394,7 +400,7 @@ export const investmentForexData = {
 					},
 					{
 						key: "Possible DD",
-						value: 33,
+						value: 30,
 						tooltip: "Some important information here"
 					},
 				],
@@ -522,32 +528,38 @@ export const investmentForexData = {
 			content: [
 				{
 					title: "Consistent Returns",
-					icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
+					icon: "CgArrowLongUp",
+					// icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
 					text: "Remarkable 5-25% monthly returns based on 2+ years of live trading."
 				},
 				{
 					title: "Rental & Managed",
-					icon: <CgHome style={styledFeaturesIcon}/>,
+					// icon: <CgHome style={styledFeaturesIcon}/>,
+					icon: "CgHome",
 					text: "Trade on your account or invest in a managed account at €0 upfront cost."
 				},
 				{
 					title: "Sit Back & Relax",
-					icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					// icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					icon: "BsFillEmojiSmileFill",
 					text: "No previous experience with MT4 EAs required for neither rental nor managed accounts."
 				},
 				{
 					title: "Risk Management",
-					icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					// icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					icon: "BsShieldLock",
 					text: "By playing with risk levels, you can increase/decrease a profitability factor."
 				},
 				{
 					title: "Reporting & Transparency",
-					icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					// icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					icon: "BsFileEarmarkText",
 					text: "No hidden fees, clear reporting and full verification via Myfxbook."
 				},
 				{
 					title: "Full Capital Control",
-					icon: <FiSliders style={styledFeaturesIcon}/>,
+					// icon: <FiSliders style={styledFeaturesIcon}/>,
+					icon: "FiSliders",
 					text: `No "freezing the capital", withdraw profits or top up your account at any moment.`
 				},
 			],
@@ -625,24 +637,24 @@ export const investmentForexData = {
 		},
 		threeContent: [
 			{
-				icon: <FcNeutralTrading style={coloredIconStyles}/>,
+				icon: "FcNeutralTrading",
 				title: "$5k Makes $5,6k in a Year",
 				text: "Balance comouding (no profit withdrawing) and personal money management principles (removing some profits)."
 			},
 			{
-				icon: <FcBullish style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Funding & Onboarding",
 				text: "Fast-track KYC via a supported broker with no capital restrictions and flexible top-up options."
 			},
 			{
-				icon: <FcCollaboration style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Installation Support",
 				text: "You are getting a free installation support, plus we are always online."
 			},
 		],
 		twoContent: [
 			{
-				icon: <FcHome style={largerColoredIconStyles}/>,
+				icon: "FcHome",
 				title: "Rental",
 				text: "You’ll just need to have an account with a broker ready and install the EA on a VPS and supporting it throughout the investment cycles. This approach works best with above €4,000 (for under €4,000 ask broker for a cent account).",
 				button: {
@@ -650,7 +662,7 @@ export const investmentForexData = {
 				}
 			},
 			{
-				icon: <FcManager  style={largerColoredIconStyles}/>,
+				icon: "FcManager",
 				title: "Managed Account",
 				text: "A broker technology allows you to join in via a trusted environment without bothering about installation files and MetaTrader as a whole. Best for investors looking for a hands-off approach with as low as €400.",
 				button: {
@@ -843,7 +855,7 @@ export const investmentForexData = {
 					},
 					{
 						key: "Possible DD",
-						value: 33,
+						value: 30,
 						tooltip: "Some important information here"
 					},
 				],
@@ -971,32 +983,38 @@ export const investmentForexData = {
 			content: [
 				{
 					title: "Consistent Returns",
-					icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
+					icon: "CgArrowLongUp",
+					// icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
 					text: "Remarkable 5-25% monthly returns based on 2+ years of live trading."
 				},
 				{
 					title: "Rental & Managed",
-					icon: <CgHome style={styledFeaturesIcon}/>,
+					// icon: <CgHome style={styledFeaturesIcon}/>,
+					icon: "CgHome",
 					text: "Trade on your account or invest in a managed account at €0 upfront cost."
 				},
 				{
 					title: "Sit Back & Relax",
-					icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					// icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					icon: "BsFillEmojiSmileFill",
 					text: "No previous experience with MT4 EAs required for neither rental nor managed accounts."
 				},
 				{
 					title: "Risk Management",
-					icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					// icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					icon: "BsShieldLock",
 					text: "By playing with risk levels, you can increase/decrease a profitability factor."
 				},
 				{
 					title: "Reporting & Transparency",
-					icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					// icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					icon: "BsFileEarmarkText",
 					text: "No hidden fees, clear reporting and full verification via Myfxbook."
 				},
 				{
 					title: "Full Capital Control",
-					icon: <FiSliders style={styledFeaturesIcon}/>,
+					// icon: <FiSliders style={styledFeaturesIcon}/>,
+					icon: "FiSliders",
 					text: `No "freezing the capital", withdraw profits or top up your account at any moment.`
 				},
 			],
@@ -1074,24 +1092,24 @@ export const investmentForexData = {
 		},
 		threeContent: [
 			{
-				icon: <FcNeutralTrading style={coloredIconStyles}/>,
+				icon: "FcNeutralTrading",
 				title: "$5k Makes $5,6k in a Year",
 				text: "Balance comouding (no profit withdrawing) and personal money management principles (removing some profits)."
 			},
 			{
-				icon: <FcBullish style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Funding & Onboarding",
 				text: "Fast-track KYC via a supported broker with no capital restrictions and flexible top-up options."
 			},
 			{
-				icon: <FcCollaboration style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Installation Support",
 				text: "You are getting a free installation support, plus we are always online."
 			},
 		],
 		twoContent: [
 			{
-				icon: <FcHome style={largerColoredIconStyles}/>,
+				icon: "FcHome",
 				title: "Rental",
 				text: "You’ll just need to have an account with a broker ready and install the EA on a VPS and supporting it throughout the investment cycles. This approach works best with above €4,000 (for under €4,000 ask broker for a cent account).",
 				button: {
@@ -1099,7 +1117,7 @@ export const investmentForexData = {
 				}
 			},
 			{
-				icon: <FcManager  style={largerColoredIconStyles}/>,
+				icon: "FcManager",
 				title: "Managed Account",
 				text: "A broker technology allows you to join in via a trusted environment without bothering about installation files and MetaTrader as a whole. Best for investors looking for a hands-off approach with as low as €400.",
 				button: {
@@ -1292,7 +1310,7 @@ export const investmentForexData = {
 					},
 					{
 						key: "Possible DD",
-						value: 33,
+						value: 30,
 						tooltip: "Some important information here"
 					},
 				],
@@ -1420,32 +1438,38 @@ export const investmentForexData = {
 			content: [
 				{
 					title: "Consistent Returns",
-					icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
+					icon: "CgArrowLongUp",
+					// icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
 					text: "Remarkable 5-25% monthly returns based on 2+ years of live trading."
 				},
 				{
 					title: "Rental & Managed",
-					icon: <CgHome style={styledFeaturesIcon}/>,
+					// icon: <CgHome style={styledFeaturesIcon}/>,
+					icon: "CgHome",
 					text: "Trade on your account or invest in a managed account at €0 upfront cost."
 				},
 				{
 					title: "Sit Back & Relax",
-					icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					// icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					icon: "BsFillEmojiSmileFill",
 					text: "No previous experience with MT4 EAs required for neither rental nor managed accounts."
 				},
 				{
 					title: "Risk Management",
-					icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					// icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					icon: "BsShieldLock",
 					text: "By playing with risk levels, you can increase/decrease a profitability factor."
 				},
 				{
 					title: "Reporting & Transparency",
-					icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					// icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					icon: "BsFileEarmarkText",
 					text: "No hidden fees, clear reporting and full verification via Myfxbook."
 				},
 				{
 					title: "Full Capital Control",
-					icon: <FiSliders style={styledFeaturesIcon}/>,
+					// icon: <FiSliders style={styledFeaturesIcon}/>,
+					icon: "FiSliders",
 					text: `No "freezing the capital", withdraw profits or top up your account at any moment.`
 				},
 			],
@@ -1523,24 +1547,24 @@ export const investmentForexData = {
 		},
 		threeContent: [
 			{
-				icon: <FcNeutralTrading style={coloredIconStyles}/>,
+				icon: "FcNeutralTrading",
 				title: "$5k Makes $5,6k in a Year",
 				text: "Balance comouding (no profit withdrawing) and personal money management principles (removing some profits)."
 			},
 			{
-				icon: <FcBullish style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Funding & Onboarding",
 				text: "Fast-track KYC via a supported broker with no capital restrictions and flexible top-up options."
 			},
 			{
-				icon: <FcCollaboration style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Installation Support",
 				text: "You are getting a free installation support, plus we are always online."
 			},
 		],
 		twoContent: [
 			{
-				icon: <FcHome style={largerColoredIconStyles}/>,
+				icon: "FcHome",
 				title: "Rental",
 				text: "You’ll just need to have an account with a broker ready and install the EA on a VPS and supporting it throughout the investment cycles. This approach works best with above €4,000 (for under €4,000 ask broker for a cent account).",
 				button: {
@@ -1548,7 +1572,7 @@ export const investmentForexData = {
 				}
 			},
 			{
-				icon: <FcManager  style={largerColoredIconStyles}/>,
+				icon: "FcManager",
 				title: "Managed Account",
 				text: "A broker technology allows you to join in via a trusted environment without bothering about installation files and MetaTrader as a whole. Best for investors looking for a hands-off approach with as low as €400.",
 				button: {
@@ -1741,7 +1765,7 @@ export const investmentForexData = {
 					},
 					{
 						key: "Possible DD",
-						value: 33,
+						value: 30,
 						tooltip: "Some important information here"
 					},
 				],
@@ -1869,32 +1893,38 @@ export const investmentForexData = {
 			content: [
 				{
 					title: "Consistent Returns",
-					icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
+					icon: "CgArrowLongUp",
+					// icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
 					text: "Remarkable 5-25% monthly returns based on 2+ years of live trading."
 				},
 				{
 					title: "Rental & Managed",
-					icon: <CgHome style={styledFeaturesIcon}/>,
+					// icon: <CgHome style={styledFeaturesIcon}/>,
+					icon: "CgHome",
 					text: "Trade on your account or invest in a managed account at €0 upfront cost."
 				},
 				{
 					title: "Sit Back & Relax",
-					icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					// icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+					icon: "BsFillEmojiSmileFill",
 					text: "No previous experience with MT4 EAs required for neither rental nor managed accounts."
 				},
 				{
 					title: "Risk Management",
-					icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					// icon: <BsShieldLock style={styledFeaturesIcon}/>,
+					icon: "BsShieldLock",
 					text: "By playing with risk levels, you can increase/decrease a profitability factor."
 				},
 				{
 					title: "Reporting & Transparency",
-					icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					// icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+					icon: "BsFileEarmarkText",
 					text: "No hidden fees, clear reporting and full verification via Myfxbook."
 				},
 				{
 					title: "Full Capital Control",
-					icon: <FiSliders style={styledFeaturesIcon}/>,
+					// icon: <FiSliders style={styledFeaturesIcon}/>,
+					icon: "FiSliders",
 					text: `No "freezing the capital", withdraw profits or top up your account at any moment.`
 				},
 			],
@@ -1972,24 +2002,24 @@ export const investmentForexData = {
 		},
 		threeContent: [
 			{
-				icon: <FcNeutralTrading style={coloredIconStyles}/>,
+				icon: "FcNeutralTrading",
 				title: "$5k Makes $5,6k in a Year",
 				text: "Balance comouding (no profit withdrawing) and personal money management principles (removing some profits)."
 			},
 			{
-				icon: <FcBullish style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Funding & Onboarding",
 				text: "Fast-track KYC via a supported broker with no capital restrictions and flexible top-up options."
 			},
 			{
-				icon: <FcCollaboration style={coloredIconStyles}/>,
+				icon: "FcBullish",
 				title: "Installation Support",
 				text: "You are getting a free installation support, plus we are always online."
 			},
 		],
 		twoContent: [
 			{
-				icon: <FcHome style={largerColoredIconStyles}/>,
+				icon: "FcHome",
 				title: "Rental",
 				text: "You’ll just need to have an account with a broker ready and install the EA on a VPS and supporting it throughout the investment cycles. This approach works best with above €4,000 (for under €4,000 ask broker for a cent account).",
 				button: {
@@ -1997,7 +2027,7 @@ export const investmentForexData = {
 				}
 			},
 			{
-				icon: <FcManager  style={largerColoredIconStyles}/>,
+				icon: "FcManager",
 				title: "Managed Account",
 				text: "A broker technology allows you to join in via a trusted environment without bothering about installation files and MetaTrader as a whole. Best for investors looking for a hands-off approach with as low as €400.",
 				button: {
@@ -2190,7 +2220,7 @@ export const investmentForexData = {
 					},
 					{
 						key: "Possible DD",
-						value: 33,
+						value: 30,
 						tooltip: "Some important information here"
 					},
 				],
@@ -2344,32 +2374,38 @@ export const singleInfo = {
 		content: [
 			{
 				title: "Consistent Returns",
-				icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
+				icon: "CgArrowLongUp",
+				// icon: <CgArrowLongUp style={styledFeaturesIcon}/>,
 				text: "Remarkable 5-25% monthly returns based on 2+ years of live trading."
 			},
 			{
 				title: "Rental & Managed",
-				icon: <CgHome style={styledFeaturesIcon}/>,
+				// icon: <CgHome style={styledFeaturesIcon}/>,
+				icon: "CgHome",
 				text: "Trade on your account or invest in a managed account at €0 upfront cost."
 			},
 			{
 				title: "Sit Back & Relax",
-				icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+				// icon: <BsFillEmojiSmileFill style={styledFeaturesIcon}/>,
+				icon: "BsFillEmojiSmileFill",
 				text: "No previous experience with MT4 EAs required for neither rental nor managed accounts."
 			},
 			{
 				title: "Risk Management",
-				icon: <BsShieldLock style={styledFeaturesIcon}/>,
+				// icon: <BsShieldLock style={styledFeaturesIcon}/>,
+				icon: "BsShieldLock",
 				text: "By playing with risk levels, you can increase/decrease a profitability factor."
 			},
 			{
 				title: "Reporting & Transparency",
-				icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+				// icon: <BsFileEarmarkText style={styledFeaturesIcon}/>,
+				icon: "BsFileEarmarkText",
 				text: "No hidden fees, clear reporting and full verification via Myfxbook."
 			},
 			{
 				title: "Full Capital Control",
-				icon: <FiSliders style={styledFeaturesIcon}/>,
+				// icon: <FiSliders style={styledFeaturesIcon}/>,
+				icon: "FiSliders",
 				text: `No "freezing the capital", withdraw profits or top up your account at any moment.`
 			},
 		],
@@ -2447,24 +2483,24 @@ export const singleInfo = {
 	},
 	threeContent: [
 		{
-			icon: <FcNeutralTrading style={coloredIconStyles}/>,
+			icon: "FcNeutralTrading",
 			title: "$5k Makes $5,6k in a Year",
 			text: "Balance comouding (no profit withdrawing) and personal money management principles (removing some profits)."
 		},
 		{
-			icon: <FcBullish style={coloredIconStyles}/>,
+			icon: "FcBullish",
 			title: "Funding & Onboarding",
 			text: "Fast-track KYC via a supported broker with no capital restrictions and flexible top-up options."
 		},
 		{
-			icon: <FcCollaboration style={coloredIconStyles}/>,
+			icon: "FcBullish",
 			title: "Installation Support",
 			text: "You are getting a free installation support, plus we are always online."
 		},
 	],
 	twoContent: [
 		{
-			icon: <FcHome style={largerColoredIconStyles}/>,
+			icon: "FcHome",
 			title: "Rental",
 			text: "You’ll just need to have an account with a broker ready and install the EA on a VPS and supporting it throughout the investment cycles. This approach works best with above €4,000 (for under €4,000 ask broker for a cent account).",
 			button: {
@@ -2472,7 +2508,7 @@ export const singleInfo = {
 			}
 		},
 		{
-			icon: <FcManager  style={largerColoredIconStyles}/>,
+			icon: "FcManager",
 			title: "Managed Account",
 			text: "A broker technology allows you to join in via a trusted environment without bothering about installation files and MetaTrader as a whole. Best for investors looking for a hands-off approach with as low as €400.",
 			button: {

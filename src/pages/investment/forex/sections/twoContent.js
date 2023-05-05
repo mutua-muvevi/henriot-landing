@@ -1,5 +1,7 @@
 import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
+import { FcHome, FcManager } from "react-icons/fc";
+import { connect } from "react-redux";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
@@ -18,6 +20,9 @@ const StyledButton = styled(Button)(({ theme }) => ({
 	minWidth: "250px"
 }))
 
+const iconStyle = {
+	fontSize: "30px"
+}
 
 const ForexTwoContent = ({twoContent}) => {
 	return (
@@ -32,7 +37,11 @@ const ForexTwoContent = ({twoContent}) => {
 										<Typography variant="h5" color="text.primary">
 											{el.title}
 										</Typography>
-										{el.icon}
+										{
+											el.icon === "FcHome" ? <FcHome style={iconStyle}/> :
+											el.icon === "FcManager" ? <FcManager style={iconStyle}/> :
+											""
+										}
 									</Stack>
 									<Typography  variant="h6" color="text.primary" sx={{fontWeight: 500}}>
 										{el.text}
@@ -42,16 +51,6 @@ const ForexTwoContent = ({twoContent}) => {
 										{el.button.label}
 									</StyledButton>
 								</Stack>
-								<div>
-									<Grid container spacing={3}>
-										<Grid item >
-										</Grid>
-
-										<Grid item >
-											
-										</Grid>
-									</Grid>
-								</div>
 							</StyledGridItem>
 						))
 					}
@@ -61,4 +60,10 @@ const ForexTwoContent = ({twoContent}) => {
 	)
 }
 
-export default ForexTwoContent
+
+const mapStateToProps = ({investmentEquity}) => ({
+	twoContent: investmentEquity.data.twoContent
+})
+
+
+export default connect(mapStateToProps)(ForexTwoContent)

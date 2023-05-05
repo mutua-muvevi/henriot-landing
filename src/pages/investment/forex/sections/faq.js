@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { FaQuestion } from "react-icons/fa";
+import { connect } from "react-redux";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "50px",
@@ -69,4 +70,8 @@ const ForexFAQ = ({faq}) => {
 	)
 }
 
-export default ForexFAQ
+const mapStateToProps = ({investmentEquity}) => ({
+	faq: investmentEquity.data.faq
+})
+
+export default connect(mapStateToProps)(ForexFAQ)
