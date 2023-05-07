@@ -29,6 +29,7 @@ import InvestmentPortfolios from "./pages/investment/portfolios/portfolios";
 import Research from "./pages/resources/research/research";
 import Learn from "./pages/resources/learn/learn";
 import News from "./pages/resources/news/news";
+import SingleNews from "./pages/resources/news/single/single";
 
 //router function
 const Router = () => {
@@ -85,6 +86,11 @@ const Router = () => {
 					path: "/landing/resources/news",
 					element: <News/>,
 				},
+				{
+					path: "/landing/resources/news/single",
+					element: <SingleNews/>,
+				},
+
 				{
 					path: "/landing/resources/research",
 					element: <Research/>,
