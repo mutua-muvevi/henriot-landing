@@ -11,16 +11,18 @@ const fpaLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1681211694/h
 const fxBookLogo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1681211492/henriot/myfxbook-300-removebg-preview_o5rwnf.png"
 
 const StyledBanner = styled(Box)(({theme}) => ({
-	background: theme.palette.background.neutral,
+	backgroundColor: theme.palette.background.neutral,
 	padding: 0,
 	[theme.breakpoints.up("md")]: {
 		paddingLeft: theme.spacing(2),
 	},
 	[theme.breakpoints.up("lg")]: {
 		paddingLeft: theme.spacing(4),
+		height: "60vh"
 	},
 	[theme.breakpoints.up('xl')]: {
 		paddingLeft: theme.spacing(30),
+		height: "60vh"
 	},
 }))
 
@@ -41,7 +43,10 @@ const StyledContentStack = styled(Stack)(({ theme }) => ({
 }))
 
 const StyledGrid = styled(Grid)(({ theme }) => ({
-	height: "auto"
+	[theme.breakpoints.up('lg')]: {
+		paddingLeft: theme.spacing(30),
+		height: "60vh",
+	},
 }))
 
 const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
@@ -49,7 +54,7 @@ const StyledGridItemLeft = styled(Grid)(({ theme }) => ({
 }));
 
 const StyledGridItemRight = styled(Grid)(({ theme }) => ({
-	minHeight: "60vh",
+	height: "60vh",
 	width: "100%",
 	[theme.breakpoints.down("md")]: {
 		marginBottom: "50px",
@@ -57,7 +62,6 @@ const StyledGridItemRight = styled(Grid)(({ theme }) => ({
 }));
 
 const StyledVideo = styled("video")(({ theme }) => ({
-	
 	height: "inherit",
 	objectFit: "cover",
 	objectPosition: "center",
@@ -105,7 +109,7 @@ const ForexBanner = ({banner, data}) => {
 
 
 	return (
-		<StyledBanner>
+		<StyledBanner >
 			<StyledAbsoluteWrapper>
 				<Container maxWidth="lg">
 					<StyledContentStack spacing={6} direction="column">
@@ -121,7 +125,6 @@ const ForexBanner = ({banner, data}) => {
 
 							<Typography variant="subtitle2" textAlign="justify" color="text.primary" sx={{fontWeight: 500}}>
 								{data.caption}
-								{console.log("The data is: ", data)}
 							</Typography>
 						</Stack>
 
@@ -165,7 +168,7 @@ const ForexBanner = ({banner, data}) => {
 				<StyledGridItemLeft item xs={12} sm={12} md={12} lg={6.5} xl={7}>
 				</StyledGridItemLeft>
 
-				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5.5} xl={5}>
+				<StyledGridItemRight item xs={12} sm={12} md={12} lg={5.5} xl={5} >
 					<Stack direction="column" justifyContent="center" sx={{height: "100%",}}>
 						<StyledVideo  src={data.video} width="100%" height="100%"  autoPlay muted loop controls={false}></StyledVideo>
 					</Stack>
