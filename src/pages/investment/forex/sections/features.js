@@ -17,7 +17,7 @@ import { BsFileEarmarkText, BsFillEmojiSmileFill, BsShieldLock } from "react-ico
 import { FiSliders } from "react-icons/fi";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
-	paddingTop: "50px",
+	// paddingTop: "50px",
 	paddingBottom: "50px",
 	backgroundColor: theme.palette.background.neutral,
 }));
