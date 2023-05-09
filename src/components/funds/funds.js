@@ -25,7 +25,7 @@ const FundsComponent = ({fundsItem}) => {
 			<FundsNavigation fundsNavigationItems={fundsItem.fundsNavigationItems}/>
 			<FundsOverview overviewItems={fundsItem.overviewItems} paragraph={fundsItem.overViewParagraph} />
 			<FundsParagraph fundsParagraph={fundsItem.fundsParagraph}/>
-			<FundsPerfomance chartData={fundsItem.chartData} paragraph={fundsItem.perfomanceParagraph}/>
+			<FundsPerfomance chartData={fundsItem.chartData} paragraph={fundsItem.perfomanceParagraph} widget={fundsItem.performanceWidget}/>
 			{/* <FundInvestmentTerms paragraph={fundsItem.perfomanceParagraph}/> */}
 			<FundsDocument documentButtons={fundsItem.documentButtons}/>
 		</StyledFundsComponent>

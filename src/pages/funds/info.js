@@ -139,6 +139,7 @@ export const foreignExchangefundsItem = {
 			// ]
 		},
 	],
+	performanceWidget: `<a href="https://www.myfxbook.com/members/Henriotgroup/h-alpha-fund/10094600"<img> alt="widget" src="https://widgets.myfxbook.com/custom-widget?id=10094600&width=800&height=600&bart=0&linet=0&symbol=USDJPY&magic=-1&title=H-alpha Fund&titles=14&bgColor=fffafa&gridColor=bdbdbd&lineColor=00cc96&barColor=82ff85&bar1Color=82ff85&fontColor=000000&chartbgc=fffcfc&equityColor=000000"/></a>`,
 	perfomanceParagraph: [
 		`Past performance does not guarantee future results. The performance data quoted represents past performance and current returns may be lower or higher. The investment return and principal will fluctuate so that an investor’s shares when redeemed may be worth more or less than the original cost. Extraordinary performance is attributable in part due to unusually favorable market conditions and may not be repeated or consistently achieved in the future. The Fund’s most recent month-end performance can be found in the fund material section.`,
 		`Returns for less than one year are not annualized. Net asset value (“NAV”) returns are based on the dollar value of a single share of the ETF, calculated using the value of the underlying assets of the ETF minus its liabilities, divided by the number of shares outstanding. The NAV is typically calculated at 4:00 pm Eastern time on each business day the New York Stock Exchange is open for trading. Market returns are based on the trade price at which shares are bought and sold on the NYSE Arca, Inc. using the last share trade.`,
@@ -360,6 +361,7 @@ export const CECfundsItem = {
 			],
 		},
 	],
+	performanceWidget: `<a href="https://www.myfxbook.com/members/Henriotgroup/h-alpha-fund/10094600"<img> alt="widget" src="https://widgets.myfxbook.com/custom-widget?id=10094600&width=800&height=600&bart=0&linet=0&symbol=USDJPY&magic=-1&title=H-alpha Fund&titles=14&bgColor=fffafa&gridColor=bdbdbd&lineColor=00cc96&barColor=82ff85&bar1Color=82ff85&fontColor=000000&chartbgc=fffcfc&equityColor=000000"/></a>`,
 	perfomanceParagraph: [
 		`Past performance does not guarantee future results. The performance data quoted represents past performance and current returns may be lower or higher. The investment return and principal will fluctuate so that an investor’s shares when redeemed may be worth more or less than the original cost. Extraordinary performance is attributable in part due to unusually favorable market conditions and may not be repeated or consistently achieved in the future. The Fund’s most recent month-end performance can be found in the fund material section.`,
 		`Returns for less than one year are not annualized. Net asset value (“NAV”) returns are based on the dollar value of a single share of the ETF, calculated using the value of the underlying assets of the ETF minus its liabilities, divided by the number of shares outstanding. The NAV is typically calculated at 4:00 pm Eastern time on each business day the New York Stock Exchange is open for trading. Market returns are based on the trade price at which shares are bought and sold on the NYSE Arca, Inc. using the last share trade.`,
@@ -534,6 +536,7 @@ export const diverseFundsItem = {
 			],
 		},
 	],
+	performanceWidget: `<a href="https://www.myfxbook.com/members/Henriotgroup/h-alpha-fund/10094600"<img> alt="widget" src="https://widgets.myfxbook.com/custom-widget?id=10094600&width=800&height=600&bart=0&linet=0&symbol=USDJPY&magic=-1&title=H-alpha Fund&titles=14&bgColor=fffafa&gridColor=bdbdbd&lineColor=00cc96&barColor=82ff85&bar1Color=82ff85&fontColor=000000&chartbgc=fffcfc&equityColor=000000"/></a>`,
 	perfomanceParagraph: [
 		`Past performance does not guarantee future results. The performance data quoted represents past performance and current returns may be lower or higher. The investment return and principal will fluctuate so that an investor’s shares when redeemed may be worth more or less than the original cost. Extraordinary performance is attributable in part due to unusually favorable market conditions and may not be repeated or consistently achieved in the future. The Fund’s most recent month-end performance can be found in the fund material section.`,
 		`Returns for less than one year are not annualized. Net asset value (“NAV”) returns are based on the dollar value of a single share of the ETF, calculated using the value of the underlying assets of the ETF minus its liabilities, divided by the number of shares outstanding. The NAV is typically calculated at 4:00 pm Eastern time on each business day the New York Stock Exchange is open for trading. Market returns are based on the trade price at which shares are bought and sold on the NYSE Arca, Inc. using the last share trade.`,
