@@ -15,9 +15,9 @@ const StyledContentStack = styled(Stack)(({ theme }) => ({}));
 const StyledContentRightStack = styled(Stack)(({ theme }) => ({}));
 
 const styledLink = {
-	height: "30px",
-	width: "100%"
-}
+	minHeight: "50px",
+	width: "100%",
+};
 
 const FundsOverview = ({ overviewItems, paragraph }) => {
 	return (
@@ -82,11 +82,11 @@ const FundsOverview = ({ overviewItems, paragraph }) => {
 								</Typography>
 							</StyledContentRightStack>
 						))}
-						<a href="https://www.myfxbook.com/members/Henriotgroup/h-alpha-fund/10094600">
+						<a href="https://www.myfxbook.com/members/Henriotgroup/h-alpha-fund/10094600" target="_blank" rel="noreferrer">
 							<img
-								src="https://widgets.myfxbook.com/widget?id=10094600&type=2&color=black"
 								alt="widget"
 								style={styledLink}
+								src="https://widgets.myfxbook.com/widgets/10094600/mini.jpg"
 							/>
 						</a>
 					</Stack>
