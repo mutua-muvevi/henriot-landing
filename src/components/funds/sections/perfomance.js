@@ -28,9 +28,9 @@ const FundsPerfomance = ({ chartData, paragraph, widget }) => {
 			</Typography>
 
 			<StyledChartSection>
-				<a href="https://www.myfxbook.com/members/Henriotgroup/h-alpha-fund/10094600">
+				<a href="https://www.myfxbook.com/members/Henriotgroup/h-alpha-fund/10094600" target="_blank" rel="noreferrer">
 					<img
-						src="https://widgets.myfxbook.com/custom-widget?id=10094600&width=800&height=600&bart=0&linet=0&symbol=USDJPY&magic=-1&title=H-alpha Fund&titles=14&bgColor=fffafa&gridColor=bdbdbd&lineColor=00cc96&barColor=82ff85&bar1Color=82ff85&fontColor=000000&chartbgc=fffcfc&equityColor=000000"
+						src="https://widgets.myfxbook.com/custom-widget?id=10094600&width=600&height=300&bart=0&linet=0&symbol=USDJPY&magic=-1&title=Henriot Investment Management alpha Fund&titles=12&bgColor=ffffff&gridColor=bdbdbd&lineColor=ff0505&barColor=ffadad&bar1Color=ffadad&fontColor=525252&chartbgc=ffffff&equityColor=eff45a"
 						alt="widget"
 						style={styledWidget}
 					/>
