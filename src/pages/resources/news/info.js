@@ -257,4 +257,141 @@ export const articles = [
 			``,
 		]
 	},
+	{
+		id: "4",
+		coverImage: "https://res.cloudinary.com/dqweh6zte/image/upload/v1684825445/henriot/article_4_ehinmf.jpg",
+		title: "How the stock market operates ",
+		subtitle: "Understanding the Basics of Modern Stock Markets",
+		tagline: "Simple investment strategies for long-term financial success.",
+		date: "May 2, 2023",
+		estimatedReadTime: ": 6 minutes.",
+		author: {
+			name: "",
+			bio: ""
+		},
+		blocks: [
+			{
+				title: "",
+				subtitle: "",
+				paragraphs: [
+					`Today's financial markets range from crowded human-filled trading pits to markets that only exist on computer screens. They are as diverse as the people who trade in them`,
+					`The stock market will be our first stop. Here is what you need to know about the daily transfer of billions of shares, starting with order and ending with clearing and settlement. Mastering these principles, you can better comprehend how today's financial markets work.`,
+					``,
+				],
+				list: {
+					title: "",
+					items: []
+				},
+				table: {}
+			},
+			{
+				title: "OK, let's start at the very beginning. What's a financial market? What's a trade?",
+				subtitle: "",
+				paragraphs: [
+					`A financial market is where buyers and sellers meet to trade items, including derivatives, currencies, commodities, ETFs, bonds, and stocks. Buying and selling these assets is referred to as trading. A trade is created when opposing buy and sell orders coincide. Some deals are carried out on-site (for example, through an exchange), while others are over-the-counter (OTC). Let's examine these terms' definitions in more detail:`
+				],
+				list: {
+					title: "",
+					items: [
+						`An exchange is a highly-organized marketplace where members trade specific types of instruments. For instance, members of the New York Stock Exchange trade US shares, while members of Euronext buy and sell European stocks and options. It's important to note that only members can trade on an exchange. That's why retail investors and asset managers generally must make their trades via banks and brokers who are exchange members. The main goals of exchange are to provide fair and orderly trading and effective pricing information publication for all assets traded there. Most exchange trades are carried out "on screen," where the best price is made public.`,
+						`Over-the-counter (OTC) trades, in contrast, are negotiated directly between two parties such as a bank and an asset manager and executed between these parties, away from a venue. Unlike an on-exchange trade, the OTC trade price is negotiated between the parties beforehand.`,
+					]
+				},
+				table: {}
+			},
+			{
+				title: "Got it. So who's involved in making a trade happen?",
+				subtitle: "",
+				paragraphs: [
+					`It all starts with the investor, an individual or organization who wishes to trade a financial asset or instrument. There are two main types of investors:`
+				],
+				list: {
+					title: "",
+					items: [
+						`Retail investors who use their own money to trade, frequently through an online broker.`,
+						`Institutional investors, such as a pension fund, insurance firm, or hedge fund that often invest money on behalf of others. `,
+					]
+				},
+				table: {}
+			},
+			{
+				title: "",
+				subtitle: "",
+				paragraphs: [
+					`The broker acts as a middleman between the investor and the exchange, executing trades due to their direct or indirect connection to the exchange. Brokers also do additional duties. For instance, they do several checks to determine whether the investor is qualified to make the trade. These include ensuring investors have enough money and adhere to price or size restrictions.`,
+					`Market makers: By publishing quotes (bids to buy and offers to sell) across various assets on the exchange, market makers provide liquidity to financial markets. Without them, trading would be more difficult for market participants, and trade execution would be more expensive. Stocks, ETFs, derivatives like options and futures, and other asset classes are available for trading through the Henriot platform.`,
+					`Central counterparty: Once the transaction has been completed, the central counterparty (CCP) enters the picture. It makes all the computations required to figure out what is required of each side and when. The CCP ensures that both parties fulfill their responsibilities for money and securities to transfer on time. Some businesses use general clearing members (GCMs) to clear on their behalf or connect directly to the CCP.`,
+					`The custodian or depository is responsible for keeping the financial assets secure. After receiving notification that a trade has been completed, the custodian ensures the appropriate securities are transferred to the relevant accounts.`,
+				],
+				list: {
+					title: "",
+					items: []
+				},
+				table: {}
+			},
+			{
+				title: "So how does this all come together to make a trade happen?",
+				subtitle: "Step 1: The investor submits an order",
+				paragraphs: [
+					`The investor is where it all begins. They advise the brokerage which security, how much, and at what price they wish to purchase or sell.`
+				],
+				list: {
+					title: "",
+					items: []
+				},
+				table: {}
+			},
+			{
+				title: "",
+				subtitle: "Step 2: The order passes through the brokerage firm",
+				paragraphs: [
+					`Following receipt of the order by the sales trader in the brokerage firm's front office, it either undergoes an automated computer check or is forwarded to risk-management specialists in the middle office. In both situations, a series of checks are made to determine whether the customer's order is within allowable bounds. If so, the order is transmitted to be carried out. If not, it is turned down.`
+				],
+				list: {
+					title: "",
+					items: []
+				},
+				table: {}
+			},
+			{
+				title: "",
+				subtitle: "Step 3: The order arrives at the exchange.",
+				paragraphs: [
+					`These risk management tests must be passed before an order can be sent to the exchange. The order book is where trades that arrive at the exchange are put. The order book is an electronic ledger that keeps track of each offer to buy and sell for a certain instrument. A transaction is completed when a bid and an ask agree. In a future explainer, we'll go into greater detail about how the order book functions.`
+				],
+				list: {
+					title: "",
+					items: []
+				},
+				table: {}
+			},
+			{
+				title: "",
+				subtitle: "Step 4: The transaction moves to post-trade",
+				paragraphs: [
+					`A trade enters what is referred to as the post-trade phase once it has been confirmed. Here, brokers for the involved parties confirm the transaction's specifics, including the product, the exchange rate, and the settlement date. The custodian of the customer receives these details from the exchange as well, and the custodian then provides a confirmation to the broker. Remember that the custodian is the organization in charge of assuring the security of its client's financial assets. The back-office crew begins to work as soon as the transaction is approved and the CCP is activated.`,
+					`During the so-called settlement phase, the CCP assumes legal possession of the shares when the securities are changing hands. It essentially acts as a surety for the investors. It collects enough cash from the buyer and seller—referred to as "margin"—to cover any possible losses in the event that the trading parties fail to uphold their end of the bargain. (In OTC trading, there is no CCP to collect money from participants and guarantee that the trading parties fulfill their obligations. The CCP then notifies the appropriate parties of the settlement instructions.`,
+				],
+				list: {
+					title: "",
+					items: []
+				},
+				table: {}
+			},
+			{
+				title: "",
+				subtitle: "Step 5: The trade settles",
+				paragraphs: [
+					`The procedure ends with a settlement when the money and the securities exchange hands. A trade typically settles two days after it is placed on the exchange. The generally used abbreviation for this settlement date is "T+2," where "T" refers to the transaction date. If a transaction is marked T+2, securities, and money are transferred two days following the trade. T+2 is the standard operating foundation for most markets. Trades may be settled in cash, in which case only cash exchanges hands and no securities do.`,
+					`Each trade counterparty's account is held by the CCP, making the transfer possible. Through the CCP, the buyer and the seller transfer money and securities, respectively. Back-office personnel guarantees timely and accurate documentation of payments. The CCP reports transactions to the exchanges and custodians after each trading day.`,
+				],
+				list: {
+					title: "",
+					items: []
+				},
+				table: {}
+			},
+		],
+		sources: []
+	},
 ]
