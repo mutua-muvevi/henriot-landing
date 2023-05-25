@@ -37,6 +37,15 @@ const StyledCardContent = styled(CardContent)(({ theme }) => ({
 	height: 200
 }))
 
+const StyledTag = styled(Box)(({ theme }) => ({
+	border: "1px solid grey",
+	borderRadius: theme.shape.borderRadius,
+	paddingLeft: "5px",
+	paddingRight: "5px",
+	paddingTop: "5px",
+	paddingBottom: "5px"
+}))
+
 
 const BlogTab = () => {
 	
@@ -81,14 +90,11 @@ const BlogTab = () => {
 											>
 												{
 													el.tags.map((tag, i) => (
-														<Box key={i}>
-															<Chip
-																variant="outlined"
-																size="small"
-																label={tag}
-																sx={{borderRadius: "5px"}}
-															/>
-														</Box>
+														<StyledTag key={i} >
+															<Typography variant="caption" color="text.secondary">
+																{tag}
+															</Typography>
+														</StyledTag>
 													))
 												}
 											</Stack>
