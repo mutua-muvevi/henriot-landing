@@ -281,20 +281,25 @@ const Navigation = ({ setData }) => {
 										</NavLink>
 									</Box>
 									<Box>
-										<Button
-											variant="outlined"
-											onClick={handleMenuClick}
-										>
-											Login
-										</Button>
+										<a href="https://deploy-preview-63--taupe-pixie-4546b4.netlify.app/login">
+											<Button
+												variant="outlined"
+												onClick={handleMenuClick}
+											>
+												Login
+											</Button>
+										</a>
 									</Box>
 									<Box>
-										<Button
-											variant="contained"
-											onClick={handleMenuClick}
-										>
-											Register
-										</Button>
+										<a href="https://deploy-preview-63--taupe-pixie-4546b4.netlify.app/register">
+											<Button
+												variant="contained"
+												onClick={handleMenuClick}
+											>
+												Register
+											</Button>
+										</a>
+										
 									</Box>
 								</Stack>
 							</StyledMenuStack>
