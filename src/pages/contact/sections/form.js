@@ -8,6 +8,8 @@ import SelectField from "../../../components/formui/select/select";
 import TextFieldWrapper from "../../../components/formui/textfield/textfield";
 
 import { formItems, LeftSideInfo } from "../info";
+import { postContactMessage } from "../../../redux/action/contact";
+import { connect } from "react-redux";
 
 
 const INITIAL_FORM_STATE = {
@@ -56,10 +58,11 @@ const StyledGridItem = styled(Grid)(({ theme }) => ({
 
 }));
 
-const ContactForm = () => {
+const ContactForm = ({ postMessage }) => {
 
-	const submitHandler = (values) => {
-		console.log(values)
+	const submitHandler = (values, { resetForm }) => {
+		postMessage(values)
+		resetForm()
 	}
 
 	return (
@@ -69,7 +72,7 @@ const ContactForm = () => {
 					<StyledGridItem item xs={12} sm={12} md={12} lg={6} xl={6}>
 						<Stack direction="column" alignItems="flex-start" textAlign="left" justifyContent="flex-start" spacing={3}>
 							<Typography variant="h3" color="text.primary">
-								Let's communicate
+								Let's Communicate
 							</Typography>
 							{
 								LeftSideInfo.map((el, i) => (
@@ -141,4 +144,10 @@ const ContactForm = () => {
 	)
 }
 
-export default ContactForm
+const mapStateToProps = ({}) => ({});
+
+const mapDispatchToProps = (dispatch) => ({
+	postMessage: (values) => dispatch(postContactMessage(values))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm)
