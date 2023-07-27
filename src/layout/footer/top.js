@@ -11,6 +11,8 @@ import { Formik, Form, useFormik } from "formik";
 import * as Yup from "yup";
 import CheckboxField from '../../components/formui/checkbox/checkbox';
 import { FaPaperPlane } from 'react-icons/fa';
+import { postEmail } from '../../redux/action/email';
+import { connect } from 'react-redux';
 
 const logo = "https://res.cloudinary.com/dqweh6zte/image/upload/v1658133237/henriot/logo/henriot_logo_mefxsi.png";
 const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis pulvinar tellus, in ultricies sapien pharetra vitae."
@@ -65,20 +67,21 @@ const StyledAccordion = styled(Accordion)(({theme}) => ({
 	backgroundColor: "inherit"
 }))
 
-const FooterTop = () => {
+const FooterTop = ({ saveEmail }) => {
 	
 	const initialValues = {
 		email: "",
-		isRead: "",
+		readTerms: false,
 	};
 
 	const validationSchema = Yup.object().shape({
 		email: Yup.string().email("Add a valid email").required("Email is required"),
-		startingCapital: Yup.string(),
+		readTerms: Yup.boolean(),
 	});
 
-	const submitHandler = (values) => {
-		alert(values)
+	const submitHandler = (values, { resetForm }) => {
+		saveEmail(values)
+		resetForm()
 	}
 
   return (
@@ -162,10 +165,10 @@ const FooterTop = () => {
 											type="email"
 										/>
 										<CheckboxField
-											name="isRead"
+											name="readTerms"
 											label="I have read the terms and conditions"
 										/>
-										<Button color="primary" variant="contained" endIcon={<FaPaperPlane/>} onSubmit={submitHandler}>
+										<Button color="primary" variant="contained" endIcon={<FaPaperPlane/>} type="submit">
 											Subscribe
 										</Button>
 									</Stack>
@@ -180,4 +183,10 @@ const FooterTop = () => {
 )
 }
 
-export default FooterTop
+const mapStateToProps = ({}) => ({});
+
+const mapDispatchToProps = (dispatch) => ({
+	saveEmail: (values) => dispatch(postEmail(values))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(FooterTop)
